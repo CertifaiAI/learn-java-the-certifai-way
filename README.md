@@ -1,5 +1,5 @@
-# Fundamentals in Java
-
+# Fundamentals in Java  
+  
 ## What You Will Learn
 - Through these building blocks of Java snippets, you will able to understand the gist of Java programming in no time.
 
