@@ -10,16 +10,16 @@
 ## How To Use This Repository
 In order to gain the most benefits, you can choose the topic to look deeper into at your own pace.  
 
-If you are starting from scratch, walkthrough the folder in the sequence of 
-- **basic**, 
-- **maven**, 
-- **intermediate** and
-- **advanced**  
-to gain the maximum learning experience. 
+If you are starting from scratch, walkthrough the folder in the sequence as below to gain the maximum learning experience.  
+- [**basic**](https://www.google.co.uk/), 
+- [**maven**](https://www.google.co.uk/), 
+- [**intermediate**](https://www.google.co.uk/)
+- [**advanced**](https://www.google.co.uk/)  
+ 
 
-If you are not familiar with Apache Maven, go ahead and focus on the **maven** subdirectory.  
+If you are not familiar with Apache Maven, go ahead and focus on the [**maven**]() subdirectory.  
 
-If you want to test yourself quickly, take the challenge in the directory **challenge**. 
+If you want to test yourself quickly, take the challenge in the [**challenge**]() subdirectory.  
 
 ## Basic 
 - [0_HelloWorld.java](https://www.google.co.uk/)
