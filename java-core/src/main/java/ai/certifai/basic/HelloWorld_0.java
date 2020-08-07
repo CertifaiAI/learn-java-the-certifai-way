@@ -1,9 +1,15 @@
+package ai.certifai.basic;
+
 import ai.certifai.util.Evaluation;
 
 public class HelloWorld_0
 {
-    public static void main(String[] args) throws Exception
+    static Evaluation eval = new Evaluation(HelloWorld_0.class);
+
+    public static void main(String[] args)
     {
-        Evaluation eval = new Evaluation(HelloWorld_0.class);
+        String firstString = "Hello World";
+
+        eval.evaluatePerLine(firstString);
     }
 }
