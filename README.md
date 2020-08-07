@@ -1,13 +1,24 @@
-# Fundamentals in Java  
-  
 ## What You Will Learn
-- Through these building blocks of Java snippets, you will able to understand the gist of Java programming in no time.
+- Through the building blocks of Java snippets, you will able to understand the gist of Java programming in no time.
 
 ## What You Need 
 - Grit to stick through the pain of debugging!
 - [JDK 1.8](https://adoptopenjdk.net/)  or later
 - [Apache Maven 3.5](https://maven.apache.org/download.cgi) or later
-- [Intellij iDE](https://www.jetbrains.com/idea/download/)
+- [Intellij iDE](https://www.jetbrains.com/idea/download/)  
+
+## How To Use This Repository
+In order to gain the most benefits, you can choose the topic to look deeper into at your own pace.  
+
+If you are starting from scratch, walkthrough the folder in the sequence of **basic**, **intermediate**, **advanced** and **maven** to gain the maximum learning experience. 
+
+If you are not familiar with Apache Maven, go ahead and focus on the subdirecotry **maven**.  
+
+If you want to test yourself quickly, take the challenge in the directory **challenge**. 
+
+
+
+Jump ahead to Create a Simple Application.
 
 You can use the [editor on GitHub](https://github.com/CertifaiAI/java-fundamentals/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
