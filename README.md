@@ -1,4 +1,13 @@
-## Welcome to GitHub Pages
+# Fundamentals in Java
+
+## What You Will Learn
+- Through these building blocks of Java snippets, you will able to understand the gist of Java programming in no time.
+
+## What You Need 
+- Grit to stick through the pain of debugging!
+- [JDK 1.8](https://adoptopenjdk.net/)  or later
+- [Apache Maven 3.5](https://maven.apache.org/download.cgi) or later
+- [Intellij iDE](https://www.jetbrains.com/idea/download/)
 
 You can use the [editor on GitHub](https://github.com/CertifaiAI/java-fundamentals/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
