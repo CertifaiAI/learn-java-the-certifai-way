@@ -16,5 +16,5 @@
     - boolean
     
 ## Appendix
-2. [If_ElseIf_Else.java](https://gist.github.com/codenamewei/a6aa4dc6f3fa94017999e20082b4622f)
-3. [DataTypes.java](https://gist.github.com/codenamewei/d14ae1a078b50ebf430e100bb66a3977)
+1. [If_ElseIf_Else.java](https://gist.github.com/codenamewei/a6aa4dc6f3fa94017999e20082b4622f)
+2. [DataTypes.java](https://gist.github.com/codenamewei/d14ae1a078b50ebf430e100bb66a3977)
