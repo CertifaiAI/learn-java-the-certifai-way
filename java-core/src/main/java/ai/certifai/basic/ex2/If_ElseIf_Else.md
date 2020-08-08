@@ -9,17 +9,17 @@ Given an integer, _input_, return an output string of **Even**, **Odd**, **Out O
 - if _input_ is odd number, return **Odd**
 - if _input_ greater than 10000, return **Out Of Range**  
 
-`  
-    if(condition 1)     
-    {      
-        //code block      
+    if(condition 1)
+    {
+
+//code block      
     }     
     else if(condition 2)      
     {      
         //code block      
     } 
 
- `
+
 **Sample Input**  
 1
 
