@@ -13,6 +13,7 @@ Fill in after [line 14](https://github.com/CertifaiAI/java-fundamentals/blob/mas
 **Sample Input**  
 `
 String inputString = "Nasi Lemak!";
+
 eval.evaluatePerLine(inputString);
 `
 
