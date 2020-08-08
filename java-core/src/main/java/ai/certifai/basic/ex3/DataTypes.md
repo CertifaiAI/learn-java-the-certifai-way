@@ -11,16 +11,17 @@ Define these 4 values in the respective format and get it evaluated
 Fill in after [line 14](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex3/DataTypes.java#L14)
 
 **Sample Input**  
-`
-String inputString = "Nasi Lemak!";
 
+```
+String inputString = "Nasi Lemak!";      
 eval.evaluatePerLine(inputString);
-`
+```
 
-**Sample Output**  
-`
+**Sample Output** 
+
+```
 Nasi Lemak!
-`
+```
 
 **Key Takeaways**
 
