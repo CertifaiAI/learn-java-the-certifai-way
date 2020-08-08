@@ -23,6 +23,7 @@ If you want to test yourself quickly, take the challenge in the [**challenge**](
 
 ## Basic 
 - [HelloWorld.java](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/basic/ex1)
+- [If_ElseIf_Else.java](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/basic/ex2)
 
 
 
