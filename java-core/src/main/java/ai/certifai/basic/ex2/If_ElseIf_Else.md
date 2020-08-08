@@ -1,4 +1,4 @@
-# QuickStart!
+# If - Else if - Else loop
 
 **What To Do**  
 Fill in function _String compute(int input)_ to fulfill the conditions above
