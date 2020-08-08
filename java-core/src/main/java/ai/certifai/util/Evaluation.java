@@ -7,6 +7,7 @@ import java.util.Objects;
 
 public class Evaluation
 {
+    private int totalCaseNumber = -1;
     private int truthCaseNumber = 0;
     private int caseNumber = 0;
     private BufferedReader br;
@@ -23,6 +24,15 @@ public class Evaluation
         try
         {
             br = new BufferedReader(new FileReader(file));
+
+            String bufferTotalCase;
+
+            if((bufferTotalCase = br.readLine()) != null) {
+
+                totalCaseNumber = Integer.parseInt(bufferTotalCase);
+
+            }
+
         }
         catch(Exception e)
         {
@@ -37,7 +47,7 @@ public class Evaluation
 
             if((trueOutput = br.readLine()) != null)
             {
-                System.out.println("Case " + caseNumber++);
+                System.out.println("Case " + ++caseNumber);
 
                 if(output instanceof String)
                 {
@@ -66,11 +76,42 @@ public class Evaluation
                         printWrongResult(output, trueOutput);
                     }
                 }
+                else if(output instanceof Double)
+                {
+                    Double dTrueOutput = Double.parseDouble(trueOutput);
+                    Double doubleOutput = dTrueOutput - (Double) output;
+                    if (Math.abs(doubleOutput) <= 0.000001)
+                    {
+                        System.out.println("Correct\n");
+
+                        truthCaseNumber++;
+                    }
+                    else
+                    {
+                        printWrongResult(output, trueOutput);
+                    }
+                }
+                else if(output instanceof Boolean) {
+
+                    boolean boolTrueOutput = Boolean.parseBoolean(trueOutput);
+                    boolean boolOutput = (boolean) output;
+                    if(boolOutput == boolTrueOutput)
+                    {
+                        System.out.println("Correct\n");
+
+                        truthCaseNumber++;
+                    }
+                }
+                else if(output == null)
+                {
+                    printWrongResult("null", trueOutput);
+                }
+
 
             }
             else
             {
-                System.out.println("Output file reader and input number of lines not aligned");
+                System.out.println("Output file reader ended before testing case does");
             }
         }
         catch(Exception e)
@@ -81,9 +122,14 @@ public class Evaluation
 
     public void printResult()
     {
-        System.out.println("\n*************************");
+        System.out.println("*************************");
 
-        if(truthCaseNumber == caseNumber)
+        if(totalCaseNumber > caseNumber)
+        {
+            System.out.println("Note: not all use cases was tested");
+            System.out.println(Config.WRONG_MSG);
+        }
+        else if(truthCaseNumber == caseNumber)
         {
             System.out.println(Config.RIGHT_MSG);
         }
@@ -98,7 +144,7 @@ public class Evaluation
     public void printWrongResult(Object output, Object trueOutput)
     {
         System.out.println("Wrong");
-        System.out.println("Output     : " + output);
-        System.out.println("True Output: " + trueOutput + "\n");
+        System.out.println("- Output     : " + output);
+        System.out.println("- True Output: " + trueOutput + "\n");
     }
 }

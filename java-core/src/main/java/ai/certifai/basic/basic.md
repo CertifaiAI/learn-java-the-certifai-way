@@ -1,17 +1,20 @@
 ## Gist of Basic Java Programming
  
-1. Naming convention of java is of CamelCase.  
-2. 
-
-
-## Summary
 **HelloWorld.java**
 1. There should be one public class name per file  
 2. The public class name must be same with file name
 
-**If_ElseIf_Else**
+**If_ElseIf_Else.java**
 1. How to build a function in java  
-2. How to build if-elseif-else loop
+2. How to build if-elseif-else loop  
 
+**DataTypes.java**
+- Different data types in Java: 
+    - int
+    - double
+    - String
+    - boolean
+    
 ## Appendix
 2. [If_ElseIf_Else.java](https://gist.github.com/codenamewei/a6aa4dc6f3fa94017999e20082b4622f)
+3. [DataTypes.java](https://gist.github.com/codenamewei/d14ae1a078b50ebf430e100bb66a3977)
