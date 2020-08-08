@@ -34,6 +34,6 @@ Odd
 
 **Key Takeaways**
 
-- There should be one public class name per file
+- How to build a function in java
 
-- The public class name must be same with file name 
+- How to build if-elseif-else loop 
