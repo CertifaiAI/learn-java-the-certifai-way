@@ -1,7 +1,7 @@
 # If - Else if - Else loop
 
 **What To Do**  
-Fill in function _String compute(int input)_ to fulfill the conditions above
+Fill in function [_String compute(int input)_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex2/If_ElseIf_Else.java#L26-L32) to fulfill the conditions above
 
 Given an integer, _input_, return an output string of **Even**, **Odd**, **Out Of Range**  
  
