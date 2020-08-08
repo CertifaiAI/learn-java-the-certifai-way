@@ -22,7 +22,7 @@ If you are not familiar with Apache Maven, go ahead and focus on the [**maven**]
 If you want to test yourself quickly, take the challenge in the [**challenge**]() subdirectory.  
 
 ## Basic 
-- [0_HelloWorld.java](https://www.google.co.uk/)
+- [HelloWorld.java](https://www.google.co.uk/)
 
 
 
