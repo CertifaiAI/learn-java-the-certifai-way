@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.Objects;
 
-
 public class Evaluation
 {
     private int truthCaseNumber = 0;
@@ -31,7 +30,7 @@ public class Evaluation
         }
     }
 
-    public void evaluatePerLine(String output)
+    public void evaluatePerLine(Object output)
     {
         try {
             String trueOutput;
@@ -40,13 +39,34 @@ public class Evaluation
             {
                 System.out.println("Case " + caseNumber++);
 
-                System.out.println("Output     : " + output);
-                System.out.println("True Output: " + trueOutput);
-
-                if(output.equals(trueOutput))
+                if(output instanceof String)
                 {
-                    truthCaseNumber++;
+                    if(output.equals(trueOutput))
+                    {
+                        System.out.println("Correct\n");
+
+                        truthCaseNumber++;
+                    }
+                    else
+                    {
+                        printWrongResult(output, trueOutput);
+                    }
                 }
+                else if(output instanceof Integer)
+                {
+                    Integer nOutput = (Integer) output;
+                    if(nOutput == Integer.parseInt(trueOutput))
+                    {
+                        System.out.println("Correct\n");
+
+                        truthCaseNumber++;
+                    }
+                    else
+                    {
+                        printWrongResult(output, trueOutput);
+                    }
+                }
+
             }
             else
             {
@@ -73,7 +93,12 @@ public class Evaluation
         }
 
         System.out.println("*************************");
+    }
 
-
+    public void printWrongResult(Object output, Object trueOutput)
+    {
+        System.out.println("Wrong");
+        System.out.println("Output     : " + output);
+        System.out.println("True Output: " + trueOutput + "\n");
     }
 }

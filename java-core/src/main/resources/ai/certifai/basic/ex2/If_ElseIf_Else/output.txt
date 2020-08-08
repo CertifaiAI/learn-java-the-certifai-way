@@ -1,0 +1,8 @@
+Even
+Odd
+Even
+Even
+Out of Range
+Odd
+Even
+Out of Range
