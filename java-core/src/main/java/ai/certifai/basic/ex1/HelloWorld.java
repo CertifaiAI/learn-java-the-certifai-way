@@ -11,5 +11,7 @@ public class HelloWorld
         String firstString = null; //Enter your code here
 
         eval.evaluatePerLine(firstString);
+
+        eval.printResult();
     }
 }
