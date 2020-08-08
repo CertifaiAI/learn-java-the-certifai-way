@@ -22,7 +22,7 @@ If you are not familiar with Apache Maven, go ahead and focus on the [**maven**]
 If you want to test yourself quickly, take the challenge in the [**challenge**]() subdirectory.  
 
 ## Basic 
-- [HelloWorld.java](https://www.google.co.uk/)
+- [HelloWorld.java](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/basic/ex1)
 
 
 
