@@ -2,7 +2,7 @@
 
 ## Chapter 1 Introduction of Apache Maven
 
-### 1.1 Installation of Apache Maven 
+### 1.1 Installation of Apache Maven :man_technologist: :woman_technologist:
 
 - Download and install Apache Maven from [here](https://maven.apache.org/download.cgi).  
 
@@ -22,11 +22,12 @@ mvn -version
 
 - This folder covers some of the Maven essentials to manage Java based project in day to day use.
 
-### 1.3 Build an Apache Maven Project :raised_hands: :computer: 
+### 1.3 Build an Apache Maven Project :man_technologist: :woman_technologist:
 
 Step 1: Create a new project in Intellij
 
-- There's two ways to do this. Open Intellij in your system. 
+- There's two approaches in creating new project. 
+  First of all, open Intellij in your host system. 
 
 1. (Option 1) Click "Create New Project" in the "Welcome to IntelliJ IDEA" interface. 
 <p align="center">
@@ -39,22 +40,39 @@ Step 1: Create a new project in Intellij
 </p>  
 
 2. Choose the archetype **maven-archetype-quickstart** to start with.  
-   Note: maven-archetype-quickstart is sample Maven template which provides skeleton structure of Java project.
+   :information_source: maven-archetype-quickstart is sample Maven template which provides skeleton structure of Java project.
 <p align="center">
   <img src="metadata/maven_create_project_1.png">
 </p>  
 
-3. Give a relevant project name in the **name** field.
+3. Fill up the bottom fields accordingly.  
+ 
+   - Name: Name of Project
+    - Example:
+        - Name: MyFirstJavaProject
+   - Location: Directory where the project will be created
+    - Example:
+        - Location: ~/Desktop/temp
+   - GroupId: Reverse domain name of the organization. The purpose of GroupId is to makes the project recognizatble across all available projects.
+       - Example:
+           - GroupID: ai.certifai
+   - ArtifactId: Name of Artifact. By default same with the name of the project
+    - Example:
+        - Name: MyFirstJavaProject
+   - Version: Version of the project. Default value is 1.0-SNAPSHOT
+    - Example:
+        - Version: 1.0-SNAPSHOT
+                   
 <p align="center">
   <img src="metadata/maven_create_project_2.png">
 </p>
 
-:information_source: You can check the properties of the project in the subsequent window.  
+:information_source: These information can be modified at later phase.
+
+:information_source: The properties of the project can be double checked in this interface during creating project.  
 <p align="center">
   <img src="metadata/maven_create_project_3.png">
 </p>
-
-
 
 
 ## Chapter 2 Dive in Java with Apache Maven
