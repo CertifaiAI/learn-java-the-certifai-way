@@ -22,8 +22,27 @@ mvn -version
 
 - This folder covers some of the Maven essentials to manage Java based project in day to day use.
 
-### 1.3 Build an Apache Maven Project :computer: 
+### 1.3 Build an Apache Maven Project :raised_hands: :computer: 
 
+Step 1: Create a new project in Intellij
+
+- There's two ways to do this. Open Intellij in your system. 
+
+1. (Option 1) Click "Create New Project" in the "Welcome to IntelliJ IDEA" interface. 
+<p align="center">
+  <img width="500" height="350" src="metadata/maven_create_project_0_0.png">
+</p>  
+
+1. (Option 2) If there's an existing project opened, create a new project by going to **File -> New -> Project**
+<p align="center">
+  <img width="500" height="350" src="metadata/maven_create_project_0.png">
+</p>  
+
+2. Choose the archetype **maven-archetype-quickstart** to start with. 
+   Note: maven-archetype-quickstart is sample Maven template which provides skeleton structure of Java project.
+<p align="center">
+  <img width="500" height="350" src="metadata/maven_create_project_1.png">
+</p>  
 
 
 ## Chapter 2 Dive in Java with Apache Maven
@@ -79,6 +98,7 @@ mvn -version
 ### invalidate cache and restart
 
 ### Reimport project after change of pom.xml
+
 
 
   
