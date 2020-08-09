@@ -22,6 +22,10 @@ mvn -version
 
 - This folder covers some of the Maven essentials to manage Java based project in day to day use.
 
+### 1.3 Build an Apache Maven Project :computer: 
+
+
+
 ## Chapter 2 Dive in Java with Apache Maven
 
 - The fundamental component to manage dependencies is by using pom.xml - project object model (POM). 
