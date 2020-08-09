@@ -80,7 +80,7 @@ Step 1: Create a new project in Intellij
 - The fundamental component to manage dependencies is by using pom.xml - project object model (POM). 
 - Simply put, _pom.xml_ is an XML representation of a Maven project with default values of configurations for dependencies name, version and etc.  
 
-### Single-Module Java Project
+### 2.1 Single-Module Java Project
 
 - Note:
   A module in Java represents a group of closely related packages and resources.  
@@ -99,7 +99,7 @@ Step 1: Create a new project in Intellij
 
  
 
-### Maven Central Repository
+### 2.2 Maven Central Repository
 
 - Maven Central Repository hosted on the cloud.
 
@@ -113,6 +113,13 @@ Step 1: Create a new project in Intellij
 <p align="center">
   <img src="metadata/maven_graphic_1.jpg">
 </p>  
+
+### 2.3 Add dependencies to _my-first-dl4j-project_ :man_technologist: :woman_technologist:
+
+1. Search for javacv-platform in [central repository](https://mvnrepository.com/repos/central)
+2. Copy and paste it under the _dependencies_ of pom.xml
+3. Paste these code snippets in the **App.java**
+4. Reload project
 
 ### group id and name and dependency find and in .m2
 
