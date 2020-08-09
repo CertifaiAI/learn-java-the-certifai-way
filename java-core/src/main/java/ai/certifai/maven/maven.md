@@ -182,7 +182,7 @@ How many pom.xml is in the [**TrainingLabs**](https://github.com/CertifaiAI/Trai
   
 ### Chapter 3 Useful day-to-day operations with Apache Maven & Intellij :man_technologist: :woman_technologist:
 
-- When importing a Maven project into Intellij, open a new project pointing to the root pom.xml.  
+**Note 1: When importing a Maven project into Intellij, open a new project pointing to the root pom.xml.  **
 
 Step 1: Import an existing project
 
@@ -204,17 +204,17 @@ Step 1: Import an existing project
   <img src="metadata/import_2.jpg">
 </p>  
 
-- When the IDE is not behave like what you are expecting,  
-one of the few debugging steps an individual can try to do is clear the cache and restart to see if it solves the problem.
+**Note 2 When the IDE is not behave like what you are expecting,  
+one of the few debugging steps an individual can try to do is clear the cache and restart to see if it solves the problem. **
 <p align="center">
   <img src="metadata/invalidate.jpg">
 </p>  
 
-- **The changes in pom.xml will not automatically be reflected when the program is run**.  
+**Note 3: The changes in pom.xml will not automatically be reflected when the program is run**.  
 - Always remember to reload the project once make changes to any of the pom.xml.  
 
 1. Right click on the repository name. Find **Maven -> Reimport** from the categories.  
     - In some system, it's **Maven -> Reload project**. Both serves the same purpose.
 <p align="center">
-  <img src="metadata/invalidate.jpg">
+  <img src="metadata/reload.jpg">
 </p>  
