@@ -22,7 +22,7 @@ mvn -version
 
 - This folder covers some of the Maven essentials to manage Java based project in day to day use.
 
-### 1.3 Build an Apache Maven Project :computer: 
+### 1.3 Build an Apache Maven Project :raised_hands: :computer: 
 
 
 
