@@ -12,8 +12,8 @@ In order to gain the most benefits, you can choose the topic to look deeper into
 
 If you are starting from scratch, walkthrough the folder in the sequence as below to gain the maximum learning experience.  
 - [**Overview of Java**](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/quickstart.md)
-- [**Introduction to Apache Maven**](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/maven), 
-- [**Basic**](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/basic), 
+- [**Introduction to Apache Maven**](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/maven)
+- [**Basic**](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/basic)
 
 If you are not familiar with Apache Maven, go ahead and focus on the [**Introduction to Apache Maven**](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/maven) subdirectory.  
 

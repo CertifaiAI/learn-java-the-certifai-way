@@ -52,5 +52,16 @@ finally
     //statement
 }
 ```
+**What To Do**  
 
-### Throws Exceptions
+Rewrite the function block below starting from line 18 to handle exception with try-catch-finally.  
+Print out the message "File is not found!" in the **catch** loop
+```$xslt
+public static void main(String[] args) 
+```
+
+**Sample Output** 
+
+```
+File is Not Found!
+```
