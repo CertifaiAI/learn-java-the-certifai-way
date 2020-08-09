@@ -4,9 +4,9 @@
 
 ### 1.1 Installation of Apache Maven 
 
-Download and install Apache Maven from [here](https://maven.apache.org/download.cgi).  
+- Download and install Apache Maven from [here](https://maven.apache.org/download.cgi).  
 
-Verify the installation through 
+- Verify the installation through 
 ```
 mvn -version
 ```
@@ -18,16 +18,26 @@ mvn -version
 
 - Apache Maven is a **project management tool** primarily for Java projects. 
 
+- Apache Maven manage a project's build, reporting and documentation from a central piece of information, pom.xml - project object model (POM). 
 
-
-- Apache Maven manage a project's build, reporting and documentation from a central piece of information 
-
+- This folder covers some of the Maven essentials to manage Java based project in day to day use.
 
 ## Chapter 2 Dive in Java with Apache Maven
 
 - The fundamental component to manage dependencies is by using pom.xml - project object model (POM). 
+- Simply put, _pom.xml_ is an XML representation of a Maven project with default values of configurations for dependencies name, version and etc.  
+- Let's take a look at a bare bone pom.xml.  
 
-### Single-Module Project
+<p align="center">
+  <img width="500" height="350" src="metadata/simplest_pom.png">
+</p>  
+
+### Single-Module Java Project
+
+- Note:
+  A module in Java represents 
+  
+- A single-module project 
 
 - With pom.xml, dependency management is easy in defining, creating and maintaining reproducible environments with well-defined classpaths and library versions.
 
