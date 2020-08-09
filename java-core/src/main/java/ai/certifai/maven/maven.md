@@ -30,29 +30,28 @@ Step 1: Create a new project in Intellij
 
 1. (Option 1) Click "Create New Project" in the "Welcome to IntelliJ IDEA" interface. 
 <p align="center">
-  <img width="500" height="350" src="metadata/maven_create_project_0_0.png">
+  <img src="metadata/maven_create_project_0_0.png">
 </p>  
 
 1. (Option 2) If there's an existing project opened, create a new project by going to **File -> New -> Project**
 <p align="center">
-  <img width="550" height="350" src="metadata/maven_create_project_0.png">
+  <img src="metadata/maven_create_project_0.png">
 </p>  
 
 2. Choose the archetype **maven-archetype-quickstart** to start with.  
    Note: maven-archetype-quickstart is sample Maven template which provides skeleton structure of Java project.
 <p align="center">
-  <img width="500" height="350" src="metadata/maven_create_project_1.png">
+  <img src="metadata/maven_create_project_1.png">
 </p>  
 
 3. Give a relevant project name in the **name** field.
 <p align="center">
-  <img width="550" height="350" src="metadata/maven_create_project_2.png">
+  <img src="metadata/maven_create_project_2.png">
 </p>
 
-:information_source:  
-You can check the properties of the project in the subsequent window.  
+:information_source: You can check the properties of the project in the subsequent window.  
 <p align="center">
-  <img width="550" height="350" src="metadata/maven_create_project_3.png">
+  <img src="metadata/maven_create_project_3.png">
 </p>
 
 
