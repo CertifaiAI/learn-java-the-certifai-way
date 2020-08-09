@@ -47,19 +47,19 @@ Step 1: Create a new project in Intellij
 
 3. Fill up the bottom fields accordingly.  
  
-   - Name: Name of Project
+   - **Name**: Name of Project
     - Example:
         - Name: MyFirstJavaProject
-   - Location: Directory where the project will be created
+   - **Location**: Directory where the project will be created
     - Example:
         - Location: ~/Desktop/temp
-   - GroupId: Reverse domain name of the organization. The purpose of GroupId is to makes the project recognizatble across all available projects.
+   - **GroupId**: Reverse domain name of the organization. The purpose of GroupId is to makes the project recognizatble across all available projects.
        - Example:
            - GroupID: ai.certifai
-   - ArtifactId: Name of Artifact. By default same with the name of the project
+   - **ArtifactId**: Name of Artifact. By default same with the name of the project
     - Example:
         - Name: MyFirstJavaProject
-   - Version: Version of the project. Default value is 1.0-SNAPSHOT
+   - **Version**: Version of the project. Default value is 1.0-SNAPSHOT
     - Example:
         - Version: 1.0-SNAPSHOT
                    
@@ -79,32 +79,50 @@ Step 1: Create a new project in Intellij
 
 - The fundamental component to manage dependencies is by using pom.xml - project object model (POM). 
 - Simply put, _pom.xml_ is an XML representation of a Maven project with default values of configurations for dependencies name, version and etc.  
-- Let's take a look at a bare bone pom.xml.  
-
-<p align="center">
-  <img width="500" height="350" src="metadata/simplest_pom.png">
-</p>  
 
 ### Single-Module Java Project
 
 - Note:
-  A module in Java represents 
-  
-- A single-module project 
+  A module in Java represents a group of closely related packages and resources.  
 
 - With pom.xml, dependency management is easy in defining, creating and maintaining reproducible environments with well-defined classpaths and library versions.
 
 <p align="center">
-  <img width="490" height="400" src="metadata/pom_1.png">
+  <img src="metadata/pom_1.png">
+</p> 
+
+- Let's take a look at a bare bone pom.xml.  
+
+<p align="center">
+  <img src="metadata/simplest_pom.png">
 </p>  
 
-### repository and dependency download
+ 
 
-- root pom.xml
+### Maven Central Repository
 
+- Maven Central Repository hosted on the cloud.
 
-### group id and name and dependency
+<p align="center">
+  <img src="metadata/maven_graphic_0.jpg">
+</p>  
 
+- Maven contains a huge number of commonly used libraries to be used by the community.  
+- A library in Java is represented as a jar package.
+
+<p align="center">
+  <img src="metadata/maven_graphic_1.jpg">
+</p>  
+
+### group id and name and dependency find and in .m2
+
+:information_source: 
+When Maven does not find the specific dependency in local repository,  
+it start searching in [central repository](https://mvnrepository.com/repos/central) 
+
+<p align="center">
+  <img src="metadata/maven_graphic_2.jpg">
+</p>  
 
 ### Multi-Modules Project
 
