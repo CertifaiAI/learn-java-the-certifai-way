@@ -52,8 +52,8 @@ Step 1: Create a new project in Intellij
         - Name: MyFirstJavaProject
    - **Location**: Directory where the project will be created
     - Example:
-        - Location: ~/Desktop/temp
-   - **GroupId**: Reverse domain name of the organization. The purpose of GroupId is to makes the project recognizatble across all available projects.
+        - Location: ~/Desktop/TEMP/MyFirstDL4JProject
+   - **GroupId**: Reverse domain name of the organization. The purpose of GroupId is to makes the project recognizable across all available projects.
        - Example:
            - GroupID: ai.certifai
    - **ArtifactId**: Name of Artifact. By default same with the name of the project
@@ -131,20 +131,54 @@ Else, Apache Maven would download the dependency from the cloud by referring to 
   <img src="metadata/maven_graphic_2.jpg">
 </p>  
 
-### Multi-Modules Project
+### 2.4 Multi-Modules Project :man_technologist: :woman_technologist:
 
+- Multi modules project is more complex compared to single module project.  
+- There's a root pom.xml for the whole repository and a child pom.xml per module.  
+    -  The root pom.xml in the root folder provide information which is leverage in every child module. 
+    
 <p align="center">
   <img width="350" height="400" src="metadata/pom_2.png">
 </p>  
 
-
-  - root and sub pom.xml
+:question: 
+How many pom.xml is in the [**TrainingLabs**](https://github.com/CertifaiAI/TrainingLabs.git) repository? 
   
-### Chapter 3 Useful hacks of Apache Maven with Intellij
+### Chapter 3 Useful day-to-day operations with Apache Maven & Intellij :man_technologist: :woman_technologist:
 
+- When importing a Maven project into Intellij, open a new project pointing to the root pom.xml.  
 
-### import by pom.xml
+Step 1: Import an existing project
 
-### invalidate cache and restart
+- There's two approaches in importing an existing project. 
+  First of all, open Intellij in your host system. 
 
-### Reimport project after change of pom.xml
+1. (Option 1) Click "Open or Import" in the "Welcome to IntelliJ IDEA" interface. 
+<p align="center">
+  <img src="metadata/import0.jpg">
+</p>  
+
+1. (Option 2) If there's an existing project opened, create a new project by going to **File -> New -> Project from Existing Sources**
+<p align="center">
+  <img src="metadata/import_1.jpg">
+</p>  
+
+2. Select the root pom.xml of the repository in which intend to open in Intellij.
+<p align="center">
+  <img src="metadata/import_2.jpg">
+</p>  
+
+- When the IDE is not behave like what you are expecting,  
+one of the few debugging steps an individual can try to do is clear the cache and restart to see if it solves the problem.
+<p align="center">
+  <img src="metadata/invalidate.jpg">
+</p>  
+
+- **The changes in pom.xml will not automatically be reflected when the program is run**.  
+- Always remember to reload the project once make changes to any of the pom.xml.  
+
+1. Right click on the repository name. Find **Maven -> Reimport** from the categories.  
+    - In some system, it's **Maven -> Reload project**. Both serves the same purpose.
+<p align="center">
+  <img src="metadata/invalidate.jpg">
+</p>  
