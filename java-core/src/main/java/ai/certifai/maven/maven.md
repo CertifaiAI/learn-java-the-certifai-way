@@ -11,7 +11,7 @@ Verify the installation through
 mvn -version
 ```
 <p align="center">
-  <img width="700" height="500" src="metadata/maven_0.png">
+  <img width="500" height="350" src="metadata/maven_0.png">
 </p>  
 
 ### 1.2 What is Apache Maven
@@ -32,7 +32,7 @@ mvn -version
 - With pom.xml, dependency management is easy in defining, creating and maintaining reproducible environments with well-defined classpaths and library versions.
 
 <p align="center">
-  <img width="700" height="500" src="metadata/pom_1.png">
+  <img width="490" height="400" src="metadata/pom_1.png">
 </p>  
 
 ### repository and dependency download
@@ -46,7 +46,7 @@ mvn -version
 ### Multi-Modules Project
 
 <p align="center">
-  <img width="700" height="500" src="metadata/pom_2.png">
+  <img width="350" height="400" src="metadata/pom_2.png">
 </p>  
 
 
