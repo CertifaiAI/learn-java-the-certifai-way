@@ -12,25 +12,26 @@ In order to gain the most benefits, you can choose the topic to look deeper into
 
 If you are starting from scratch, walkthrough the folder in the sequence as below to gain the maximum learning experience.  
 - quickstart.md  
-- [**maven**](https://www.google.co.uk/), 
-- [**basic**](https://www.google.co.uk/), 
-- [**intermediate**](https://www.google.co.uk/)
-- [**advanced**](https://www.google.co.uk/)  
+- [**maven**](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/maven), 
+- [**basic**](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/basic), 
+- [**intermediate**](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/maven/intermediate)
+- [**advanced**](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/advanced)  
+- [**challenge**](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/challenge)  
 
-If you are not familiar with Apache Maven, go ahead and focus on the [**maven**]() subdirectory.  
+If you are not familiar with Apache Maven, go ahead and focus on the [**maven**](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/maven) subdirectory.  
 
 If you want to test yourself quickly, take the challenge in the [**challenge**]() subdirectory
 
 ## Maven
-- 
+- [maven.md](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/maven/maven.md)
 
 ## Basic 
 - [HelloWorld.java](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/basic/ex1)
 - [If_ElseIf_Else.java](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/basic/ex2)
-- [DataTypes.java]()
+- [DataTypes.java](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/basic/ex3)
  
 
-
+:information_source: Chapter with these emojis :man_technologist: :woman_technologist: means hands-on session where you are encouraged to try it on your own host system.
 
 
 
