@@ -13,3 +13,5 @@ Hello World!
 - There should be one public class name per file
 
 - The public class name must be same with file name 
+
+- Contrary to Python, each line should end with semicolon.

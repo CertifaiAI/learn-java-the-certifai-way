@@ -2,9 +2,9 @@ package ai.certifai.basic.ex4;
 
 import ai.certifai.util.Evaluation;
 
-public class String2List
+public class ExceptionHandling
 {
-    static Evaluation eval = new Evaluation(ai.certifai.basic.ex4.String2List.class);
+    static Evaluation eval = new Evaluation(ExceptionHandling.class);
 
     public static void main(String[] args)
     {

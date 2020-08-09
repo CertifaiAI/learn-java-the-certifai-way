@@ -10,6 +10,7 @@ public class HelloWorld
 {
 }
 ```
+3. Contrary to Python, each line should end with semicolon.
 
 **If_ElseIf_Else.java**
 1. How to build a function in java
