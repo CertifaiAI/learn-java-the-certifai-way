@@ -97,7 +97,6 @@ Step 1: Create a new project in Intellij
   <img src="metadata/simplest_pom.png">
 </p>  
 
- 
 
 ### 2.2 Maven Central Repository
 
@@ -119,13 +118,14 @@ Step 1: Create a new project in Intellij
 1. Search for javacv-platform in [central repository](https://mvnrepository.com/repos/central)
 2. Copy and paste it under the _dependencies_ of pom.xml
 3. Paste these code snippets in the **App.java**
-4. Reload project
+4. Reload project  
+5. Run the program
 
-### group id and name and dependency find and in .m2
+### How does **2.3** works?
 
-:information_source: 
-When Maven does not find the specific dependency in local repository,  
-it start searching in [central repository](https://mvnrepository.com/repos/central) 
+_.m2_ folder in the host system saved local repositories.  
+If a particular dependency not found in the folder, Maven would check _.m2_ folder to make sure all dependencies exists locally.
+Else, Apache Maven would download the dependency from the cloud by referring to pom.xml.
 
 <p align="center">
   <img src="metadata/maven_graphic_2.jpg">
@@ -144,11 +144,6 @@ it start searching in [central repository](https://mvnrepository.com/repos/centr
 
 
 ### import by pom.xml
-
-### .m2
-
-- what is .m2
-- how to find jar files
 
 ### invalidate cache and restart
 
