@@ -132,10 +132,16 @@ Step 1: Create a new project in Intellij
   <img src="metadata/dependency_2.jpg">
 </p>  
 
-2. Copy and paste the code snippet under the _dependencies_ of pom.xml. 
+2. Copy the code snippet under the _dependencies_ of pom.xml. 
 <p align="center">
   <img src="metadata/dependency_3.jpg">
 </p>  
+
+Paste the code snippets in the root pom.xml of your newly build project.
+
+ <p align="center">
+   <img src="metadata/pom_.jpg">
+ </p>  
 
 3. Paste these code snippets in the [**App.java**](https://gist.github.com/codenamewei/4bfe8251c2ddfb0e84db2dc3f5a37c9c)
 
