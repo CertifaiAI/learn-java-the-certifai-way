@@ -34,7 +34,8 @@ If you want to test yourself quickly, take the challenge in the [**Challenge**](
 - [DataTypes.java](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/basic/ex3)
  
 
-:information_source:  Chapter with emojis of :man_technologist: :woman_technologist: indicates hands-on session where you are encouraged to try it on your own host system.
+:information_source:
+Chapter with emojis of :man_technologist: :woman_technologist:  indicates hands-on session where you are encouraged to try it on your own host system.
 
 
 
