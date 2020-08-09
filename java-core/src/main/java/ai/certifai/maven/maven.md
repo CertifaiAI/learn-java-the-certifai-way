@@ -24,6 +24,38 @@ mvn -version
 
 ### 1.3 Build an Apache Maven Project :raised_hands: :computer: 
 
+Step 1: Create a new project in Intellij
+
+- There's two ways to do this. Open Intellij in your system. 
+
+1. (Option 1) Click "Create New Project" in the "Welcome to IntelliJ IDEA" interface. 
+<p align="center">
+  <img width="500" height="350" src="metadata/maven_create_project_0_0.png">
+</p>  
+
+1. (Option 2) If there's an existing project opened, create a new project by going to **File -> New -> Project**
+<p align="center">
+  <img width="550" height="350" src="metadata/maven_create_project_0.png">
+</p>  
+
+2. Choose the archetype **maven-archetype-quickstart** to start with.  
+   Note: maven-archetype-quickstart is sample Maven template which provides skeleton structure of Java project.
+<p align="center">
+  <img width="500" height="350" src="metadata/maven_create_project_1.png">
+</p>  
+
+3. Give a relevant project name in the **name** field.
+<p align="center">
+  <img width="550" height="350" src="metadata/maven_create_project_2.png">
+</p>
+
+:information_source:  
+You can check the properties of the project in the subsequent window.  
+<p align="center">
+  <img width="550" height="350" src="metadata/maven_create_project_3.png">
+</p>
+
+
 
 
 ## Chapter 2 Dive in Java with Apache Maven
