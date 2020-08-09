@@ -11,19 +11,26 @@
 In order to gain the most benefits, you can choose the topic to look deeper into at your own pace.  
 
 If you are starting from scratch, walkthrough the folder in the sequence as below to gain the maximum learning experience.  
-- [**basic**](https://www.google.co.uk/), 
+- quickstart.md  
 - [**maven**](https://www.google.co.uk/), 
+- [**basic**](https://www.google.co.uk/), 
 - [**intermediate**](https://www.google.co.uk/)
 - [**advanced**](https://www.google.co.uk/)  
- 
 
 If you are not familiar with Apache Maven, go ahead and focus on the [**maven**]() subdirectory.  
 
-If you want to test yourself quickly, take the challenge in the [**challenge**]() subdirectory.  
+If you want to test yourself quickly, take the challenge in the [**challenge**]() subdirectory
+
+## Maven
+- 
 
 ## Basic 
 - [HelloWorld.java](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/basic/ex1)
 - [If_ElseIf_Else.java](https://github.com/CertifaiAI/java-fundamentals/tree/master/java-core/src/main/java/ai/certifai/basic/ex2)
+- [DataTypes.java]()
+ 
+
+
 
 
 

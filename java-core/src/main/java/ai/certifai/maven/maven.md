@@ -18,14 +18,23 @@ mvn -version
 
 - Apache Maven is a **project management tool** primarily for Java projects. 
 
+- The fundamental component to manage dependencies is by using pom.xml - project object model (POM).
+
+- Apache Maven manage a project's build, reporting and documentation from the central piece of information - pom.xml.
+
+Lets build a single module maven-managed project to take a closer look. 
 
 
-- Apache Maven manage a project's build, reporting and documentation from a central piece of information 
+
+
+
+
+
 
 
 ## Chapter 2 Dive in Java with Apache Maven
 
-- The fundamental component to manage dependencies is by using pom.xml - project object model (POM). 
+ 
 
 ### Single-Module Project
 
