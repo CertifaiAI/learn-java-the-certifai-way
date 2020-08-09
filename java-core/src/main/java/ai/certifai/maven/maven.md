@@ -120,19 +120,23 @@ Step 1: Create a new project in Intellij
   <img src="metadata/dependency_0.jpg">
 </p>
 
+- Search for javacv-platform
+
 <p align="center">
   <img src="metadata/dependency_1.jpg">
 </p>   
+
+- Click into the version desired
 
 <p align="center">
   <img src="metadata/dependency_2.jpg">
 </p>  
 
-2. Copy and paste it under the _dependencies_ of pom.xml.
-   Change the java version to corresponding installed version. In this example, it's 1.8.  
+2. Copy and paste the code snippet under the _dependencies_ of pom.xml. 
 <p align="center">
   <img src="metadata/dependency_3.jpg">
 </p>  
+
 3. Paste these code snippets in the [**App.java**](https://gist.github.com/codenamewei/4bfe8251c2ddfb0e84db2dc3f5a37c9c)
 
 4. Reload project
@@ -140,7 +144,7 @@ Step 1: Create a new project in Intellij
   <img src="metadata/reload.jpg">
 </p> 
    - You can check the folder _.m2_ that the corresponding jar file has been downloaded from central repository.   
-   
+
  <p align="center">
    <img src="metadata/m2.jpg">
  </p>  
