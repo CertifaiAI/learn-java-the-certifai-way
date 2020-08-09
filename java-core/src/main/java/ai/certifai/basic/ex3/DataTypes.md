@@ -25,9 +25,20 @@ Nasi Lemak!
 
 **Key Takeaways**
 
-- Different data types in Java: 
+- Different primitive data types in Java: 
     - int
     - double
     - String
-    - boolean
+    - boolean  
+    
+- There's wrapper for all these primitive data types.    
+  On a general note: these wrapper class wrap a primitive type into an object.    
+  Subsequently, providing more flexibility in storing and manipulating the data.  
+    
+| Primitive Data Type | Object |
+| --- | ----------- |
+| int | Integer |
+| double | Double |
+| float | Float |
+| boolean  | Boolean |
     
