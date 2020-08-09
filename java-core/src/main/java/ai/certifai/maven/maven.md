@@ -11,7 +11,7 @@ Verify the installation through
 mvn -version
 ```
 <p align="center">
-  <img width="700" height="500" src="metadata/maven.png">
+  <img width="700" height="500" src="metadata/maven_0.png">
 </p>  
 
 ### 1.2 What is Apache Maven
