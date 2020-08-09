@@ -2,7 +2,7 @@
 
 ## Chapter 1 Introduction of Apache Maven
 
-### 1.1 Installation of Apache Maven 
+### 1.1 Quickstart
 
 Download and install Apache Maven from [here](https://maven.apache.org/download.cgi).  
 
@@ -16,7 +16,13 @@ mvn -version
 
 ### 1.2 What is Apache Maven
 
+
+
 - 
 
 ## Chapter 2
 - Reimport project after change of pom.xml
+
+
+## Chapter 3
+- How to create new project
