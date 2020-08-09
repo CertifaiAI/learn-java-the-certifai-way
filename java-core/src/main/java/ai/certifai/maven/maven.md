@@ -16,7 +16,14 @@ mvn -version
 
 ### 1.2 What is Apache Maven
 
-- 
+- Apache Maven is a **project management tool** primarily for Java projects. 
+
+- The fundamental component of Apache Maven is project object model (POM). 
+  - root pom.xml
+  - root and sub pom.xml
+
+- Apache Maven manage a project's build, reporting and documentation from a central piece of information 
+
 
 ## Chapter 2
 - Reimport project after change of pom.xml
