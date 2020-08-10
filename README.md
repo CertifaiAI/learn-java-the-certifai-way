@@ -1,6 +1,8 @@
 ## What You Will Learn
 - Through the building blocks of Java snippets, you will able to understand the gist of Java programming in no time.
 
+View this readme.md in [website format](https://certifaiai.github.io/java-fundamentals/).
+
 ## What You Need 
 - Grit to stick through the pain of debugging!
 - [JDK 1.8](https://adoptopenjdk.net/)  or later
