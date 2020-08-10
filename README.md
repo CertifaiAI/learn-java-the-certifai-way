@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/main/java/ai/certifai/maven/metadata/java.png">
+  <img src="java-core/src/main/java/ai/certifai/maven/metadata/java.png">
 </p> 
 
 ## What You Will Learn
