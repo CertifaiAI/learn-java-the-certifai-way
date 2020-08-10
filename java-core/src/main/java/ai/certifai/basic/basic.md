@@ -57,3 +57,4 @@ else
 ## Appendix
 1. [If_ElseIf_Else.java](https://gist.github.com/codenamewei/a6aa4dc6f3fa94017999e20082b4622f)
 2. [DataTypes.java](https://gist.github.com/codenamewei/d14ae1a078b50ebf430e100bb66a3977)
+3. [ExceptionHandling.java](https://gist.github.com/codenamewei/ebe7a8612f435e2d8b08edb1abe88d0b)

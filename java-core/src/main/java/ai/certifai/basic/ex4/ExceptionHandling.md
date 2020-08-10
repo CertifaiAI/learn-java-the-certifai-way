@@ -54,10 +54,21 @@ finally
 ```
 **What To Do**  
 
-Rewrite the function block below starting from line 18 to handle exception with try-catch-finally.  
-Print out the message "File is not found!" in the **catch** loop
+Rewrite the function block below starting from line 21 to handle exception with try-catch-finally.  
+eval.evaluatePerLine("File is not found!") in the **catch** loop if file is not found
 ```$xslt
-public static void main(String[] args) 
+public static void main(String[] args) throws Exception
+{
+    String filePathInString = "metadata/sample.txt"; //FILE DID NOT EXIST
+
+    //Rewrite the statement below onwards to catch the exception with try-catch-finally
+    File filePath = new File(filePathInString);
+    Scanner input = new Scanner(filePath);
+
+    //Write try-finally-catch from here onwards
+
+    eval.printResult();
+}
 ```
 
 **Sample Output** 
