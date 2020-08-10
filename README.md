@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="src/main/java/ai/certifai/maven/metadata/java.png">
+</p> 
+
 ## What You Will Learn
 - Through the building blocks of Java snippets, you will able to understand the gist of Java programming in no time.
 
