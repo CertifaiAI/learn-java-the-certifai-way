@@ -3,6 +3,20 @@
 ### Why use Java
 ### (Even though it require more lines of codes and debugging)
 
+- Platform independent. 
+    - Applications developed can work fine on all 0Ses.
+- Fast performances compared to other languages
+    - Java is a compiled language, the types are known during execution.  
+    There's no need of step-by-step executors of source code like interpreted language, which is slower in nature.  
+- Abundant ecosystems of Tools
+    - Many industry software and development tools are written and developed in Java.  
+- Building Android Apps is compatible.
+    - Most of the android applications are written in Java using Google’s Android API. 
+- Java has a strong development roadmap with continuous progress in security and performance.
+
+
+### JVM - JDK - JRE
+
 There are three keywords to familiarize with in Java Environment. 
 - Java Runtime Environment (JVM)
 - Java Development Kit (JDK)
