@@ -19,7 +19,7 @@ public class Evaluation
         String resourcePath = class_.getName().replace(".", "/");
         String resourceFile = resourcePath + "/" + Config.OUTPUT_FILE;
 
-        File file = new File(Objects. requireNonNull(loader.getResource(resourceFile)).getFile());
+        File file = new File(loader.getResource(resourceFile).getFile());
 
         try
         {
@@ -96,7 +96,7 @@ public class Evaluation
                 else if(output instanceof Boolean) {
 
                     boolean boolTrueOutput = Boolean.parseBoolean(trueOutput);
-                    boolean boolOutput = (boolean) output;
+                    boolean boolOutput = (Boolean) output;
                     if(boolOutput == boolTrueOutput)
                     {
                         System.out.println("Correct\n");
