@@ -1,8 +1,11 @@
 package ai.certifai.util;
 
+import javax.xml.transform.Result;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Evaluation
@@ -11,6 +14,7 @@ public class Evaluation
     private int truthCaseNumber = 0;
     private int caseNumber = 0;
     private BufferedReader br;
+    private List<Boolean> results;
 
     public Evaluation(Class class_)
     {
@@ -19,7 +23,9 @@ public class Evaluation
         String resourcePath = class_.getName().replace(".", "/");
         String resourceFile = resourcePath + "/" + Config.OUTPUT_FILE;
 
-        File file = new File(Objects. requireNonNull(loader.getResource(resourceFile)).getFile());
+        File file = new File(loader.getResource(resourceFile).getFile());
+
+        results = new ArrayList<Boolean>();
 
         try
         {
@@ -58,10 +64,14 @@ public class Evaluation
                         System.out.println("Correct\n");
 
                         truthCaseNumber++;
+
+                        results.add(true);
                     }
                     else
                     {
                         printWrongResult(output, trueOutput);
+
+                        results.add(false);
                     }
                 }
                 else if(output instanceof Integer)
@@ -72,10 +82,14 @@ public class Evaluation
                         System.out.println("Correct\n");
 
                         truthCaseNumber++;
+
+                        results.add(true);
                     }
                     else
                     {
                         printWrongResult(output, trueOutput);
+
+                        results.add(false);
                     }
                 }
                 else if(output instanceof Double)
@@ -87,19 +101,22 @@ public class Evaluation
                         System.out.println("Correct\n");
 
                         truthCaseNumber++;
+                        results.add(true);
                     }
                     else
                     {
                         printWrongResult(output, trueOutput);
+                        results.add(false);
                     }
                 }
                 else if(output instanceof Boolean) {
 
                     boolean boolTrueOutput = Boolean.parseBoolean(trueOutput);
-                    boolean boolOutput = (boolean) output;
+                    boolean boolOutput = (Boolean) output;
                     if(boolOutput == boolTrueOutput)
                     {
                         System.out.println("Correct\n");
+                        results.add(true);
 
                         truthCaseNumber++;
                     }
@@ -107,6 +124,7 @@ public class Evaluation
                 else if(output == null)
                 {
                     printWrongResult("null", trueOutput);
+                    results.add(false);
                 }
 
 
@@ -141,6 +159,8 @@ public class Evaluation
         }
 
         System.out.println("*************************");
+
+        new ResultBoard().display(results);
     }
 
     public void printWrongResult(Object output, Object trueOutput)
