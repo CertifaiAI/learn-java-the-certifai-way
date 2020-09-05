@@ -160,7 +160,7 @@ public class Evaluation
 
         System.out.println("*************************");
 
-        new ResultBoard().display(results);
+        new Dashboard().show(results);
     }
 
     public void printWrongResult(Object output, Object trueOutput)
