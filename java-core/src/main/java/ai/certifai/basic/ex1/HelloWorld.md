@@ -6,10 +6,12 @@ Pass string of 'Hello World!' to the parameter [_firstString_](https://github.co
 
 **Sample Output**  
 `
-Hello World!
-`
+Hello World!  
+`  
+
 **Key Takeaways**
 
+- 
 - There should be one public class name per file
 
 - The public class name must be same with file name 

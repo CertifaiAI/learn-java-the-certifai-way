@@ -16,7 +16,7 @@ public class InputReader
         String resourcePath = class_.getName().replace(".", "/");
         String resourceFile = resourcePath + "/" + Config.INPUT_FILE;
 
-        File file = new File(Objects. requireNonNull(loader.getResource(resourceFile)).getFile());
+        File file = new File(loader.getResource(resourceFile).getFile());
 
         try
         {
