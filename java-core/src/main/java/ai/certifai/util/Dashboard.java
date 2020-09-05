@@ -33,7 +33,7 @@ public class Dashboard {
         SpringUtilities.makeCompactGrid(panel,
                 listResults.size(), 2, //rows, cols
                 6, 6,        //initX, initY
-                8, 6);       //xPad, yPad
+                6, 6);       //xPad, yPad
 
         JFrame frame = new JFrame("Result Board");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
