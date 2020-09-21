@@ -11,7 +11,6 @@ Hello World!
 
 **Key Takeaways**
 
-- 
 - There should be one public class name per file
 
 - The public class name must be same with file name 
