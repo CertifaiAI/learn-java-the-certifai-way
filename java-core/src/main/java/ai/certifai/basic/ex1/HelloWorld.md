@@ -12,8 +12,8 @@ Hello World!
 **Key Takeaways**
 
 <p align="center">
-  <imgsrc="metadata/publicClass.jpg">
-</p> 
+  <img src="metadata/publicClass.jpg">
+</p>  
 
 - There should be one public class name per file
 
