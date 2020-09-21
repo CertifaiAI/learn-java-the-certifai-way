@@ -20,3 +20,11 @@ Hello World!
 - The public class name must be same with file name 
 
 - Contrary to Python, each line should end with semicolon.
+
+
+**Quiz** 
+1. Can more than 1 class appear in one .java file?  
+
+2. Is .java program equal to machine code?  
+
+3. What does the word _static_ means?
