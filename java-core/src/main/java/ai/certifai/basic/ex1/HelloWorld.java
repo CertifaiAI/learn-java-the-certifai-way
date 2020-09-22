@@ -17,6 +17,11 @@ package ai.certifai.basic.ex1;
 
 import ai.certifai.util.Evaluation;
 
+/**
+ * Iconic Hello World Quickstart
+ *
+ * @author codenamewei
+ */
 public class HelloWorld
 {
     static Evaluation eval = new Evaluation(HelloWorld.class);
