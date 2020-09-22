@@ -8,6 +8,7 @@ Pass 'new PackagingIntro().getClass().getCanonicalName();' to the variable [_pac
 `
 Package Name = ai.certifai.basic.ex2.PackagingIntro 
 `  
+
 **Key Takeaways**  
 - Basic file directory structure of java project by Apache Maven
 <p align="center">
@@ -20,13 +21,13 @@ Package Name = ai.certifai.basic.ex2.PackagingIntro
   <img src="metadata/JavaStructure_.png">
 </p> 
 
-- Group ID: Reverse domain name of an organization.  
+- **Group ID**: Reverse domain name of an organization.  
 - Group ID contribute to the beginning of packages name
 <p align="center">
   <img src="metadata/groupID_.jpg">
 </p> 
 
-- Packages group related classes, interfaces, and sub-packages.  
+- **Packages** group related classes, interfaces, and sub-packages.  
 - Packages are defined all in lower case.  
 - Packages are period-delimited.    
 - Essentially, packages are used to prevent conflicts with file names.  
