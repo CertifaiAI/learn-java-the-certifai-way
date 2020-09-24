@@ -1,11 +1,12 @@
 # Construction of Class
 
-**Background**
+## **Background**
+### Analogy 1
  <p align="center">
-   <img src="metadata/cloning.gif">
+   <img width="500" height="700" src="metadata/cloning.gif">
  </p>  
 
-
+### Analogy 2
  <p align="center">
    <img src="metadata/spaceX.jpg">
  </p>  
