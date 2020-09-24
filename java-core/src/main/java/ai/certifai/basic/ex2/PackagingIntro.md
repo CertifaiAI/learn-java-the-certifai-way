@@ -1,7 +1,7 @@
 # QuickStart!
 
 **What To Do**  
-Pass 'new PackagingIntro().getClass().getCanonicalName();' to the variable [_packageName_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex2/PackagingIntro.java#L31)
+Pass `new PackagingIntro().getClass().getCanonicalName();` to the variable [_packageName_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex2/PackagingIntro.java#L31)
  
 
 **Sample Output**  
