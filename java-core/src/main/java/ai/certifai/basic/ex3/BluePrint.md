@@ -3,7 +3,7 @@
 ## **Background**
 ### Analogy 1
  <p align="center">
-   <img width="500" height="700" src="metadata/cloning.gif">
+   <img width="300" height="500" src="metadata/cloning.gif">
  </p>  
 
 ### Analogy 2
