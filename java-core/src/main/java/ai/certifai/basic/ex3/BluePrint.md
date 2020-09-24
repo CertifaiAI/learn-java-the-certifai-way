@@ -1,6 +1,11 @@
-# QuickStart!
+# Construction of Class
 
 **Background**
+ <p align="center">
+   <img src="metadata/cloning.gif">
+ </p>  
+
+
  <p align="center">
    <img src="metadata/spaceX.jpg">
  </p>  
