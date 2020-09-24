@@ -35,7 +35,8 @@ Package Name = ai.certifai.basic.ex2.PackagingIntro
   <img src="metadata/packageName.jpg">
 </p> 
 
-**Quiz** 
+**Quiz**  
+
 1. What does the keyword _public_ means?
 
 2. What does the word _static_ means?
