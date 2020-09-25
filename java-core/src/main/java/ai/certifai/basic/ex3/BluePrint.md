@@ -31,13 +31,15 @@ Hello World!
 `  
 
 **Key Takeaways**
+- Keyword **static**: It exists by default and can run by itself (at the class level without creating an object)
 
+- **void**: Returns no value.  
 
 - There are access modifiers to select on the class, package, function, variables level.  
 
 | Access Modifiers | Function |
 | --- | ----------- |
-| public | Visible to everywhere. |
+| public | Visible to everywhere. The method / variable can be called from anywhere from outside the program as well. |
 | protected | The member can only be accessed by its own class, and subclass of its class in its own package  |
 | private | The member can only be accessed by own class |
  
