@@ -22,25 +22,23 @@
  
 
 **What To Do**  
-1. Uncomment 3 lines of code [_firstString_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex3/BluePrint.java#L45-L47)  
-2. Make the necessary addition of functions in the class [_PersonalProfile.class_]() to support item 1 to works
+1. Uncomment 3 lines of code [_from line 45 to 47_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex3/BluePrint.java#L45-L47)  
+2. Make the necessary addition of functions in the class [_PersonalProfile.class_]() to support item 1 to works.  
 Note: do not change the modifier of the variable _name_, _height_, _width_. 
 
 **Example Code**
-`  
-public {returning format} {function name}()  
-{  
+public {returning format} {function name}()    
+{    
     return {variable name};  
-}                    
-`
+}                      
+
 
 **Expected Output**  
-`
 Total Number: 1  
 Name: John Doe  
 Height: 165    
 Width: 100   
-`
+
 
 **Key Takeaways**
 - Keyword **static**: It exists by default and can run by itself (at the class level without creating an object)
