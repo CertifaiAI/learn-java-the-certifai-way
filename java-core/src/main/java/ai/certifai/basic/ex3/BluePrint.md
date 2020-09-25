@@ -1,22 +1,25 @@
 # Construction of Class
 
 ## **Background**
-### Analogy 1
+### Analogy 1: Cloning
  <p align="center">
-   <img width="500" height="700" src="metadata/cloning.gif">
+   <img width="300" height="400" src="metadata/cloning.gif">
  </p>  
 
-### Analogy 2
+### Analogy 2: Create identical items out of the blueprint design
+
+ What is **blueprint**?  
+ Reproduction of technical drawing to allow rapid and accurate production of an unlimited number of copies.
+
+
  <p align="center">
-   <img src="metadata/spaceX.jpg">
+   <img width="550" height="400" src="metadata/spaceX.jpg">
  </p>  
  
   <p align="center">
-    <img src="metadata/spaceXengine.jpg">
+    <img width="550" height="400" src="metadata/spaceXengine.jpg">
   </p>  
  
- What is **blueprint**?  
- Reproduction of technical drawing to allow rapid and accurate production of an unlimited number of copies.
 
 **What To Do**  
 Run 
