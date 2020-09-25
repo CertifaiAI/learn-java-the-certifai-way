@@ -22,13 +22,24 @@
  
 
 **What To Do**  
-Run 
+1. Uncomment 3 lines of code [_firstString_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex1/HelloWorld.java#L11)  
+2. Make the necessary addition of functions in the class [_PersonalProfile.class_]() to support item 1 to works
+Note: do not change the modifier of the variable _name_, _height_, _width_. 
 
-
-**Sample Output**  
+**Example Code**
 `
-Hello World!  
-`  
+public {returning format} {function name}()
+{
+    return {variable name};
+}                      
+`
+
+**Expected Output**  
+`
+Name: John Doe
+Height: 165
+Width: 100  
+`
 
 **Key Takeaways**
 - Keyword **static**: It exists by default and can run by itself (at the class level without creating an object)

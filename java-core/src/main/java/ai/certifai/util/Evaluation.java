@@ -1,9 +1,7 @@
 package ai.certifai.util;
 
 import javax.xml.transform.Result;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -13,11 +11,20 @@ public class Evaluation
     private int totalCaseNumber = -1;
     private int truthCaseNumber = 0;
     private int caseNumber = 0;
+    private boolean isIndependentCase;
     private BufferedReader br;
     private List<Boolean> results;
 
+    public Evaluation(Class class_, boolean isCase)
+    {
+        this(class_);
+        isIndependentCase = isCase;
+    }
+
     public Evaluation(Class class_)
     {
+        isIndependentCase = true;
+
         ClassLoader loader = class_.getClassLoader();
 
         String resourcePath = class_.getName().replace(".", "/");
@@ -55,7 +62,8 @@ public class Evaluation
 
             if((trueOutput = br.readLine()) != null)
             {
-                System.out.println("Case " + ++caseNumber);
+                ++caseNumber;
+                if(isIndependentCase) System.out.println("Case " + caseNumber);
 
                 if(output instanceof String)
                 {
@@ -144,23 +152,41 @@ public class Evaluation
     {
         System.out.println("*************************");
 
-        if(totalCaseNumber > caseNumber)
+        String output;
+
+        try {
+
+            if (totalCaseNumber > caseNumber) {
+
+
+                System.out.println(Config.WRONG_MSG);
+            }
+            else if ((output = br.readLine()) != null)
+            {
+                while(output != null)
+                {
+                    results.add(false);
+
+                    output = br.readLine();
+                }
+
+                System.out.println("Note: not all use cases was tested");
+                System.out.println(Config.WRONG_MSG);
+            }
+            else if (truthCaseNumber == caseNumber)
+            {
+                System.out.println(Config.RIGHT_MSG);
+            }
+
+            System.out.println("*************************");
+
+            new Dashboard().show(results);
+        }
+        catch(IOException e)
         {
-            System.out.println("Note: not all use cases was tested");
+            System.out.println("Output file reader not ended");
             System.out.println(Config.WRONG_MSG);
         }
-        else if(truthCaseNumber == caseNumber)
-        {
-            System.out.println(Config.RIGHT_MSG);
-        }
-        else
-        {
-            System.out.println(Config.WRONG_MSG);
-        }
-
-        System.out.println("*************************");
-
-        new Dashboard().show(results);
     }
 
     public void printWrongResult(Object output, Object trueOutput)
