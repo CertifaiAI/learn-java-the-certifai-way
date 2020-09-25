@@ -7,5 +7,8 @@ package ai.certifai.basic.ex3;
  */
 public class BluePrint
 {
+    public static void main(String[] args)
+    {
 
+    }
 }
