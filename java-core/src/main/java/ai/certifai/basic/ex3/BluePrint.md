@@ -26,7 +26,7 @@
 2. Make the necessary addition of functions in the class [_PersonalProfile.class_]() to support item 1 to works.  
 Note: do not change the modifier of the variable _name_, _height_, _width_. 
 
-**Example Code**
+**Example Code**  
 public {returning format} {function name}()    
 {    
     return {variable name};  
