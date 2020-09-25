@@ -25,7 +25,9 @@ Hello World!
 
 - There should be one public class name per file
 
-- The public class name must be same with file name 
+- The class name must be same with file name for Java to recognize the entry point.  
+There should be a **public** access modified before it.  
+Else will throw a compile time error. (Try it :computer:)
 
 - Contrary to Python, each line should end with semicolon.
 
