@@ -37,7 +37,7 @@ java ai.certifai.basic.ex4.Run {number}
 ```
 
 **How To Consider this Exercise Success**  
-Able to run step 3 from the previous session
+Able to run step 4 from the previous session
 
 
 **Key Takeaways**  
