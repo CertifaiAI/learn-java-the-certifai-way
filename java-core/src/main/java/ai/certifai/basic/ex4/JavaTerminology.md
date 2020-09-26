@@ -64,7 +64,7 @@ Installation of Java can come in either of the one flavours
  <img src="metadata/javaterm.jpg">
 </p>
 
-**.java Extension Format**  
+**Java Source Code (.java)**  
 - Java file contains Java source code    
 
 **Java Bytecode (.class)**  
