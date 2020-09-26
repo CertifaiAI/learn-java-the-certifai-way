@@ -3,7 +3,7 @@
 **What To Do**  
 Fill in function [_String compute(int input)_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex2/If_ElseIf_Else.java#L26-L32) to fulfill the conditions above
 
-Given an integer, _input_, return an output string of **Even**, **Odd**, **Out Of Range**  
+Given an integer, _input_, return an output string of **Even**, **Odd**, **Out Of Range**, **Special**
  
 - if _input_ is even number, return **Even**  
 - if _input_ is odd number, return **Odd**  
@@ -39,4 +39,4 @@ Odd
 
 **Quiz**  
 
-1.  
+1.  {To be filled)
