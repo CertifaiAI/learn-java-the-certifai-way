@@ -1,4 +1,4 @@
-# Remember Now, Or Suffer Later - Java Key Terminologies
+# Java Key Terminologies
 
 **What To Do** 
 1. Open up your command prompt / terminal 
