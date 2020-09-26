@@ -41,7 +41,11 @@ Able to run step 4 from the previous session
 
 
 **Key Takeaways**  
-
+**- Java Installation**
+**- Java Virtual Machine**
+**- Java Runtime Environment (JRE)**  
+**- Java Development Kit (JDK)**  
+**- Java Bytecode**  
 
 **Quiz**  
 
