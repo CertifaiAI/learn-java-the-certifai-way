@@ -54,7 +54,7 @@ Width: 100
    <img src="metadata/tenor.gif">
  </p> 
  
- The **private**prevent outside entities from access the variables.  
+ The **private** prevent outside entities from access the variables.  
  You can only deal with the **private** members through getter and setter functions. 
  
 - Keyword **static**: It exists by default and can run by itself (at the class level without creating an object)
