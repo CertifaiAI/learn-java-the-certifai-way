@@ -64,12 +64,13 @@ Installation of Java can come in either of the one flavours
  <img src="metadata/javaterm.jpg">
 </p>
 
-** .java Extension Format**  
+**.java Extension Format**  
 - Java file contains Java source code    
 
-**- Java Bytecode (.class) **  
+**Java Bytecode (.class)**  
+
 - Machine language of the Java virtual machine
-- Converted from .java to be executable by JVM
+- Converted from Java source code(.java) to be executable by JVM
 - A Java class file(.class) is a file containing Java bytecode that is created by a Java compiler as a result of successful compilation.  
 <p align="center">
  <img src="metadata/javaterm1.jpg">
