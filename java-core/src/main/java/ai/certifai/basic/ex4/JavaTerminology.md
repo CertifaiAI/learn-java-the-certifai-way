@@ -40,12 +40,15 @@ java ai.certifai.basic.ex4.Run {number}
 Able to run step 4 from the previous session
 
 
-**Key Takeaways**  
-**- Java Installation**  
-**- Java Virtual Machine**  
+**Key Takeaways**    
+  
+
+Installation of Java can come in either of the one flavours - Java Development Kit (JDK) or Java Runtime Environment (JRE).  
 **- Java Runtime Environment (JRE)**    
 **- Java Development Kit (JDK)**  
 **- Java Bytecode**  
+
+**- Java Virtual Machine**
 
 **Quiz**  
 
