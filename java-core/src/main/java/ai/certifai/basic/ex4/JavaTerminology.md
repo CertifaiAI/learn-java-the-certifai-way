@@ -17,18 +17,27 @@ If the output is as shown below, proceed to Step 3.
 
 If the below happen, go to **Java Environment Path Setup** session at the end of this page.  
 <p align="center">
- <img width="450" height="300" src="metadata/javacommanderror.png">
+ <img width="490" height="300" src="metadata/javacommanderror.png">
 </p> 
 
-3. Change to the directory of 
+3. Run the commands below in the command prompt 
+Note: {yourpath} is the absolute path to the folder of java-fundamentals
 ```
 cd {yourpath}\java-fundamentals\java-core\src\main\java  
 javac ai/certifai/basic/ex4/Run.java
 java ai.certifai.basic.ex4.Run 12
 ```
+<p align="center">
+ <img src="metadata/output.jpg">
+</p> 
 
+4. Rerun the last command changing the last value between even and odd numbers
+```
+java ai.certifai.basic.ex4.Run {number}
+```
 
 **How To Consider this Exercise Success**  
+Able to run step 3 from the previous session
 
 
 **Key Takeaways**  
@@ -37,9 +46,10 @@ java ai.certifai.basic.ex4.Run 12
 **Quiz**  
 
 **Java Environment Path Setup**
-1. Find out where is your java program at. Try _C:\Program Files\Java_ or _C:\Program Files\AdoptOpenJDK_.
+1. Find out where is your java program at. Try _C:\Program Files\Java\java*_ or _C:\Program Files\AdoptOpenJDK\java*_.
 <p align="center">
  <img width="450" height="300" src="metadata/java.jpg">
 </p> 
 
-2. Open up **Edit the system environment variables** and add _C:\Program Files\Java\jdk1.8.0_261\bin_ to the PATH variable.
+2. Open up **Edit the system environment variables**.  
+Add _C:\Program Files\Java\java*\bin_ or  _C:\Program Files\AdoptOpenJDK\java*\bin_ to the PATH variable.
