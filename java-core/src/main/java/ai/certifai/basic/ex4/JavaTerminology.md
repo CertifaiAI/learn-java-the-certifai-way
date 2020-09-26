@@ -42,13 +42,38 @@ Able to run step 4 from the previous session
 
 **Key Takeaways**    
   
-
-Installation of Java can come in either of the one flavours - Java Development Kit (JDK) or Java Runtime Environment (JRE).  
-**- Java Runtime Environment (JRE)**    
-**- Java Development Kit (JDK)**  
-**- Java Bytecode**  
-
 **- Java Virtual Machine**
+-  virtual machine that enables a computer to run Java-based programs
+<p align="center">
+ <img src="metadata/jvm.png">
+</p>
+Installation of Java can come in either of the one flavours  
+1. Java Development Kit (JDK)  
+2. Java Runtime Environment (JRE)  
+  
+**- Java Development Kit (JDK)**      
+- Java software development environment including JVM, compiler, debugger and other tools for developing Java applets and applications.  
+  
+**- Java Runtime Environment (JRE)**  
+- A part of programs of JDK  
+- The JRE creates the JVM and ensures dependencies are available to your Java programs  
+
+<p align="center">
+ <img src="metadata/javaterm.jpg">
+</p>
+
+** .java Extension Format**  
+- Java file contains Java source code    
+
+**- Java Bytecode (.class) **  
+- Machine language of the Java virtual machine
+- Converted from .java to be executable by JVM
+- A Java class file(.class) is a file containing Java bytecode that is created by a Java compiler as a result of successful compilation.  
+<p align="center">
+ <img src="metadata/javaterm1.jpg">
+</p>
+
+
 
 **Quiz**  
 
