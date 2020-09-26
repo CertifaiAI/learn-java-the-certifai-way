@@ -27,10 +27,12 @@
 Note: do not change the modifier of the variable _name_, _height_, _width_. 
 
 **Example Code**  
+`
 public {returning format} {function name}()    
 {    
     return {variable name};  
-}                      
+}
+`
 
 
 **Expected Output**  
