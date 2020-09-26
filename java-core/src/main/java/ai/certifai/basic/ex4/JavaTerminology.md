@@ -3,7 +3,7 @@
 **What To Do** 
 1. Open up your command prompt / terminal 
  <p align="center">
-   <img src="metadata/commandprompt.png">
+   <img src="metadata/commandprompt.PNG">
  </p> 
 
 2. Type in java command below
