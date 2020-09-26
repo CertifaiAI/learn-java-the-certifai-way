@@ -46,15 +46,15 @@ Width: 100
 - Did you changed the modifier of the variable _name_, _height_, _width_ to make it works? 
 
  <p align="center">
-   <img src="metadata/public.jpg">
+   <img src="metadata/public.png">
  </p> 
  
- **Don't do it. Why?**
+ # **Don't do it. Why?**
   <p align="center">
    <img src="metadata/tenor.gif">
  </p> 
  
- The **private**prevent outside entities from access the variables.  
+ The **private** prevent outside entities from access the variables.  
  You can only deal with the **private** members through getter and setter functions. 
  
 - Keyword **static**: It exists by default and can run by itself (at the class level without creating an object)
