@@ -148,45 +148,54 @@ public class Evaluation
         }
     }
 
-    public void printResult()
+    private boolean flushEvaluationPerLine()
     {
-        System.out.println("*************************");
-
-        String output;
 
         try {
 
-            if (totalCaseNumber > caseNumber) {
+            String output;
 
-
-                System.out.println(Config.WRONG_MSG);
-            }
-            else if ((output = br.readLine()) != null)
-            {
-                while(output != null)
-                {
+            if ((output = br.readLine()) != null) {
+                while (output != null) {
                     results.add(false);
 
                     output = br.readLine();
                 }
+                System.out.println("Note: not all lines were tested");
 
-                System.out.println("Note: not all use cases was tested");
-                System.out.println(Config.WRONG_MSG);
-            }
-            else if (truthCaseNumber == caseNumber)
-            {
-                System.out.println(Config.RIGHT_MSG);
+                return false;
             }
 
-            System.out.println("*************************");
-
-            new Dashboard().show(results);
-        }
-        catch(IOException e)
+        }catch(Exception e)
         {
-            System.out.println("Output file reader not ended");
+
+            System.out.println(e);
+        }
+
+        return true;
+    }
+    public void printResult()
+    {
+        System.out.println("*************************");
+
+        boolean isTestDone = flushEvaluationPerLine();
+
+        if (totalCaseNumber > caseNumber) {
+            flushEvaluationPerLine();
             System.out.println(Config.WRONG_MSG);
         }
+        else if (!isTestDone)
+        {
+            System.out.println(Config.WRONG_MSG);
+        }
+        else if ((truthCaseNumber == caseNumber) && isTestDone)
+        {
+            System.out.println(Config.RIGHT_MSG);
+        }
+
+        System.out.println("*************************");
+
+        new Dashboard().show(results);
     }
 
     public void printWrongResult(Object output, Object trueOutput)
