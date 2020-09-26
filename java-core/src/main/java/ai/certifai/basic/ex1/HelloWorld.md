@@ -32,7 +32,7 @@ Else will throw a compile time error. (Try it :computer:)
 - Contrary to Python, each line should end with semicolon.
 
 
-**Quiz** 
+**Quiz**  
 1. Can more than 1 class appear in one .java file?  
 
 2. What do you understand about the line [_package ai.certifai.basic.ex1;_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex1/HelloWorld.java#L16)?

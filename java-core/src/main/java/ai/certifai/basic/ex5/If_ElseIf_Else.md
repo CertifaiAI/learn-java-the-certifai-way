@@ -6,7 +6,8 @@ Fill in function [_String compute(int input)_](https://github.com/CertifaiAI/jav
 Given an integer, _input_, return an output string of **Even**, **Odd**, **Out Of Range**  
  
 - if _input_ is even number, return **Even**  
-- if _input_ is odd number, return **Odd**
+- if _input_ is odd number, return **Odd**  
+- if _input_ more or equal to 50 but less or equal to 100, return **Special**  
 - if _input_ greater than 10000, return **Out Of Range**  
 
 ```
@@ -34,6 +35,8 @@ Odd
 
 **Key Takeaways**
 
-- How to build a function in java
-
 - How to build if-elseif-else loop 
+
+**Quiz**  
+
+1.  

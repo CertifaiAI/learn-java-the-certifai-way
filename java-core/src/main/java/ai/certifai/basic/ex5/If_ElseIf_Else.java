@@ -1,8 +1,11 @@
-package ai.certifai.basic.ex2_;
+package ai.certifai.basic.ex5;
 
 import ai.certifai.util.Evaluation;
 import ai.certifai.util.InputReader;
 
+/**
+ * If - Else If - Else Loop
+ */
 public class If_ElseIf_Else
 {
     static Evaluation eval = new Evaluation(If_ElseIf_Else.class);
