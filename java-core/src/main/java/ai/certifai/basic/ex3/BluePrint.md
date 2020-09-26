@@ -46,10 +46,10 @@ Width: 100
 - Did you changed the modifier of the variable _name_, _height_, _width_ to make it works? 
 
  <p align="center">
-   <img src="metadata/public.jpg">
+   <img src="metadata/public.png">
  </p> 
  
- **Don't do it. Why?**
+ # **Don't do it. Why?**
   <p align="center">
    <img src="metadata/tenor.gif">
  </p> 
