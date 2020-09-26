@@ -77,9 +77,6 @@ Installation of Java can come in either of the one flavours
 </p>
 
 
-
-**Quiz**  
-
 **Java Environment Path Setup**
 1. Find out where is your java program at. Try _C:\Program Files\Java\java*_ or _C:\Program Files\AdoptOpenJDK\java*_.
 <p align="center">
