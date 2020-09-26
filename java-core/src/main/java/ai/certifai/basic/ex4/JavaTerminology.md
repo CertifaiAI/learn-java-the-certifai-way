@@ -46,10 +46,12 @@ Able to run step 4 from the previous session
 -  virtual machine that enables a computer to run Java-based programs
 <p align="center">
  <img src="metadata/jvm.png">
-</p>
+</p>  
+
 Installation of Java can come in either of the one flavours  
 1. Java Development Kit (JDK)  
 2. Java Runtime Environment (JRE)  
+  
   
 **- Java Development Kit (JDK)**      
 - Java software development environment including JVM, compiler, debugger and other tools for developing Java applets and applications.  
