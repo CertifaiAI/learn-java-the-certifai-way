@@ -3,7 +3,7 @@
 **What To Do** 
 1. Open up your command prompt / terminal 
  <p align="center">
-   <img width="550" height="400" src="metadata/commandprompt.PNG">
+   <img src="metadata/commandprompt.PNG">
  </p> 
 
 2. Type in java command below
@@ -12,12 +12,12 @@ java -version
 ```
 If the output is as shown below, proceed to Step 3.
 <p align="center">
- <img width="550" height="300" src="metadata/javacommand.png">
+ <img src="metadata/javacommand.png">
 </p> 
 
 If the below happen, go to **Java Environment Path Setup** session at the end of this page.  
 <p align="center">
- <img width="490" height="300" src="metadata/javacommanderror.png">
+ <img src="metadata/javacommanderror.png">
 </p> 
 
 3. Run the commands below in the command prompt 
@@ -48,8 +48,17 @@ Able to run step 3 from the previous session
 **Java Environment Path Setup**
 1. Find out where is your java program at. Try _C:\Program Files\Java\java*_ or _C:\Program Files\AdoptOpenJDK\java*_.
 <p align="center">
- <img width="450" height="300" src="metadata/java.jpg">
+ <img src="metadata/java.jpg">
 </p> 
 
 2. Open up **Edit the system environment variables**.  
 Add _C:\Program Files\Java\java*\bin_ or  _C:\Program Files\AdoptOpenJDK\java*\bin_ to the PATH variable.
+
+<p align="center">
+ <img src="metadata/environment.png">
+</p>
+
+<p align="center">
+ <img src="metadata/javaenvironmentpath.png">
+</p>
+
