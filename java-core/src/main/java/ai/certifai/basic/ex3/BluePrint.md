@@ -22,7 +22,7 @@
  
 
 **What To Do**  
-1. Uncomment 3 lines of code [_from line 45 to 47_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex3/BluePrint.java#L35-L39)  
+1. Uncomment 3 lines of code [_from line 35 to 39_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex3/BluePrint.java#L35-L39)  
 2. Make the necessary addition of functions in the class [_PersonalProfile.class_]() to support item 1 to works.  
 
 **Example Code**  
