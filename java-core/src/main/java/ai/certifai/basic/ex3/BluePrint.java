@@ -9,17 +9,10 @@ import ai.certifai.util.Evaluation;
  */
 class PersonalProfile
 {
-    public static int counter;
-
     private String name;
 
     private int height;
     private int weight;
-
-    static
-    {
-        counter = 0;
-    }
 
     public PersonalProfile(String myName, int myHeight, int myWeight)
     {
@@ -27,7 +20,6 @@ class PersonalProfile
         height = myHeight;
         weight = myWeight;
 
-        counter += 1;
     }
 }
 
@@ -40,7 +32,6 @@ public class BluePrint
     {
         PersonalProfile johnProfile = new PersonalProfile("John Doe", 165, 100);
 
-        eval.evaluatePerLine("Total Number: " + PersonalProfile.counter);
         /*
         eval.evaluatePerLine("Name: " + johnProfile.getName());
         eval.evaluatePerLine("Height: " + johnProfile.getHeight());

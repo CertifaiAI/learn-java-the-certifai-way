@@ -22,7 +22,7 @@
  
 
 **What To Do**  
-1. Uncomment 3 lines of code [_from line 45 to 47_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex3/BluePrint.java#L45-L47)  
+1. Uncomment 3 lines of code [_from line 45 to 47_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex3/BluePrint.java#L35-L39)  
 2. Make the necessary addition of functions in the class [_PersonalProfile.class_]() to support item 1 to works.  
 
 **Example Code**  
@@ -57,8 +57,6 @@ Width: 100
  The **private** prevent outside entities from access the variables.  
  You can only deal with the **private** members through getter and setter functions. 
  
-- Keyword **static**: It exists by default and can run by itself (at the class level without creating an object)
-
 - **void**: Returns no value.  
 
 - There are access modifiers to select on the class, package, function, variables level.  
