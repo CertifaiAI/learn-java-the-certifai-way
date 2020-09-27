@@ -8,19 +8,19 @@ Define these 4 values in the respective format and get it evaluated
 - 100.054 as double
 - true as boolean
 
-Fill in after [line 14](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex3/DataTypes.java#L14)
+Fill in after [line 19](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex6/DataTypes.java#L19)
 
 **Sample Input**  
 
 ```
-String inputString = "Nasi Lemak!";      
-eval.evaluatePerLine(inputString);
+int value = 2;      
+eval.evaluatePerLine(value);
 ```
 
 **Sample Output** 
 
 ```
-Nasi Lemak!
+2
 ```
 
 **Key Takeaways**

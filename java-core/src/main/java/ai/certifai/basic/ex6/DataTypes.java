@@ -1,7 +1,12 @@
-package ai.certifai.basic.ex3_;
+package ai.certifai.basic.ex6;
 
 import ai.certifai.util.Evaluation;
 
+/**
+ * Data Types
+ *
+ * @author codenamewei
+ */
 public class DataTypes
 {
     static Evaluation eval = new Evaluation(DataTypes.class);
@@ -11,7 +16,9 @@ public class DataTypes
         String inputString = "Nasi Lemak!";
         eval.evaluatePerLine(inputString);
 
-        //Enter your code here
+        /*
+        Enter your code here
+         */
 
         eval.printResult();
     }
