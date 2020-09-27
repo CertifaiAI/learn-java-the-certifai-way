@@ -1,4 +1,4 @@
-package ai.certifai.basic.ex4_;
+package ai.certifai.intermediate.ex4_;
 
 import ai.certifai.util.Evaluation;
 
