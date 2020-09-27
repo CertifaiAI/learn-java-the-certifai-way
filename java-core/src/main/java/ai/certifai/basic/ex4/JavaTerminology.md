@@ -15,7 +15,7 @@ If the output is as shown below, proceed to Step 3.
  <img src="metadata/javacommand.png">
 </p> 
 
-If the below happen, go to **Java Environment Path Setup** session at the end of this page.  
+If an error message below happens when trying to run _java_ command, go to **Java Debugging Steps** session at the end of this page.  
 <p align="center">
  <img src="metadata/javacommanderror.png">
 </p> 
@@ -79,7 +79,17 @@ Installation of Java can come in either of the one flavours
 </p>
 
 
-**Java Environment Path Setup**
+**Java Debugging Steps**
+1. When java command not found, the cause can be 
+- Don't have a Java JRE or JDK installed at all.  
+
+**Solution** 
+  Install [Java JDK 8](https://www.oracle.com/pt/java/technologies/javase/javase-jdk8-downloads.html)
+ 
+- Did not update the Path Enviroment Variable.
+
+**Solution**
+
 1. Find out where is your java program at. Try _C:\Program Files\Java\java*_ or _C:\Program Files\AdoptOpenJDK\java*_.
 <p align="center">
  <img src="metadata/java.jpg">
