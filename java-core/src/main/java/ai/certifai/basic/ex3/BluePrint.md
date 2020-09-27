@@ -67,7 +67,7 @@ Width: 100
 | protected | The member can only be accessed by its own class, and subclass of its class in its own package  |
 | private | The member can only be accessed by own class |
  
-
+- **Always** provide variable's name which express it's purpose and meaning clearly.  
 
 **Quiz** 
 
