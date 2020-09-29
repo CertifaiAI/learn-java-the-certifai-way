@@ -62,7 +62,7 @@ public class AdvancedForLoop
         int totalValue = 0;
         for(int i = 0; i < m; ++i)
         {
-            int currentValue = totalValue + (int) Math.pow(2, n) + b;
+            int currentValue = totalValue + (int) Math.pow(2, n + i) + b;
 
             totalValue = currentValue;
 
