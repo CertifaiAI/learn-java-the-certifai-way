@@ -44,7 +44,7 @@ public class Evaluation
 
                 totalCaseNumber = Integer.parseInt(bufferTotalCase);
 
-                System.out.println("Total Test Cases: " + totalCaseNumber);
+                System.out.println("Total Lines Check: " + totalCaseNumber);
 
             }
 
