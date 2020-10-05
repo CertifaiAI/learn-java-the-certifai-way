@@ -1,4 +1,0 @@
-1
-Name: John Doe
-Height: 165
-Width: 100

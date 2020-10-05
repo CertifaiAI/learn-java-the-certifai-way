@@ -1,31 +1,52 @@
+/*
+ * Copyright (c) 2020 CertifAI Sdn. Bhd.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Apache License, Version 2.0 which is available at
+ * https://www.apache.org/licenses/LICENSE-2.0.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations
+ * under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
 package ai.certifai.util;
 
-import javax.xml.transform.Result;
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Evaluation 
+ * 
+ * @author codenamewei
+ */
+@Slf4j
 public class Evaluation
 {
-    private int totalCaseNumber = -1;
+    /*
     private int truthCaseNumber = 0;
-    private int caseNumber = 0;
-    private boolean isIndependentCase;
+    private int currentCaseNumber = 0;
+
+    private InputReader inputReaderRef;
     private BufferedReader br;
+
+    private boolean isMultiLineUseCaseTrue;
+    private int multiLinesBuffer = -1; //buffer
+    private int multiLinesPerUseCase = -1; //total number of lines of current use case -  for multi line use case
+
     private List<Boolean> results;
 
-    public Evaluation(Class class_, boolean isCase)
+    public Evaluation(Class class_, InputReader in)
     {
-        this(class_);
-        isIndependentCase = isCase;
-    }
-
-    public Evaluation(Class class_)
-    {
-        isIndependentCase = true;
-
         ClassLoader loader = class_.getClassLoader();
+
+        inputReaderRef = in;
 
         String resourcePath = class_.getName().replace(".", "/");
         String resourceFile = resourcePath + "/" + Config.OUTPUT_FILE;
@@ -38,38 +59,150 @@ public class Evaluation
         {
             br = new BufferedReader(new FileReader(file));
 
-            String bufferTotalCase;
+            if(in.isMultiLine())
+            {
+                Object buffer = br.readLine();
 
-            if((bufferTotalCase = br.readLine()) != null) {
-
-                totalCaseNumber = Integer.parseInt(bufferTotalCase);
-
-                System.out.println("Total Lines Check: " + totalCaseNumber);
+                multiLinesPerUseCase = Integer.parseInt((String) buffer);
+                multiLinesBuffer = 0;
+                isMultiLineUseCaseTrue = true; // true until a line prove to be wrong, then the rest of the use case is false
 
             }
-
         }
         catch(Exception e)
         {
-            System.out.println("Error occurs during declare BufferedReader: " + e);
+            log.info(e.getMessage());
+        }
+
+
+    }
+
+    private void checkMultiLineNewUseCase()
+    {
+        try
+        {
+            if(++multiLinesBuffer == multiLinesPerUseCase)
+            {
+                results.add(isMultiLineUseCaseTrue);
+
+                log.info(isMultiLineUseCaseTrue ? "Correct\n" : "Wrong\n");
+
+                ++currentCaseNumber;
+                multiLinesPerUseCase = Integer.parseInt(br.readLine());
+                multiLinesBuffer = 0;
+                isMultiLineUseCaseTrue = true;
+
+            }
+        }
+        catch(Exception e)
+        {
+            log.info(e.getMessage());
         }
     }
 
-    public void evaluatePerLine(Object output)
+    private void flushMultiLine()
+    {
+        try
+        {
+            isMultiLineUseCaseTrue = false;
+            while(currentCaseNumber < inputReaderRef.getCurrentUseCase())
+            {
+                while(multiLinesBuffer < multiLinesPerUseCase)
+                {
+                    br.readLine();
+
+                    checkMultiLineNewUseCase();
+                }
+            }
+        }
+        catch(Exception e)
+        {
+            log.info(e.getMessage());
+        }
+    }
+
+
+    private void evalMultiLine(Object output)
+    {
+        //check for case number now in reader and fast forward if necessary
+        try {
+
+            if(currentCaseNumber < inputReaderRef.getCurrentUseCase())
+            {
+                flushMultiLine();
+            }
+            else
+            {
+
+                String trueOutput = br.readLine();
+                System.out.println("True Output: " + trueOutput);
+
+                if(output instanceof String)
+                {
+                    if(!output.equals(trueOutput))
+                    {
+                        isMultiLineUseCaseTrue = false;
+                    }
+                }
+                else if(output instanceof Integer)
+                {
+                    Integer nOutput = (Integer) output;
+                    if(nOutput != Integer.parseInt(trueOutput))
+                    {
+                        isMultiLineUseCaseTrue = false;
+                    }
+                }
+                else if(output instanceof Double)
+                {
+                    Double dTrueOutput = Double.parseDouble(trueOutput);
+                    Double doubleOutput = dTrueOutput - (Double) output;
+                    if (Math.abs(doubleOutput) > 0.000001)
+                    {
+                        isMultiLineUseCaseTrue = false;
+                    }
+                }
+                else if(output instanceof Boolean) {
+
+                    boolean boolTrueOutput = Boolean.parseBoolean(trueOutput);
+                    boolean boolOutput = (Boolean) output;
+                    if(boolOutput != boolTrueOutput)
+                    {
+                        isMultiLineUseCaseTrue = false;
+                    }
+                }
+                else if(output == null)
+                {
+                    isMultiLineUseCaseTrue = false;
+                }
+
+                checkMultiLineNewUseCase();
+            }
+        }
+        catch(Exception e)
+        {
+            log.info("Input error: " + e);
+        }
+    }
+    private void evalSingleLine(Object output)
     {
         try {
-            String trueOutput;
 
-            if((trueOutput = br.readLine()) != null)
+            if(currentCaseNumber < inputReaderRef.getNumOfUseCase())
             {
-                ++caseNumber;
-                if(isIndependentCase) System.out.println("Case " + caseNumber);
+                if(currentCaseNumber != inputReaderRef.getCurrentUseCase())
+                {
+                    throw new Exception("Exception of case number");
+                }
+
+                log.info("Case " + currentCaseNumber++);
+
+                String trueOutput = br.readLine();
 
                 if(output instanceof String)
                 {
                     if(output.equals(trueOutput))
                     {
-                        System.out.println("Correct\n");
+                        log.info("Correct\n");
 
                         truthCaseNumber++;
 
@@ -87,7 +220,7 @@ public class Evaluation
                     Integer nOutput = (Integer) output;
                     if(nOutput == Integer.parseInt(trueOutput))
                     {
-                        System.out.println("Correct\n");
+                        log.info("Correct\n");
 
                         truthCaseNumber++;
 
@@ -106,7 +239,7 @@ public class Evaluation
                     Double doubleOutput = dTrueOutput - (Double) output;
                     if (Math.abs(doubleOutput) <= 0.000001)
                     {
-                        System.out.println("Correct\n");
+                        log.info("Correct");
 
                         truthCaseNumber++;
                         results.add(true);
@@ -123,7 +256,7 @@ public class Evaluation
                     boolean boolOutput = (Boolean) output;
                     if(boolOutput == boolTrueOutput)
                     {
-                        System.out.println("Correct\n");
+                        log.info("Correct\n");
                         results.add(true);
 
                         truthCaseNumber++;
@@ -139,18 +272,30 @@ public class Evaluation
             }
             else
             {
-                System.out.println("Output file reader ended before testing case does");
+                log.info("Output file reader ended before testing case does");
             }
         }
         catch(Exception e)
         {
-            System.out.println("Input error: " + e);
+            log.info("Input error: " + e);
+        }
+    }
+
+
+    public void evaluatePerUseCase(Object output)
+    {
+        if(inputReaderRef.isMultiLine())
+        {
+            evalMultiLine(output);
+        }
+        else
+        {
+            evalSingleLine(output);
         }
     }
 
     private boolean flushEvaluationPerLine()
     {
-
         try {
 
             String output;
@@ -161,47 +306,48 @@ public class Evaluation
 
                     output = br.readLine();
                 }
-                System.out.println("Note: not all lines were tested");
+                log.info("Note: not all lines were tested");
 
                 return false;
             }
 
         }catch(Exception e)
         {
-
-            System.out.println(e);
+            log.info(e.getMessage());
         }
 
         return true;
     }
     public void printResult()
     {
-        System.out.println("*************************");
+        log.info("*************************");
 
         boolean isTestDone = flushEvaluationPerLine();
 
-        if (totalCaseNumber > caseNumber) {
+        if (inputReaderRef.getNumOfUseCase() > currentCaseNumber) {
             flushEvaluationPerLine();
-            System.out.println(Config.WRONG_MSG);
+            log.info(Config.WRONG_MSG);
         }
         else if (!isTestDone)
         {
-            System.out.println(Config.WRONG_MSG);
+            log.info(Config.WRONG_MSG);
         }
-        else if ((truthCaseNumber == caseNumber) && isTestDone)
+        else if ((truthCaseNumber == currentCaseNumber) && isTestDone)
         {
-            System.out.println(Config.RIGHT_MSG);
+            log.info(Config.RIGHT_MSG);
         }
 
-        System.out.println("*************************");
+        log.info("*************************");
 
         new Dashboard().show(results);
     }
 
     public void printWrongResult(Object output, Object trueOutput)
     {
-        System.out.println("Wrong");
-        System.out.println("- Output     : " + output);
-        System.out.println("- True Output: " + trueOutput + "\n");
+        log.info("Wrong");
+        log.info("Output     : " + output);
+        log.info("True Output: " + trueOutput + "\n");
     }
+
+     */
 }

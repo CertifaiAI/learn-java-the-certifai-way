@@ -16,38 +16,53 @@
 package ai.certifai.basic.ex5;
 
 import ai.certifai.util.Evaluation;
-import ai.certifai.util.InputReader;
 
 /**
  * If - Else If - Else Loop
  */
 public class If_ElseIf_Else
 {
-    static Evaluation eval = new Evaluation(If_ElseIf_Else.class);
+    static Evaluation eval;
+    //static InputReader in;
 
     public static void main(String[] args)
     {
-        InputReader in = new InputReader(If_ElseIf_Else.class);
+        /*
+        in = new InputReader(If_ElseIf_Else.class);
+        eval = new Evaluation(If_ElseIf_Else.class, in);
 
-        while(true)
+        int totalUseCases = in.getNumOfUseCase();
+
+        for(int i = 0; i < totalUseCases; ++i)
         {
             String input = in.getInputPerLine();
 
-            if(input == null) break;
-
-            eval.evaluatePerLine(compute(Integer.parseInt(input)));
+            eval.evaluatePerUseCase(compute(Integer.parseInt(input)));
         }
 
         eval.printResult();
+        */
     }
 
     public static String compute(int input)
     {
-        /*
-        Fill in this function.
-        */
+        if((input >= 50) && (input <= 100))
+        {
+            return "Special";
+        }
+        else if(input > 10000)
+        {
+            return "Out of Range";
+        }
+        else if(input % 2 == 0)
+        {
+            return "Even";
+        }
+        else
+        {
+            return "Odd";
+        }
 
-
-        return null;
+        //return "";
     }
 }

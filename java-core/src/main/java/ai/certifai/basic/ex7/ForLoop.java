@@ -1,22 +1,22 @@
-    /*
-     * Copyright (c) 2020 CertifAI Sdn. Bhd.
-     *
-     * This program and the accompanying materials are made available under the
-     * terms of the Apache License, Version 2.0 which is available at
-     * https://www.apache.org/licenses/LICENSE-2.0.
-     *
-     * Unless required by applicable law or agreed to in writing, software
-     * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-     * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-     * License for the specific language governing permissions and limitations
-     * under the License.
-     *
-     * SPDX-License-Identifier: Apache-2.0
-     */
+/*
+ * Copyright (c) 2020 CertifAI Sdn. Bhd.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Apache License, Version 2.0 which is available at
+ * https://www.apache.org/licenses/LICENSE-2.0.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations
+ * under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
 package ai.certifai.basic.ex7;
 
-import ai.certifai.util.Evaluation;
-import ai.certifai.util.InputReader;
+import ai.certifai.util.InputParser;
+import ai.certifai.util.OutputParser;
 
 /**
  * For Loop
@@ -25,26 +25,29 @@ import ai.certifai.util.InputReader;
  */
 public class ForLoop
 {
-    static Evaluation eval = new Evaluation(ForLoop.class);
+    static OutputParser out;
+    static InputParser in;
 
     public static void main(String[] args)
     {
-        InputReader in = new InputReader(ForLoop.class);
+        in = new InputParser(ForLoop.class);
+        out = new OutputParser(ForLoop.class, in);
 
-        int numOfUseCase = Integer.parseInt(in.getInputPerLine());
+        int totalUseCases = in.getTotalUseCases();
 
-        /*
-        for(int j = 0; j < numOfUseCase; ++j)
+        for(int i = 0; i < totalUseCases; ++i)
         {
-            int linesPerUseCase = Integer.parseInt(in.getInputPerLine());
+            int linesPerUseCase = in.getCurrentUseCaseTotalLines();
 
-            for(int i = 0; i < linesPerUseCase; ++i)
+            for(int j = 0; j < linesPerUseCase ; ++j)
             {
-                eval.evaluatePerLine(in.getInputPerLine());
+                String output = in.getStringInput();
+                System.out.println(output);
+                out.evaluate(output);
             }
-        }*/
 
-        eval.printResult();
+            out.printResult();
+        }
     }
 
 }
