@@ -143,7 +143,7 @@ public class InputParser {
         }
         else
         {
-            return "";
+            return "-1";
         }
     }
 
@@ -214,7 +214,6 @@ public class InputParser {
         }
         else if(!classInit)
         {
-
             try
             {
                 flushLine(currentUseCaseTotalLines - multiLinesBuffer);
