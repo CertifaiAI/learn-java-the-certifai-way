@@ -46,47 +46,28 @@ public class InputParser {
 
     public InputParser(Class class_)
     {
-        ClassLoader loader = class_.getClassLoader();
-
-        String resourcePath = class_.getName().replace(".", "/");
-        String resourceFile = resourcePath + "/" + Config.INPUT_FILE;
-
-        File file = new File(loader.getResource(resourceFile).getFile());
+        File file = FileLoader.getInputLoader(class_);
 
         try
         {
             br = new BufferedReader(new FileReader(file));
 
-            try {
-                String inputBuffer;
+            String inputBuffer = br.readLine();
 
-                if((inputBuffer = br.readLine()) != null)
-                {
-                    String[] input = inputBuffer.trim().split("\\s+");
+            String[] input = inputBuffer.trim().split("\\s+");
 
-                    if(input.length != 2)
-                    {
-                        log.info("Input text file failed with not 2 input. Program expected to failed");
-                    }
-
-                    totalUseCases = Integer.parseInt(input[0]);
-                    isMultiLine = Boolean.parseBoolean(input[1]);
-
-                    if(isMultiLine)
-                    {
-                        currentUseCaseTotalLines = Integer.parseInt(br.readLine());
-                    }
-                }
-                else
-                {
-                    log.info("BufferedReader ended while readLine() initiated");
-                }
-            }
-            catch(Exception e)
+            if(input.length != 2)
             {
-                log.info("Input error: " + e);
+                log.info("Input text file failed with not 2 input. Program expected to failed");
             }
 
+            totalUseCases = Integer.parseInt(input[0]);
+            isMultiLine = Boolean.parseBoolean(input[1]);
+
+            if(isMultiLine)
+            {
+                currentUseCaseTotalLines = Integer.parseInt(br.readLine());
+            }
 
         }
         catch(Exception e)

@@ -32,80 +32,55 @@ import java.util.List;
 @Slf4j
 public class OutputParser
 {
-    private boolean classInit = true;
-
-    private String output;
     private BufferedReader br;
     private InputParser in;
 
     private int currentUseCase = 1;
 
     @Getter private int totalUseCases;
-    private boolean isMultiLine;
 
     //multipleLine
+    private boolean isMultiLine;
+
     private int multiLinesBuffer = 0;
     private int currentUseCaseTotalLines = 1;
-
-
-    private boolean isCurrentUseCaseFalse = false;
+    private boolean isCurrentUseCaseFalse = false; //if true, the rest of multi lines of this use case will not change the output
 
     private List<Boolean> results;
 
     public OutputParser(Class class_, InputParser inputParser)
     {
-        ClassLoader loader = class_.getClassLoader();
-
-        String resourcePath = class_.getName().replace(".", "/");
-        String resourceFile = resourcePath + "/" + Config.OUTPUT_FILE;
-
-        File file = new File(loader.getResource(resourceFile).getFile());
-
+        File file = FileLoader.getOutputLoader(class_);
         in = inputParser;
 
         try
         {
             br = new BufferedReader(new FileReader(file));
 
-            try {
-                String inputBuffer;
+            String inputBuffer = br.readLine();
 
-                if((inputBuffer = br.readLine()) != null)
-                {
-                    String[] output = inputBuffer.trim().split("\\s+");
+            String[] output = inputBuffer.trim().split("\\s+");
 
-                    if(output.length != 2)
-                    {
-                        log.info("output text file failed with not 2 output. Program expected to failed");
-                    }
-
-                    totalUseCases = Integer.parseInt(output[0]);
-                    isMultiLine = Boolean.parseBoolean(output[1]);
-
-
-                    if(totalUseCases != in.getTotalUseCases())
-                    {
-                        log.info("input use cases != output use cases. Program not able to work fine");
-                        return;
-                    }
-
-                    results = new ArrayList<>();
-
-                    if(isMultiLine)
-                    {
-                        currentUseCaseTotalLines = Integer.parseInt(br.readLine());
-                    }
-                }
-                else
-                {
-                    log.info("BufferedReader ended while readLine() initiated");
-                }
-            }
-            catch(Exception e)
+            if(output.length != 2)
             {
-                log.info("Output error: " + e);
+                log.info("output text file failed with not 2 output. Program expected to failed");
             }
 
+            totalUseCases = Integer.parseInt(output[0]);
+            isMultiLine = Boolean.parseBoolean(output[1]);
+
+            if(totalUseCases != in.getTotalUseCases())
+            {
+                log.info("input use cases != output use cases. Program not able to work fine");
+                return;
+            }
+
+            results = new ArrayList<>();
+
+            if(isMultiLine)
+            {
+                currentUseCaseTotalLines = Integer.parseInt(br.readLine());
+            }
 
         }
         catch(Exception e)
@@ -156,7 +131,7 @@ public class OutputParser
                     {
                         currentUseCaseTotalLines = Integer.parseInt(buffer);
                         multiLinesBuffer = 0;
-                        results.add(false);
+                        resultsAddValueIfValid(false);
                     }
                     ++currentUseCase;
                 }
@@ -176,13 +151,25 @@ public class OutputParser
 
     }
 
+    private void resultsAddValueIfValid(boolean state)
+    {
+        if(results.size() < totalUseCases)
+        {
+            results.add(state);
+        }
+        else
+        {
+            log.info("Results size is more than total use cases. State not saved");
+        }
+    }
+
     public void evaluate(String input)
     {
         try
         {
             if(in.getCurrentUseCase() > totalUseCases) return; // use case ended do nothing
 
-            if(in.getCurrentUseCase() < currentUseCase)
+            if(currentUseCase < in.getCurrentUseCase())
             {
                 flushUseCase(currentUseCase - in.getCurrentUseCase());
             }
@@ -200,7 +187,7 @@ public class OutputParser
 
                     if(multiLinesBuffer == currentUseCaseTotalLines)
                     {
-                        results.add(!isCurrentUseCaseFalse);
+                        resultsAddValueIfValid(!isCurrentUseCaseFalse);
 
                         ++currentUseCase;
 
@@ -217,10 +204,14 @@ public class OutputParser
                             multiLinesBuffer = 1;
                         }
                     }
+                    else if(multiLinesBuffer > currentUseCaseTotalLines)
+                    {
+                        results.add((int) results.size() - 1, false);
+                    }
                 }
                 else
                 {
-                    results.add(getTrueOutput().equals(input));
+                    resultsAddValueIfValid(getTrueOutput().equals(input));
 
                     ++currentUseCase;
 
@@ -258,19 +249,18 @@ public class OutputParser
 
     public void printResult()
     {
-
-        if (currentUseCase < totalUseCases)
+        if (currentUseCase < (totalUseCases - 1))
         {
-            int numOfUseCasesSkip = totalUseCases - currentUseCase;
+            int numOfUseCasesSkip = totalUseCases - currentUseCase - 1;
 
             for(int i = 0; i < numOfUseCasesSkip; ++i)
             {
-                results.add(false);
+                resultsAddValueIfValid(false);
             }
         }
         else if(isMultiLine && (multiLinesBuffer < currentUseCaseTotalLines))
         {
-            results.add(false);
+            resultsAddValueIfValid(false);
         }
 
 
