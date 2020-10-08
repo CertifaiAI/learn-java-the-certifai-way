@@ -15,33 +15,38 @@
  */
 package ai.certifai.basic.ex5;
 
-import ai.certifai.util.Evaluation;
+import ai.certifai.basic.ex7.ForLoop;
+import ai.certifai.util.InputParser;
+import ai.certifai.util.OutputParser;
 
 /**
  * If - Else If - Else Loop
  */
 public class If_ElseIf_Else
 {
-    static Evaluation eval;
-    //static InputReader in;
+
+    static OutputParser out;
+    static InputParser in;
 
     public static void main(String[] args)
     {
-        /*
-        in = new InputReader(If_ElseIf_Else.class);
-        eval = new Evaluation(If_ElseIf_Else.class, in);
+        in = new InputParser(If_ElseIf_Else.class);
+        out = new OutputParser(If_ElseIf_Else.class, in);
 
-        int totalUseCases = in.getNumOfUseCase();
+        int totalUseCases = in.getTotalUseCases();
 
         for(int i = 0; i < totalUseCases; ++i)
         {
-            String input = in.getInputPerLine();
+            int input = in.getIntegerInput();
 
-            eval.evaluatePerUseCase(compute(Integer.parseInt(input)));
+            String output = compute(input);
+
+            System.out.println(output);
+
+            out.evaluate(output);
         }
 
-        eval.printResult();
-        */
+        out.printResult();
     }
 
     public static String compute(int input)

@@ -37,22 +37,22 @@ public class ForLoop
 
         int linesPerUseCase = in.getCurrentUseCaseTotalLines();
 
-        for(int j = 0; j < (linesPerUseCase ); ++j)
+        for(int j = 0; j < (linesPerUseCase - 2 ); ++j)
         {
             String input = in.getStringInput();
             out.evaluate(input);
         }
 
         linesPerUseCase = in.getCurrentUseCaseTotalLines();
-        System.out.println("linesPerUseCase: " + linesPerUseCase);
 
-        for(int j = 0; j < (linesPerUseCase + 5); ++j)
+        for(int j = 0; j < (linesPerUseCase); ++j)
         {
             String input = in.getStringInput();
             out.evaluate(input);
         }
 
         out.printResult();
+
     }
 
 }

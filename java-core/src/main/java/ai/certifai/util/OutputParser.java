@@ -178,20 +178,22 @@ public class OutputParser
     {
         try
         {
-            if(in.getCurrentUseCase() > totalUseCases) return; // use case ended do nothing
 
-            if(in.getCurrentUseCase() > currentUseCase)
-            {
-                flushUseCase(in.getCurrentUseCase() - currentUseCase);
-            }
-            else if(in.getCurrentUseCase() < currentUseCase)
-            {
-                results.remove(results.size() - 1);
-                results.add(false);
-            }
 
             if(isMultiLine)
             {
+                if(in.getCurrentUseCase() > totalUseCases) return; // use case ended do nothing
+
+                if(in.getCurrentUseCase() > currentUseCase)
+                {
+                    flushUseCase(in.getCurrentUseCase() - currentUseCase);
+                }
+                else if(in.getCurrentUseCase() < currentUseCase)
+                {
+                    results.remove(results.size() - 1);
+                    results.add(false);
+                }
+
                 if(multiLinesBuffer > currentUseCaseTotalLines)
                 {
                     results.remove(results.size() - 1);

@@ -76,38 +76,55 @@ public class InputParser {
         }
     }
 
-    private boolean getInputFromFile() {
-
+    private boolean getInputFromFile()
+    {
         try
         {
-            if (multiLinesBuffer < currentUseCaseTotalLines)
+            if(!isMultiLine)
             {
-                try
-                {
-                    input = br.readLine();
+                input = br.readLine();
 
-                    if (input == null)
+                if (input == null)
+                {
+                    throw new Exception("Single line reader end early. Something wrong");
+                }
+                else
+                {
+                    ++currentUseCase;
+                }
+            }
+            else
+            {
+                if (multiLinesBuffer < currentUseCaseTotalLines)
+                {
+                    try
                     {
-                        log.info("Multi line reader end early. Something wrong");
-                    } else {
-                        ++multiLinesBuffer;
+                        input = br.readLine();
+
+                        if (input == null)
+                        {
+                            throw new Exception("Multi line reader end early. Something wrong");
+                        }
+                        else
+                        {
+                            ++multiLinesBuffer;
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        log.info(e.getMessage());
                     }
                 }
-                catch (Exception e)
-                {
-                    log.info(e.getMessage());
+                else {
+                    return false;
                 }
             }
-            else {
-                return false;
-            }
-
         }
         catch(Exception e)
         {
             log.info(e.getMessage());
+            return false;
         }
-
 
         return true;
     }
@@ -162,7 +179,6 @@ public class InputParser {
         }
 
         return -1;
-
     }
 
     public double getDoubleInput()
