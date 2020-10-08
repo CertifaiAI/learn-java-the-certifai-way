@@ -36,7 +36,24 @@ Odd
 **Key Takeaways**
 
 - How to build if-elseif-else loop 
-
+.
 **Quiz**  
 
-1.  {To be filled)
+1. How to do if-else loop in one line code?  
+2. What is the differences between operator OR (|) and operator logical-OR (||)?\
+Likewise for operator AND (&) and operator logical-AND (&&)
+```
+if((condition 1) | (condition 2))
+{
+    //code block      
+}     
+else if((condition 1) || (condition 2))    
+{
+    //code block      
+}
+else
+{
+    //code block      
+}
+```
+
