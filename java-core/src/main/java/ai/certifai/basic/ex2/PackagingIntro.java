@@ -26,12 +26,10 @@ import ai.certifai.util.OutputParser;
 public class PackagingIntro
 {
     static OutputParser out;
-    static InputParser in;
 
     public static void main(String[] args)
     {
-        in = new InputParser(PackagingIntro.class);
-        out = new OutputParser(PackagingIntro.class, in);
+        out = new OutputParser(PackagingIntro.class);
 
         String packageName = null;//PackagingIntro.class.getName(); //Enter your code here
         String output = "Package Name = " + packageName;

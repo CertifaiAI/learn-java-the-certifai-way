@@ -49,6 +49,11 @@ public class OutputParser
 
     private List<Boolean> results; //results of size totalUseCases after evaluation
 
+    public OutputParser(Class class_)
+    {
+        this(class_, null);
+    }
+
     public OutputParser(Class class_, InputParser inputParser)
     {
         File file = FileLoader.getOutputLoader(class_);
@@ -72,7 +77,7 @@ public class OutputParser
             totalUseCases = Integer.parseInt(output[0]);
             isMultiLine = Boolean.parseBoolean(output[1]);
 
-            if(totalUseCases != in.getTotalUseCases())
+            if((in != null) && (totalUseCases != in.getTotalUseCases()))
             {
                 String useCaseNotAligned = "Input use cases != output use cases. Program not able to work fine";
 
@@ -144,7 +149,7 @@ public class OutputParser
             }
             multiLinesBuffer = 1; //?
 
-            if(currentUseCase != in.getCurrentUseCase())
+            if((in != null) && (currentUseCase != in.getCurrentUseCase()))
             {
                 throw new Exception("Output use case index != input use case index");
             }
@@ -182,6 +187,11 @@ public class OutputParser
 
             if(isMultiLine)
             {
+                if(in == null)
+                {
+                    throw new Exception("Input parse is null. Program cant function well");
+                }
+
                 if(in.getCurrentUseCase() > totalUseCases) return; // use case ended do nothing
 
                 if(in.getCurrentUseCase() > currentUseCase)

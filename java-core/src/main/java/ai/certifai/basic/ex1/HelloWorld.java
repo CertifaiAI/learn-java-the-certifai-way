@@ -15,8 +15,6 @@
  */
 package ai.certifai.basic.ex1;
 
-import ai.certifai.basic.ex7.ForLoop;
-import ai.certifai.util.InputParser;
 import ai.certifai.util.OutputParser;
 
 /**
@@ -27,12 +25,10 @@ import ai.certifai.util.OutputParser;
 public class HelloWorld
 {
     static OutputParser out;
-    static InputParser in;
 
     public static void main(String[] args)
     {
-        in = new InputParser(HelloWorld.class);
-        out = new OutputParser(HelloWorld.class, in);
+        out = new OutputParser(HelloWorld.class);
 
         String firstString = "Hello World!"; //Enter your code here
 

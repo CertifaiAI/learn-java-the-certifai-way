@@ -15,8 +15,6 @@
  */
 package ai.certifai.basic.ex3;
 
-import ai.certifai.basic.ex7.ForLoop;
-import ai.certifai.util.InputParser;
 import ai.certifai.util.OutputParser;
 
 /**
@@ -44,12 +42,10 @@ class PersonalProfile
 public class BluePrint
 {
     static OutputParser out;
-    static InputParser in;
 
     public static void main(String[] args)
     {
-        in = new InputParser(BluePrint.class);
-        out = new OutputParser(BluePrint.class, in);
+        out = new OutputParser(BluePrint.class);
 
         PersonalProfile johnProfile = new PersonalProfile("John Doe", 165, 100);
 
