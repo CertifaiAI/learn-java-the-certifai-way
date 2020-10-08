@@ -15,7 +15,6 @@
  */
 package ai.certifai.basic.ex5;
 
-import ai.certifai.basic.ex7.ForLoop;
 import ai.certifai.util.InputParser;
 import ai.certifai.util.OutputParser;
 
@@ -24,7 +23,6 @@ import ai.certifai.util.OutputParser;
  */
 public class If_ElseIf_Else
 {
-
     static OutputParser out;
     static InputParser in;
 

@@ -94,7 +94,7 @@ public class OutputParser
         }
         catch(Exception e)
         {
-            log.info("Error occurs during declare BufferedReader: " + e);
+            log.info("Error occurs during declare BufferedReader: " + e.getMessage());
         }
     }
 
@@ -174,17 +174,35 @@ public class OutputParser
         }
     }
 
-    public void evaluate(int input)
+    private boolean getResult(Object input)
     {
-        //placeholder
+        boolean bResult = false;
+
+        if(input instanceof String)
+        {
+            bResult = compareString((String) input);
+        }
+        else if(input instanceof Integer)
+        {
+            bResult = compareInteger((Integer) input);
+        }
+        else if(input instanceof Float)
+        {
+            bResult = compareFloat((Float) input);
+        }
+        else if(input instanceof Boolean)
+        {
+            bResult = compareBoolean((Boolean) input);
+        }
+
+
+        return bResult;
     }
 
-    public void evaluate(String input)
+    public void evaluate(Object input)
     {
         try
         {
-
-
             if(isMultiLine)
             {
                 if(in == null)
@@ -211,8 +229,7 @@ public class OutputParser
                 }
                 else
                 {
-                    String trueOutput = getTrueOutput();
-                    if((!isCurrentUseCaseFalse) && (!trueOutput.equals(input)))
+                    if((!isCurrentUseCaseFalse) && (!getResult(input)))
                     {
                         isCurrentUseCaseFalse = true;
                     }
@@ -242,7 +259,7 @@ public class OutputParser
             }
             else
             {
-                resultsAddValueIfValid(getTrueOutput().equals(input));
+                resultsAddValueIfValid(getResult(input));
 
                 ++currentUseCase;
 
@@ -252,6 +269,36 @@ public class OutputParser
         {
             log.info("Error: " + e.getMessage());
         }
+
+    }
+
+
+    private boolean compareString(String input)
+    {
+        String trueOutput = getTrueOutput();
+        return trueOutput.equals(input);
+    }
+
+
+    private boolean compareInteger(Integer input)
+    {
+        String trueOutput = getTrueOutput();
+
+        return input.equals(Integer.parseInt(trueOutput));
+    }
+
+    private boolean compareFloat(Float input)
+    {
+        String trueOutput = getTrueOutput();
+
+        return input.equals(Float.parseFloat(trueOutput));
+    }
+
+    private boolean compareBoolean(Boolean input)
+    {
+        String trueOutput = getTrueOutput();
+
+        return input == Boolean.parseBoolean(trueOutput);
     }
 
     private String getTrueOutput() {

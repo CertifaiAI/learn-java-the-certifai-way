@@ -15,6 +15,7 @@
  */
 package ai.certifai.basic.ex3;
 
+import ai.certifai.util.InputParser;
 import ai.certifai.util.OutputParser;
 
 /**
@@ -34,26 +35,38 @@ class PersonalProfile
         name = myName;
         height = myHeight;
         weight = myWeight;
-
     }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public int getHeight()
+    {
+        return height;
+    }
+
+    public int getWeight()
+    {
+        return weight;
+    }
+
 }
 
 
 public class BluePrint
 {
-    static OutputParser out;
-
     public static void main(String[] args)
     {
-        out = new OutputParser(BluePrint.class);
+        InputParser in = new InputParser(BluePrint.class);
+        OutputParser out = new OutputParser(BluePrint.class, in);
 
         PersonalProfile johnProfile = new PersonalProfile("John Doe", 165, 100);
 
-        /*
         out.evaluate("Name: " + johnProfile.getName());
         out.evaluate("Height: " + johnProfile.getHeight());
         out.evaluate("Width: " + johnProfile.getWeight());
-        */
 
         out.printResult();
     }
