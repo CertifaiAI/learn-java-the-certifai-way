@@ -38,7 +38,7 @@ public class InputParser {
     @Getter private int currentUseCase = 1;
 
     @Getter private int totalUseCases;
-    private boolean isMultiLine;
+    @Getter private boolean isMultiLine;
 
     //multipleLine
     private int multiLinesBuffer = 0;

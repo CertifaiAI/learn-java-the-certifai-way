@@ -16,8 +16,8 @@
 package ai.certifai.intermediate.ex9;
 
 import ai.certifai.util.Conversion;
-import ai.certifai.util.Evaluation;
-import ai.certifai.util.InputReader;
+import ai.certifai.util.InputParser;
+import ai.certifai.util.OutputParser;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -31,19 +31,21 @@ import java.util.stream.Collectors;
  */
 public class AdvancedForLoop
 {
-    static Evaluation eval = new Evaluation(AdvancedForLoop.class);
+    static OutputParser out;
+    static InputParser in;
 
     public static void main(String[] args)
     {
-        InputReader in = new InputReader(AdvancedForLoop.class);
+        in = new InputParser(AdvancedForLoop.class);
+        out = new OutputParser(AdvancedForLoop.class, in);
 
-        int numOfUseCase = Integer.parseInt(in.getInputPerLine());
+        int totalUseCases = in.getTotalUseCases();
 
-        for(int i = 0; i < numOfUseCase; ++i)
+        for(int i = 0; i < totalUseCases; ++i)
         {
-            String line = in.getInputPerLine();
+            String line = in.getStringInput();
 
-            List<Integer> arrayInput = Arrays.stream(line.split(" ")).map(Integer::parseInt).collect(Collectors.toList());
+            List<Integer> arrayInput = Conversion.StringToListInteger(line);
 
             int m = arrayInput.get(0);
             int n = arrayInput.get(1);
@@ -52,7 +54,7 @@ public class AdvancedForLoop
             assessArrayValue(m, n, b);
         }
 
-        eval.printResult();
+        out.printResult();
     }
 
     ////a_m = a_(m - 1) + 2^power + b
@@ -72,6 +74,6 @@ public class AdvancedForLoop
 
         String output = Conversion.ListIntegerToString(value);
 
-        eval.evaluatePerLine(output);
+        out.evaluate(output);
     }
 }

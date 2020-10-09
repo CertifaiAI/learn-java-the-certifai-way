@@ -35,20 +35,15 @@ public class ForLoop
 
         int totalUseCases = in.getTotalUseCases();
 
-        int linesPerUseCase = in.getCurrentUseCaseTotalLines();
-
-        for(int j = 0; j < (linesPerUseCase ); ++j)
+        for(int i = 0; i < totalUseCases; ++i)
         {
-            String input = in.getStringInput();
-            out.evaluate(input);
-        }
+            int linesPerUseCase = in.getCurrentUseCaseTotalLines();
 
-        linesPerUseCase = in.getCurrentUseCaseTotalLines();
-
-        for(int j = 0; j < (linesPerUseCase); ++j)
-        {
-            String input = in.getStringInput();
-            out.evaluate(input);
+            for(int j = 0; j < (linesPerUseCase - 0); ++j)
+            {
+                String input = in.getStringInput();
+                out.evaluate(input);
+            }
         }
 
         out.printResult();

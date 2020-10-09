@@ -15,8 +15,10 @@
  */
 package ai.certifai.util;
 
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Conversion {
 
@@ -34,5 +36,10 @@ public class Conversion {
             }
         }
         return strbul.toString();
+    }
+
+    public static List<Integer> StringToListInteger(String input)
+    {
+        return Arrays.stream(input.split(" ")).map(Integer::parseInt).collect(Collectors.toList());
     }
 }

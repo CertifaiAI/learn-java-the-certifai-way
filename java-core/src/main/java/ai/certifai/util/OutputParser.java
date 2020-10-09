@@ -212,15 +212,19 @@ public class OutputParser
 
                 if(in.getCurrentUseCase() > totalUseCases) return; // use case ended do nothing
 
-                if(in.getCurrentUseCase() > currentUseCase)
+                if(in.isMultiLine())
                 {
-                    flushUseCase(in.getCurrentUseCase() - currentUseCase);
+                    if(in.getCurrentUseCase() > currentUseCase)
+                    {
+                        flushUseCase(in.getCurrentUseCase() - currentUseCase);
+                    }
+                    else if(in.getCurrentUseCase() < currentUseCase)
+                    {
+                        results.remove(results.size() - 1);
+                        results.add(false);
+                    }
                 }
-                else if(in.getCurrentUseCase() < currentUseCase)
-                {
-                    results.remove(results.size() - 1);
-                    results.add(false);
-                }
+
 
                 if(multiLinesBuffer > currentUseCaseTotalLines)
                 {
@@ -236,7 +240,7 @@ public class OutputParser
 
                     ++multiLinesBuffer;
 
-                    if(multiLinesBuffer == (currentUseCaseTotalLines + 1))
+                    if(multiLinesBuffer == (currentUseCaseTotalLines + 1) )
                     {
                         resultsAddValueIfValid(!isCurrentUseCaseFalse);
 
@@ -326,19 +330,18 @@ public class OutputParser
 
     public void printResult()
     {
-        if (currentUseCase <= totalUseCases) {
+        if (currentUseCase < totalUseCases)
+        {
             int numOfUseCasesSkip = totalUseCases - currentUseCase + 1;
 
             for (int i = 0; i < numOfUseCasesSkip; ++i) {
                 resultsAddValueIfValid(false);
             }
         }
-        /*
-        else if(isMultiLine && (multiLinesBuffer < currentUseCaseTotalLines))
+        else if(isMultiLine && (currentUseCase == totalUseCases) && (multiLinesBuffer <= currentUseCaseTotalLines))
         {
             resultsAddValueIfValid(false);
         }
-        */
 
         new Dashboard().show(results);
     }
