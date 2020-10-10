@@ -8,7 +8,6 @@ import java.util.List;
 
 public class OrderedCollection
 {
-
     static OutputParser out;
     static InputParser in;
 
@@ -31,8 +30,6 @@ public class OrderedCollection
             }
         }
 
-
         out.printResult();
-
     }
 }

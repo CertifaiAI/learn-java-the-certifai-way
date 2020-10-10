@@ -39,7 +39,7 @@ public class ForLoop
         {
             int linesPerUseCase = in.getCurrentUseCaseTotalLines();
 
-            for(int j = 0; j < (linesPerUseCase - 0); ++j)
+            for(int j = 0; j <= (linesPerUseCase); ++j)
             {
                 String input = in.getStringInput();
                 out.evaluate(input);

@@ -225,7 +225,6 @@ public class OutputParser
                     }
                 }
 
-
                 if(multiLinesBuffer > currentUseCaseTotalLines)
                 {
                     results.remove(results.size() - 1);
@@ -330,7 +329,7 @@ public class OutputParser
 
     public void printResult()
     {
-        if (currentUseCase < totalUseCases)
+        if (currentUseCase <= totalUseCases)
         {
             int numOfUseCasesSkip = totalUseCases - currentUseCase + 1;
 

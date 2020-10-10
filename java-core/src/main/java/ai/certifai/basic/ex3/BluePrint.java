@@ -65,7 +65,7 @@ public class BluePrint
         PersonalProfile johnProfile = new PersonalProfile("John Doe", 165, 100);
 
         out.evaluate("Name: " + johnProfile.getName());
-        out.evaluate("Height: " + johnProfile.getHeight());
+        //out.evaluate("Height: " + johnProfile.getHeight());
         out.evaluate("Width: " + johnProfile.getWeight());
 
         out.printResult();

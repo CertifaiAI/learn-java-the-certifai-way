@@ -30,7 +30,7 @@ public class HelloWorld
     {
         out = new OutputParser(HelloWorld.class);
 
-        String firstString = "Hello World!"; //Enter your code here
+        String firstString = "Hello World"; //Enter your code here
 
         out.evaluate(firstString);
 

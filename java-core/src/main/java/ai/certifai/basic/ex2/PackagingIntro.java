@@ -34,8 +34,6 @@ public class PackagingIntro
         String packageName = null;//PackagingIntro.class.getName(); //Enter your code here
         String output = "Package Name = " + packageName;
 
-        System.out.println(output);
-
         out.evaluate(output);
 
         out.printResult();
