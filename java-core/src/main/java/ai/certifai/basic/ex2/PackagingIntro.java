@@ -15,7 +15,6 @@
  */
 package ai.certifai.basic.ex2;
 
-import ai.certifai.util.InputParser;
 import ai.certifai.util.OutputParser;
 
 /**

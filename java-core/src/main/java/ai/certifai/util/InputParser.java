@@ -90,7 +90,7 @@ public class InputParser {
                 }
                 else
                 {
-                    ++currentUseCase;
+                    if(currentUseCase < totalUseCases) ++currentUseCase;
                 }
             }
             else
@@ -224,7 +224,7 @@ public class InputParser {
             return 0;
         }
 
-        if (!isMultiLine)
+        if((!isMultiLine) && (currentUseCase < totalUseCases))
         {
             ++currentUseCase;
         }
@@ -245,7 +245,7 @@ public class InputParser {
                 else
                 {
                     currentUseCaseTotalLines = Integer.parseInt(buffer);
-                    ++currentUseCase;
+                    if(currentUseCase < totalUseCases) ++currentUseCase;
                 }
 
             }

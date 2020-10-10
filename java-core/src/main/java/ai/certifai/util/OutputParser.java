@@ -210,7 +210,11 @@ public class OutputParser
                     throw new Exception("Input parse is null. Program cant function well");
                 }
 
-                if(in.getCurrentUseCase() > totalUseCases) return; // use case ended do nothing
+                if(in.getCurrentUseCase() > totalUseCases)
+                {
+                    System.out.println("Here: " );
+                    return; // use case ended do nothing
+                }
 
                 if(in.isMultiLine())
                 {
@@ -247,15 +251,17 @@ public class OutputParser
 
                         if(currentUseCase <= totalUseCases)
                         {
-                            String nextTotalLines;
+                            String nextTotalLines = br.readLine();
 
-                            if ((nextTotalLines = br.readLine()) == null)
+                            if (nextTotalLines == null)
                             {
                                 log.info("Output line reader end early. Something wrong");
                             }
-
-                            currentUseCaseTotalLines = Integer.parseInt(nextTotalLines);
-                            multiLinesBuffer = 1;
+                            else
+                            {
+                                currentUseCaseTotalLines = Integer.parseInt(nextTotalLines);
+                                multiLinesBuffer = 1;
+                            }
                         }
                     }
                 }
