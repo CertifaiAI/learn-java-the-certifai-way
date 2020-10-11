@@ -6,7 +6,7 @@
 - Through the building blocks of Java snippets, you will able to understand the gist of Java programming in no time.
 
 ## What You Need 
-- Grit to stick through the pain of debugging!
+- Grit to go through the repository!
 - [Oracle JDK 1.8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) or alternative open source JDK 1.8 version
   - As of today, the repository was tested with 
     - Oracle JDK 1.8
