@@ -12,16 +12,10 @@ For variable **_m, n, b_**, produce output in the form below
    <img src="metadata/1.jpg">
  </p>  
 
-For example, 
-<p align="center">
-   <img src="metadata/1.jpg">
- </p>  
-
-
-Each value _v_ is calculated with the formula of
+Each value _a_ is calculated with the formula of
 
 <p align="center">
-   <img src="metadata/pic3.png">
+   <img src="metadata/2.jpg">
  </p>  
  
 **Condition:**
