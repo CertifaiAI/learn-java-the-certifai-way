@@ -28,7 +28,23 @@ If starting from scratch, walkthrough the folder in the above order to gain the 
 ## How to Use This Repository
 
 - Guides in the form of markdown in each ex* folder will shows what to do in the particular exercise.
+<p align="center">
+  <img src="metadata/fileStructure.jpg">
+</p> 
 
-- No answer will be given. The use cases were carefully designed to determine the successful run of the code.
+- No answer will be provided. The use cases were carefully designed to determine the successful run of the code.
+<p align="center">
+  <img src="metadata/dashboard.png">
+</p> 
+
+- Don't memorize the code. Human have horrrible memories. It WONT bring you anywhere.
+
+<p align="center">
+  <img src="metadata/head.gif">
+</p> 
 
 - Try the very best to craft the answer through getting the hands dirty. Follow your own pace.  
+<p align="center">
+  <img src="metadata/try.jpg">
+</p> 
+
