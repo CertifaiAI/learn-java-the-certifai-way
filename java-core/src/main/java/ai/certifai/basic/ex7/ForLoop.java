@@ -45,7 +45,7 @@ public class ForLoop
              * out.evaluate({your answer}) is a must for use case to pass.
              */
         }
-        
+
         out.printResult();
 
     }

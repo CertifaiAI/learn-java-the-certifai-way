@@ -30,7 +30,9 @@ public class HelloWorld
     {
         out = new OutputParser(HelloWorld.class);
 
-        String firstString = null; //Enter your code here
+        //Complete the program by making changes to line 35
+        //Tips: change the content assign to variable firstString
+        String firstString = null;
 
         out.evaluate(firstString);
 
