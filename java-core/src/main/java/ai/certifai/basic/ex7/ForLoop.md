@@ -1,11 +1,11 @@
 # For Loop 
 
-**What To Do**
+## **What To Do**
 
 
-**Sample Input**
+## **Sample Input**
 
 
-**Sample Output**
+## **Sample Output**
 
-**Key Takeaways**
+## **Key Takeaways**
