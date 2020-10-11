@@ -33,11 +33,10 @@ public class DataTypes
         in = new InputParser(DataTypes.class);
         out = new OutputParser(DataTypes.class, in);
 
-        String inputString = "Nasi Lemak!";
-        out.evaluate(inputString);
-        out.evaluate(20);
-        out.evaluate(100.054f);
-        out.evaluate(true);
+        /**
+         Enter your code here to pass the program
+         Tips: out.evaluate({content}) has to be used to pass the program
+         **/
 
         /*
         Enter your code here
