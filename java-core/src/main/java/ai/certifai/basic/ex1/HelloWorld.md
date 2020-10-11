@@ -1,7 +1,7 @@
 # QuickStart!
 
 **What To Do**  
-Pass string of `Hello World!` to the variable [_firstString_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex1/HelloWorld.java#L11)
+Pass string of `Hello World!` to the variable [_firstString_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex1/HelloWorld.java#L38)
  
 
 **Sample Output**  
