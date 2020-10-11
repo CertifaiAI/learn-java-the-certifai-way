@@ -37,6 +37,6 @@ Package Name = ai.certifai.basic.ex2.PackagingIntro
 
 **Quiz**  
 
-1. What does the keyword _public_ means?
+1. What does the keyword **_public_** means?
 
-2. What does the word _static_ means?
+2. What does the word **_static_** means?
