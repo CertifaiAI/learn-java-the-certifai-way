@@ -30,7 +30,12 @@ public class PackagingIntro
     {
         out = new OutputParser(PackagingIntro.class);
 
-        String packageName = null;//PackagingIntro.class.getName(); //Enter your code here
+        /**
+         Enter your code here
+         Complete the program by making changes to line 38
+         Tips: change the content assign to variable packageName
+         **/
+        String packageName = null;
         String output = "Package Name = " + packageName;
 
         out.evaluate(output);
