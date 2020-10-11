@@ -15,6 +15,12 @@
 - [Apache Maven 3.5](https://maven.apache.org/download.cgi) or later
 - [Intellij IDE](https://www.jetbrains.com/idea/download/)  
 
+**Takeaway:**\  
+- Java - Programming Language
+- Apache Maven - Java Dependency Manager
+- 
+
+
 ## Repository Structure
 
 - [**Basic**](https://github.com/CertifaiAI/learn-java-the-certifai-way/tree/master/java-core/src/main/java/ai/certifai/basic)
@@ -34,7 +40,7 @@ If starting from scratch, walkthrough the folder in the above order to gain the 
 
 - No answer will be provided. The use cases were carefully designed to determine the successful run of the code.
 <p align="center">
-  <img src="metadata/dashboard.png">
+  <img src="metadata/dashboard.jpg">
 </p> 
 
 - Don't memorize the code. Human have horrrible memories. It WONT bring you anywhere.
