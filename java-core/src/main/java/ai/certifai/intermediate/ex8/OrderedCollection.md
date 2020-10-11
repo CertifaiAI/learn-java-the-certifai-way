@@ -17,7 +17,16 @@ Example:
 </p>
 
 ## **What To Do**
-Iterate over an array of integers given. \
+Iterate over an array of integers given in the function. Modify the _iterate(...)_ function
+```
+public static void iterate(List<Integer> array)
+{
+    /**
+     Enter your code in this function
+     Tips: out.evaluate({content}) has to be used for the program to be success
+     **/
+}
+```
 **Tips: Search for _iterate through a java list_ on any web searching browser**
 
 
