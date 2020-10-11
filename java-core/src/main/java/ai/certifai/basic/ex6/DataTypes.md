@@ -1,26 +1,20 @@
 # Types of Data
 
 **What To Do**  
-Define these 4 values in the respective format and get it evaluated  
+Define these 4 values in the respective data format and get it evaluated  
   
-- "Nasi Lemak!" as String
-- 20 as int
-- 100.054 as double
-- true as boolean
+- "Nasi Lemak!" as **String**
+- 20 as **int**
+- 100.054 as **double**
+- true as **boolean**
 
-Fill in after [line 34](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex6/DataTypes.java#L34)
+Fill in the code in [this range](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/basic/ex6/DataTypes.java#L36-L39)
 
 **Sample Input**  
 
 ```
 int value = 2;      
-eval.evaluatePerLine(value);
-```
-
-**Sample Output** 
-
-```
-2
+out.evaluate(value);
 ```
 
 **Key Takeaways**
