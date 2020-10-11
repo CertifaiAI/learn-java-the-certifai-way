@@ -15,11 +15,19 @@
 - [Apache Maven 3.5](https://maven.apache.org/download.cgi) or later
 - [Intellij IDE](https://www.jetbrains.com/idea/download/)  
 
-## How To Use This Repository
-In order to gain the most benefits, you can choose the topic to look deeper into at your own pace.  
+## Repository Structure
 
-If you are starting from scratch, walkthrough the folder in the sequence as below to gain the maximum learning experience.  
 - [**Basic**](https://github.com/CertifaiAI/learn-java-the-certifai-way/tree/master/java-core/src/main/java/ai/certifai/basic)
 - [**Introduction to Apache Maven**](https://github.com/CertifaiAI/learn-java-the-certifai-way/tree/master/java-core/src/main/java/ai/certifai/maven)
 - [**Intermediate**](https://github.com/CertifaiAI/learn-java-the-certifai-way/tree/master/java-core/src/main/java/ai/certifai/intermediate)
 
+In order to gain the most benefits, choose the topic to look deeper into at your own pace.  
+
+If starting from scratch, walkthrough the folder in the above order to gain the maximum learning experience. 
+
+## How to Use This Repository
+
+- Guides in the form of markdown in each ex* folder will shows what to do in the particular exercise.
+
+- No answer will be given. The results on carefully designed use cases will determine the successful run of the code.
+- Try the very best to craft the answer through getting the hands dirty. Follow your own pace.  
