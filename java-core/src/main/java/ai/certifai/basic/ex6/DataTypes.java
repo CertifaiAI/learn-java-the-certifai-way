@@ -34,8 +34,8 @@ public class DataTypes
         out = new OutputParser(DataTypes.class, in);
 
         /**
-         Enter your code here to pass the program
-         Tips: out.evaluate({content}) has to be used to pass the program
+         Enter your code here
+         Tips: out.evaluate({content}) has to be used for the program to be success
          **/
 
         out.printResult();
