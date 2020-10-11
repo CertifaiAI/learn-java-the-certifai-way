@@ -39,10 +39,10 @@ If starting from scratch, walkthrough the folder in the above order to gain the 
 </p> 
 
 - Only modify program code in the designated area in each exercise. \
-Markdown in each specific folder will provide a more detailed instructions. \
+Markdown in each specific folder will provide a more detailed instructions. 
 
 <p align="center">
-  <img src="metadata/codeSample.jpg">
+  <img src="metadata/codeSample.JPG">
 </p> 
 
 
