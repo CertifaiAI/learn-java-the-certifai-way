@@ -1,7 +1,7 @@
 # If - Else if - Else loop
 
-**What To Do**  
-Fill in function [_String compute(int input)_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex5/If_ElseIf_Else.java#L46-L48) to fulfill the conditions above
+## **What To Do**  
+Fill in function [_String compute(int input)_](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/basic/ex5/If_ElseIf_Else.java#L50-L57) to fulfill the conditions above
 
 Given an integer, _input_, return an output string of **Even**, **Odd**, **Out Of Range**, **Special**
  
@@ -19,25 +19,29 @@ else if(condition 2)
 {
     //code block      
 }
+else if(condition 3)      
+{
+    //code block      
+}
 else
 {
     //code block      
 }
 ```
 
-**Sample Input**  
+## **Sample Input**  
 1
 
-**Sample Output**  
+## **Sample Output**  
 `
 Odd
 `
 
-**Key Takeaways**
+## **Key Takeaways**
 
 - How to build if-elseif-else loop 
-.
-**Quiz**  
+
+## **Quiz**  
 
 1. How to do if-else loop in one line code?  
 2. What is the differences between operator OR (|) and operator logical-OR (||)?\
