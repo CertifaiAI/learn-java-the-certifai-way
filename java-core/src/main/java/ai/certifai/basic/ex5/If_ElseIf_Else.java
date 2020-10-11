@@ -57,7 +57,7 @@ public class If_ElseIf_Else
         }
         else if(input > 10000)
         {
-            return "Out of Range";
+            return "Out of sRange";
         }
         else if(input % 2 == 0)
         {
