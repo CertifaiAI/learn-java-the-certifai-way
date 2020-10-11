@@ -1,4 +1,4 @@
-# List Array
+# List<>ArrayList
 List interface with ArrayList class create a dynamic array that contains objects.
 
 <p align="center">

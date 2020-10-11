@@ -1,21 +1,24 @@
  # Advanced For Loop
+Now after you learned about For-Loop and List<>ArrayList. \
+Let's combine these two for an interesting challenge.
 
 **What To Do**
+
 Input text file will be presented in the form below 
 - Sample Input File 
 
 For variable **_m, n, b_**, produce output in the form below
 <p align="center">
-   <img src="metadata/pic1.png">
+   <img src="metadata/1.jpg">
  </p>  
 
 For example, 
 <p align="center">
-   <img src="metadata/pic2.png">
+   <img src="metadata/1.jpg">
  </p>  
 
 
-Each value is calculated with the formula of
+Each value _v_ is calculated with the formula of
 
 <p align="center">
    <img src="metadata/pic3.png">
@@ -32,5 +35,4 @@ Each value is calculated with the formula of
 **Sample Output**  
 7 18
 
-**Key Takeaways**
-- implicit casting and explicit casting
+

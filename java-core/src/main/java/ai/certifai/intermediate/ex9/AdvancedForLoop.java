@@ -58,19 +58,13 @@ public class AdvancedForLoop
     ////a_m = a_(m - 1) + 2^power + b
     public static void assessArrayValue(int m, int n, int b)
     {
-        List<Integer> value = new ArrayList<>();
-        int totalValue = 0;
-        for(int i = 0; i < m; ++i)
-        {
-            int currentValue = totalValue + (int) Math.pow(2, n + i) + b;
+        List<Integer> array = null;
+        /**
+         Modify your code in this function
+         Do the accordingly changes to this function to reach the successful run of the code
+         **/
 
-            totalValue = currentValue;
-
-            value.add(currentValue);
-
-        }
-
-        String output = Conversion.ListIntegerToString(value);
+        String output = Conversion.ListIntegerToString(array);
 
         out.evaluate(output);
     }
