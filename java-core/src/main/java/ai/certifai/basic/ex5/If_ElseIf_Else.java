@@ -41,8 +41,6 @@ public class If_ElseIf_Else
 
             String output = compute(input);
 
-            System.out.println(output);
-
             out.evaluate(output);
         }
 
@@ -51,23 +49,10 @@ public class If_ElseIf_Else
 
     public static String compute(int input)
     {
-        if((input >= 50) && (input <= 100))
-        {
-            return "Special";
-        }
-        else if(input > 10000)
-        {
-            return "Out of sRange";
-        }
-        else if(input % 2 == 0)
-        {
-            return "Even";
-        }
-        else
-        {
-            return "Odd";
-        }
-
-        //return "";
+        /**
+         Enter your code here to complete this function
+         Uncomment placeholder line ? when done
+         **/
+        return "";
     }
 }

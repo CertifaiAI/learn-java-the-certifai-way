@@ -17,6 +17,8 @@ package ai.certifai.basic.ex4;
 
 /**
  * Basic Java File to test run with terminal / command prompt
+ *
+ * @author codenamewei
  */
 public class Run
 {
