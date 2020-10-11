@@ -22,8 +22,10 @@ Hello World!
         - BluePrint
         - DataTypes
         - ExceptionHandling
+        
+- Non-static non-final name use **CamelCase** as well, with first word being small case.  
 
-- There should be one public class name per file
+- There should be **one public class name per file**
 
 - The class name must be same with file name for Java to recognize the entry point.  
 There should be a **public** access modified before it.  
@@ -33,6 +35,6 @@ Else will throw a compile time error. (Try it :computer:)
 
 
 **Quiz**  
-1. Can more than 1 class appear in one .java file?  
+1. Can more than 1 class appear in one .java file?  (Try it :computer:)
 
-2. What do you understand about the line [_package ai.certifai.basic.ex1;_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex1/HelloWorld.java#L16)?
+2. What do you understand about the line [_package ai.certifai.basic.ex1;_](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/basic/ex1/HelloWorld.java#L16)?
