@@ -8,7 +8,7 @@
 ## What You Need 
 - Grit to stick through the pain of debugging!
 - [Oracle JDK 1.8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) or alternative open source JDK 1.8 version
-  - As of today, tested with 
+  - As of today, the repository was tested with 
     - Oracle JDK 1.8
     - OpenJDK 1.8 
     - BellSoft Liberica JDK 1.8
