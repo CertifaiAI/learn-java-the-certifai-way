@@ -55,7 +55,7 @@ public class AdvancedForLoop
         out.printResult();
     }
 
-    ////a_m = a_(m - 1) + 2^power + b
+    ////a_m = a_(m - 1) + 2^(n + m) + b
     public static void assessArrayValue(int m, int n, int b)
     {
         List<Integer> array = null;

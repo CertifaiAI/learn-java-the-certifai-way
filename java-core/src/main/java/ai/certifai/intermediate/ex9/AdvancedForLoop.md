@@ -2,7 +2,12 @@
 Now after you learned about For-Loop and List<>ArrayList. \
 Let's combine these two for an interesting challenge.
 
-**What To Do**
+## **What To Do**
+
+Iterate over an array of integers given in the function. Modify the _assessArrayValue(...)_ function
+<p align="center">
+   <img src="metadata/0.jpg">
+ </p>
 
 Input text file will be presented in the form below 
 - Sample Input File 
@@ -18,15 +23,15 @@ Each value _a_ is calculated with the formula of
    <img src="metadata/2.jpg">
  </p>  
  
-**Condition:**
+## **Condition:**
 - **_m >= 1_**
 - **_n >= 0_**
 - **_b >= 0_**
 
-**Sample Input**  
+## **Sample Input**
 2 2 3
 
-**Sample Output**  
+## **Sample Output**
 7 18
 
 
