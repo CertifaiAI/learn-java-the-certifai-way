@@ -22,8 +22,8 @@
  
 
 **What To Do**  
-1. Uncomment 3 lines of code [_from line 50 to 54_](https://github.com/CertifaiAI/java-fundamentals/blob/master/java-core/src/main/java/ai/certifai/basic/ex3/BluePrint.java#L50-L54)  
-2. Make the necessary addition of functions in the class [_PersonalProfile.class_]() to support item 1 to works.  
+1. Uncomment 3 lines of code [_from line 59 to 61_](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/basic/ex3/BluePrint.java#L59-L61)  
+2. Add functions in the class [_PersonalProfile.class_](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/basic/ex3/BluePrint.java#L40-L42) to support item 1 to works.  
 
 **Example Code**  
 ```
@@ -69,6 +69,6 @@ Width: 100
  
 - **Always** provide variable's name which express it's purpose and meaning clearly.  
 
-**Quiz** 
+## **Quiz** 
 
 1. Is .java program equal to machine code?  
