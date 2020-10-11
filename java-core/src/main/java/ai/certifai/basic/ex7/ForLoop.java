@@ -41,13 +41,11 @@ public class ForLoop
 
             /**
              * Enter your code here
-             *
-             * out.evaluate({your answer}) is a must for use case to pass.
+             * Tips: out.evaluate({content}) has to be used to pass the program
              */
         }
 
         out.printResult();
 
     }
-
 }
