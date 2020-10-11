@@ -39,46 +39,15 @@ public class ForLoop
         {
             int linesPerUseCase = in.getCurrentUseCaseTotalLines();
 
-            for(int j = 0; j < (linesPerUseCase); ++j)
-            {
-                String input = in.getStringInput();
-                out.evaluate(input);
-            }
+            /**
+             * Enter your code here
+             *
+             * out.evaluate({your answer}) is a must for use case to pass.
+             */
         }
-
+        
         out.printResult();
 
     }
 
 }
-
-
-/*
-public class ForLoop
-{
-    static OutputParser out;
-    static InputParser in;
-
-    public static void main(String[] args)
-    {
-        in = new InputParser(ForLoop.class);
-        out = new OutputParser(ForLoop.class, in);
-
-        int totalUseCases = in.getTotalUseCases();
-
-        for(int i = 0; i < totalUseCases; ++i)
-        {
-            int linesPerUseCase = in.getCurrentUseCaseTotalLines();
-
-            for(int j = 0; j < (linesPerUseCase - 1); ++j)
-            {
-                String input = in.getStringInput();
-                out.evaluate(input);
-            }
-        }
-
-        out.printResult();
-    }
-
-}
- */
