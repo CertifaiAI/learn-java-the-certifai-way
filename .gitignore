@@ -34,17 +34,4 @@ target/
 #log file
 *.log
 
-#classifai-distro
 output/*
-#windows
-*.msi
-*.exe
-*.zip
-
-#mac
-*.pkg
-*.dmg
-
-#linux
-*.deb
-*.rpm
