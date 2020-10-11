@@ -37,21 +37,9 @@ class PersonalProfile
         weight = myWeight;
     }
 
-    public String getName()
-    {
-        return name;
-    }
-
-    public int getHeight()
-    {
-        return height;
-    }
-
-    public int getWeight()
-    {
-        return weight;
-    }
-
+    /**
+     * Enter your code here
+     */
 }
 
 
@@ -64,9 +52,13 @@ public class BluePrint
 
         PersonalProfile johnProfile = new PersonalProfile("John Doe", 165, 100);
 
-        out.evaluate("Name: " + johnProfile.getName());
+        /**
+         Enter your code here
+         Complete the program by uncommenting line 59-61 and making accordingly changes in PersonalProfile class
+         **/
+        //out.evaluate("Name: " + johnProfile.getName());
         //out.evaluate("Height: " + johnProfile.getHeight());
-        out.evaluate("Width: " + johnProfile.getWeight());
+        //out.evaluate("Width: " + johnProfile.getWeight());
 
         out.printResult();
     }
