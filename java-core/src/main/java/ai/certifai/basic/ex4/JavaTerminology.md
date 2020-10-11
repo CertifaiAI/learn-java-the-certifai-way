@@ -20,14 +20,14 @@ If an error message below happens when trying to run _java_ command, go to **Jav
  <img src="metadata/javacommanderror.png">
 </p> 
 
-3. Run the commands below in the command prompt 
+3. Run the commands below in the command prompt \
 Note: {yourpath} is the absolute path to the folder of java-fundamentals
 ```
-cd {yourpath}\java-fundamentals\java-core\src\main\java  
-javac ai/certifai/basic/ex4/Run.java
+cd {yourpath}\learn-java-the-certifai-way\java-core\src\main\java  
+javac ai\certifai\basic\ex4\Run.java
 java ai.certifai.basic.ex4.Run 12
 ```
-_Note: When running a Java application using Java, you supply the classname NOT the bytecode filename.  
+**_Note_**: When running a Java application using Java, you supply the classname NOT the bytecode filename.  
 
 <p align="center">
  <img src="metadata/output.jpg">
@@ -38,11 +38,11 @@ _Note: When running a Java application using Java, you supply the classname NOT 
 java ai.certifai.basic.ex4.Run {number}
 ```
 
-**How To Consider this Exercise Success**  
+## **How To Consider this Exercise Success**  
 Able to run step 4 from the previous session
 
 
-**Key Takeaways**    
+## **Key Takeaways**    
   
 **- Java Virtual Machine**
 -  virtual machine that enables a computer to run Java-based programs
