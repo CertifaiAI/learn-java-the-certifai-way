@@ -24,7 +24,7 @@ If an error message below happens when trying to run _java_ command, go to **Jav
 Note: {yourpath} is the absolute path to the folder of java-fundamentals
 ```
 cd {yourpath}\learn-java-the-certifai-way\java-core\src\main\java  
-javac ai/certifai/basic/ex4/Run.java
+javac ai\certifai\basic\ex4\Run.java
 java ai.certifai.basic.ex4.Run 12
 ```
 _Note: When running a Java application using Java, you supply the classname NOT the bytecode filename.  
