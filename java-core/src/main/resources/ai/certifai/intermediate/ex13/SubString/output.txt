@@ -1,0 +1,12 @@
+11 false
+log
+jpg
+PNG
+jpg
+It's not a file!
+zip
+ico
+png
+It's not a file!
+pdf
+It's not a file!

@@ -1,7 +1,6 @@
 package ai.certifai.util;
 
 import javax.swing.*;
-import javax.swing.SpringLayout;
 import java.awt.*;
 
 /**

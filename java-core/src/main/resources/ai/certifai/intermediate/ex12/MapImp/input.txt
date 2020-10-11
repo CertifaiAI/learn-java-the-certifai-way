@@ -1,0 +1,11 @@
+10 false
+get Italy
+delete Tuvalu
+add Tuvalu 688
+add Singapore 65
+get Singapore
+delete Singapore
+get Malaysia
+get Romania
+delete Uganda
+get Uganda

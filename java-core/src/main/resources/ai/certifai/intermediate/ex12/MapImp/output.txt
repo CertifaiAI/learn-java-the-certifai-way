@@ -1,0 +1,11 @@
+10 false
+39
+False
+True
+False
+65
+True
+60
+False
+False
+False
