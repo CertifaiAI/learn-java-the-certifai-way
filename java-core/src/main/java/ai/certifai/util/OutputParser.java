@@ -122,11 +122,13 @@ public class OutputParser
 
     private void flushUseCase(int numOfUseCase)
     {
+        if(numOfUseCase == 0) return;
+
         try
         {
             for(int i = 0; i < numOfUseCase; ++i)
             {
-                flushLine(currentUseCaseTotalLines - multiLinesBuffer + 1);
+                if(isMultiLine) flushLine(currentUseCaseTotalLines - multiLinesBuffer + 1);
 
                     String buffer = br.readLine();
                     if(buffer == null)
@@ -142,9 +144,12 @@ public class OutputParser
                             multiLinesBuffer = 1;
                             resultsAddValueIfValid(false);
                         }
+                        else
+                        {
+                            resultsAddValueIfValid(false);
+                        }
                         ++currentUseCase;
                     }
-
 
             }
             multiLinesBuffer = 1; //?
@@ -267,6 +272,7 @@ public class OutputParser
             }
             else
             {
+                flushSingleLineUseCase();
                 resultsAddValueIfValid(getResult(input));
 
                 ++currentUseCase;
@@ -280,10 +286,21 @@ public class OutputParser
 
     }
 
+    private void flushSingleLineUseCase()
+    {
+        if( (currentUseCase != totalUseCases) && (in.getCurrentUseCase() > (currentUseCase + 1)))
+        {
+            int numOfUseCaseToFlush = in.getCurrentUseCase() - currentUseCase - 1;
+
+            flushUseCase(numOfUseCaseToFlush);
+        }
+    }
+
 
     private boolean compareString(String input)
     {
         String trueOutput = getTrueOutput();
+
         return trueOutput.equals(input);
     }
 

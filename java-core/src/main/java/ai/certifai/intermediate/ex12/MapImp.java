@@ -18,6 +18,7 @@ package ai.certifai.intermediate.ex12;
 import ai.certifai.util.Conversion;
 import ai.certifai.util.InputParser;
 import ai.certifai.util.OutputParser;
+import lombok.NonNull;
 
 import java.util.HashMap;
 import java.util.List;
@@ -33,16 +34,17 @@ public class MapImp
     static OutputParser out;
     static InputParser in;
     static final String GET = "get";
-    static final String REMOVE = "delete";
+    static final String DELETE = "delete";
+    static final String ADD = "add";
 
-    public static void main(String[] args)
+    public static void main(String[] args) throws Exception
     {
         in = new InputParser(MapImp.class);
         out = new OutputParser(MapImp.class, in);
 
         Map keyValue = new HashMap<String, Integer>();
 
-        configMap(keyValue);
+        initKeyValue(keyValue);
 
         int totalUseCases = in.getTotalUseCases();
 
@@ -52,32 +54,63 @@ public class MapImp
 
             List<String> arrayInput = Conversion.StringToListString(line);
 
-            if(arrayInput.size() != 2)
+            if(arrayInput.size() == 3)
             {
-                System.out.println("Array size != 2. Program not expected to work fine");
+                configKeyValue(keyValue, arrayInput.get(0), arrayInput.get(1), arrayInput.get(2));
+            }
+            else if(arrayInput.size() == 2)
+            {
+                configKeyValue(keyValue, arrayInput.get(0), arrayInput.get(1), null);
             }
             else
             {
-                processArray(keyValue, arrayInput.get(0), Integer.parseInt(arrayInput.get(1)));
+                throw new Exception("Array size not fall under expectation. Program not expected to work fine");
+            }
+        }
+
+        out.printResult();
+    }
+
+    private static void configKeyValue(@NonNull Map keyValue, @NonNull String action, @NonNull String country, String phoneCode) {
+
+        if (action.equalsIgnoreCase(GET))
+        {
+            if(keyValue.containsKey(country))
+            {
+                out.evaluate(keyValue.get(country));
+            }
+            else
+            {
+                out.evaluate("False");
+            }
+        }
+        else if (action.equalsIgnoreCase(DELETE))
+        {
+            if(keyValue.containsKey(country))
+            {
+                keyValue.remove(country);
+                out.evaluate("True");
+            }
+            else
+            {
+                out.evaluate("False");
+            }
+        }
+        else if (action.equalsIgnoreCase(ADD))
+        {
+            if(!keyValue.containsKey(country))
+            {
+                keyValue.put(country, phoneCode);
+                //out.evaluate("True");
+            }
+            else
+            {
+                out.evaluate("False");
             }
         }
     }
 
-    private static void processMap(Map keyValue, String country, String phoneCode)
-    {
-
-        if(keyValue.equals(GET))
-        {
-
-        }
-        else if(keyValue.equals(REMOVE))
-        {
-
-        }
-
-    }
-
-    private static void configMap(Map keyValue)
+    private static void initKeyValue(Map keyValue)
     {
         keyValue.put("Italy", "39");
         keyValue.put("Malaysia", "60");
@@ -85,8 +118,6 @@ public class MapImp
         keyValue.put("Singapore", "65");
         keyValue.put("China", "86");
         keyValue.put("Russia", "7");
-
-
 
     }
 }

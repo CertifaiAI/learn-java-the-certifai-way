@@ -20,9 +20,7 @@ import ai.certifai.util.InputParser;
 import ai.certifai.util.OutputParser;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Advanced For Loop

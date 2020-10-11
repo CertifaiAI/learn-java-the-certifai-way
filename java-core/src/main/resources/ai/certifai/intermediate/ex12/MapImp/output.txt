@@ -1,7 +1,11 @@
-7 false
-add italy
-add korea
-add russia
-minus malaysia
-add indonesia
-add malta
+10 false
+39
+False
+True
+False
+65
+True
+60
+False
+False
+False
