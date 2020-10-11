@@ -1,6 +1,6 @@
 # Types of Data
 
-**What To Do**  
+## **What To Do**  
 Define these 4 values in the respective data format and get it evaluated  
   
 - "Nasi Lemak!" as **String**
@@ -10,14 +10,14 @@ Define these 4 values in the respective data format and get it evaluated
 
 Fill in the code in [this range](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/basic/ex6/DataTypes.java#L36-L39)
 
-**Sample Input**  
+## **Sample Input**  
 
 ```
 int value = 2;      
 out.evaluate(value);
 ```
 
-**Key Takeaways**
+## **Key Takeaways**
 
 - Different primitive data types in Java: 
     - int
