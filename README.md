@@ -29,5 +29,6 @@ If starting from scratch, walkthrough the folder in the above order to gain the 
 
 - Guides in the form of markdown in each ex* folder will shows what to do in the particular exercise.
 
-- No answer will be given. The results on carefully designed use cases will determine the successful run of the code.
+- No answer will be given. The use cases were carefully designed to determine the successful run of the code.
+
 - Try the very best to craft the answer through getting the hands dirty. Follow your own pace.  
