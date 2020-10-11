@@ -27,7 +27,7 @@ cd {yourpath}\learn-java-the-certifai-way\java-core\src\main\java
 javac ai\certifai\basic\ex4\Run.java
 java ai.certifai.basic.ex4.Run 12
 ```
-_Note: When running a Java application using Java, you supply the classname NOT the bytecode filename.  
+**_Note_**: When running a Java application using Java, you supply the classname NOT the bytecode filename.  
 
 <p align="center">
  <img src="metadata/output.jpg">
