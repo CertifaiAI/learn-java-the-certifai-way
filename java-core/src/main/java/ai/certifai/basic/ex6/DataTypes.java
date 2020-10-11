@@ -38,10 +38,6 @@ public class DataTypes
          Tips: out.evaluate({content}) has to be used to pass the program
          **/
 
-        /*
-        Enter your code here
-         */
-
         out.printResult();
     }
 }
