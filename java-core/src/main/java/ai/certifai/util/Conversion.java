@@ -42,4 +42,9 @@ public class Conversion {
     {
         return Arrays.stream(input.split(" ")).map(Integer::parseInt).collect(Collectors.toList());
     }
+
+    public static List<String> StringToListString(String input)
+    {
+        return Arrays.stream(input.split(" ")).collect(Collectors.toList());
+    }
 }

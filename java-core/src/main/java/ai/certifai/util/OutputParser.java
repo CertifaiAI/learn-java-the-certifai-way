@@ -212,7 +212,6 @@ public class OutputParser
 
                 if(in.getCurrentUseCase() > totalUseCases)
                 {
-                    System.out.println("Here: " );
                     return; // use case ended do nothing
                 }
 

@@ -13,61 +13,54 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  */
-package ai.certifai.basic.ex5;
+package ai.certifai.intermediate.ex11;
 
+import ai.certifai.util.FileLoader;
 import ai.certifai.util.InputParser;
 import ai.certifai.util.OutputParser;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+
 /**
- * If - Else If - Else Loop
+ * While Loop
  *
  * @author codenamewei
  */
-public class If_ElseIf_Else
+public class WhileLoop
 {
     static OutputParser out;
     static InputParser in;
 
-    public static void main(String[] args)
+    public static void main(String[] args) throws Exception
     {
-        in = new InputParser(If_ElseIf_Else.class);
-        out = new OutputParser(If_ElseIf_Else.class, in);
+        in = new InputParser(WhileLoop.class);
+        out = new OutputParser(WhileLoop.class, in);
 
         int totalUseCases = in.getTotalUseCases();
 
         for(int i = 0; i < totalUseCases; ++i)
         {
-            int input = in.getIntegerInput();
+            String inputFileName = in.getStringInput();
 
-            String output = compute(input);
+            File inputFilePath = new FileLoader().getInputLoader(WhileLoop.class, inputFileName);
 
-            System.out.println(output);
-
-            out.evaluate(output);
+            readFile(inputFilePath);
         }
 
         out.printResult();
     }
 
-    public static String compute(int input)
+    private static void readFile(File inputFile) throws Exception
     {
-        if((input >= 50) && (input <= 100))
-        {
-            return "Special";
-        }
-        else if(input > 10000)
-        {
-            return "Out of Range";
-        }
-        else if(input % 2 == 0)
-        {
-            return "Even";
-        }
-        else
-        {
-            return "Odd";
-        }
+        BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 
-        //return "";
+        String input;
+        while((input = reader.readLine()) != null)
+        {
+            out.evaluate(input);
+        }
     }
+
 }

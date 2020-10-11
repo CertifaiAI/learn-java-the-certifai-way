@@ -1,0 +1,9 @@
+7 false
+get italy
+delete china
+get korea
+add
+delete russia 100
+delete malaysia
+get malaysia
+add malta 5

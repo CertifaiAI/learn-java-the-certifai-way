@@ -1,4 +1,4 @@
-# Advanced For Loop 
+ # Advanced For Loop
 
 **What To Do**
 Input text file will be presented in the form below 
