@@ -31,7 +31,7 @@ Iterate over an array of integers given in the function. Modify the _assessArray
  </p>
 
 ## **Sample Input**
-2 2 3 
+2 2 3 \
 Note: m = 2, n = 2, b = 3
 
 ## **Sample Output**
