@@ -21,4 +21,4 @@ Sample Folder
 
 ## **Sample Output**
 Example\
-SampleFolder
+Sample_Folder
