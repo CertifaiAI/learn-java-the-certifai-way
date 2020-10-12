@@ -45,14 +45,14 @@ public class AdvancedSubString
         out.printResult();
     }
 
-    private static int processString(String input)
+    private static String processString(String input)
     {
         /**
          Modify your code in this function
          Do the accordingly changes to this function to reach the successful run of the code
          Change the returning value in line 55
          */
-        return 0;
+        return null;
     }
 
 }
