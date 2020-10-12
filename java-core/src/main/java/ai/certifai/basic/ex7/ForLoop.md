@@ -6,8 +6,9 @@ For loop is a very important implementation in most programming.
 </p>  
 
 ## **What To Do**
-Variable [**linesPerUseCase**](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/basic/ex7/ForLoop.java#L40) defines how many lines per use case. 
-Use a **for loop** to get string input of each line and get it evaluated to pass the use case
+Variable [**linesPerUseCase**](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/basic/ex7/ForLoop.java#L40) defines how many lines per use case. \
+Use a **for loop** to get string input of each line. **Tips: _in.getStringInput()_** \
+and get it evaluated by passing to _**out.evaluate(~~)**_.
 
 ## **Sample Input**
 ```
