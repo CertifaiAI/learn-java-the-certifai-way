@@ -41,18 +41,19 @@ public class SubString
         {
             String input = in.getStringInput();
 
-            getExtensionIfExist(input);
+            out.evaluate(getExtensionIfExist(input));
         }
 
         out.printResult();
     }
 
-    private static void getExtensionIfExist(String input)
+    private static String getExtensionIfExist(String input)
     {
         /**
          Modify your code in this function
          Do the accordingly changes to this function to reach the successful run of the code
-         Tips: out.evaluate({content}) has to be used for the program to be success
+         Change the returning value in line 57
          **/
+        return null;
     }
 }
