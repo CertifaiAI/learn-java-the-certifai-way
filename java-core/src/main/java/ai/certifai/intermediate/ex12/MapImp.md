@@ -47,6 +47,7 @@ Input comes in the form of
   - If ADD a key which is not exist in the Map<>HashMap, write **out.evaluate("True")**  and put the key & value exist in **Map keyValue*
   - Else, write **out.evaluate("False")**  
 
+**Only make changes to the function [_configKeyValue(...)_](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/intermediate/ex12/MapImp.java#L77-L81)**
 
 ## **Sample Input** 
 get Malaysia  
