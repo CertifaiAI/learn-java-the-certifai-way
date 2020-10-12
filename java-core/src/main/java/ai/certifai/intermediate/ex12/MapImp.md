@@ -10,6 +10,18 @@ In program MapImp, Map<>HashMap is implemented to store country name as key and 
  <img src="metadata/country_code.jpg">
 </p>
 
+**When do we use Map<>HashMap** \
+Maps are used for when you want to associate a key with a value and Lists are an ordered collection.
+
+**Example Scenario:** 
+- Item names matching with products
+<p align="center">
+ <img src="metadata/receipt.jpg">
+</p>
+- User IDs matching with names
+<p align="center">
+ <img src="metadata/key-value2.jpg">
+</p>
 
 ## **Sample Input** 
 get Malaysia
@@ -35,8 +47,7 @@ True
         
 - Not an ordered collection. Does not return keys and values in the same order they have been inserted.
 
-**When do we use Map<>HashMap** \
-Maps are used for when you want to associate a key with a value and Lists are an ordered collection.
+
 
 ## **Above & Beyond**
 
