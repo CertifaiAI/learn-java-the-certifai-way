@@ -18,7 +18,7 @@ Each value _a_ is calculated with the formula of
    <img src="metadata/2.jpg">
  </p>  
  
-**Note: a<sub>0</sub> = 0, always**
+**Note: a<sub>smaller than 0</sub> = 0, always**
  
 ## **Condition:**
 - **_m >= 1_**
