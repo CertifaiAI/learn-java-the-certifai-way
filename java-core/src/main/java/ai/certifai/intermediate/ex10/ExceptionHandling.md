@@ -52,7 +52,7 @@ finally
     //statement
 }
 ```
-**What To Do**  
+## **What To Do**  
 
 Rewrite the function block below starting from line 21 to handle exception with try-catch-finally.  
 eval.evaluatePerLine("File is not found!") in the **catch** loop if file is not found
@@ -71,7 +71,7 @@ public static void main(String[] args) throws Exception
 }
 ```
 
-**Sample Output** 
+## **Sample Output** 
 
 ```
 File is Not Found!
