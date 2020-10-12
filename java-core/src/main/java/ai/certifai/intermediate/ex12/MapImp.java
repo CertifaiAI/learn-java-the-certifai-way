@@ -71,52 +71,15 @@ public class MapImp
         out.printResult();
     }
 
-    /*private static void configKeyValue(@NonNull Map keyValue, @NonNull String action, @NonNull String country, String phoneCode) {
+
+    private static void configKeyValue(@NonNull Map keyValue, @NonNull String action, @NonNull String country, String phoneCode) {
 
         /**
          Modify your code in this function
          Do the accordingly changes to this function to reach the successful run of the code
          Tips: out.evaluate({content}) has to be used for the program to be success
+         **/
 
-    }**/
-
-    private static void configKeyValue(@NonNull Map keyValue, @NonNull String action, @NonNull String country, String phoneCode) {
-
-        if (action.equalsIgnoreCase(GET))
-        {
-            if(keyValue.containsKey(country))
-            {
-                out.evaluate(keyValue.get(country));
-            }
-            else
-            {
-                out.evaluate("False");
-            }
-        }
-        else if (action.equalsIgnoreCase(DELETE))
-        {
-            if(keyValue.containsKey(country))
-            {
-                keyValue.remove(country);
-                out.evaluate("True");
-            }
-            else
-            {
-                out.evaluate("False");
-            }
-        }
-        else if (action.equalsIgnoreCase(ADD))
-        {
-            if(!keyValue.containsKey(country))
-            {
-                keyValue.put(country, phoneCode);
-                out.evaluate("True");
-            }
-            else
-            {
-                out.evaluate("False");
-            }
-        }
     }
 
     private static void initKeyValue(Map keyValue)
