@@ -47,30 +47,11 @@ public class AdvancedSubString
 
     private static void processString(String input)
     {
-        String output = input.trim();
-
-        output = output.replace(" ", "_");
-
-        out.evaluate(getContentIfExist(output));
+        /**
+         Modify your code in this function
+         Do the accordingly changes to this function to reach the successful run of the code
+         Tips: out.evaluate({content}) has to be used for the program to be success
+         **/
     }
 
-    private static String getContentIfExist(String input)
-    {
-        Character charFinding = new Character('.');
-        int beginningIndex = 0;
-
-        while(beginningIndex < input.length())
-        {
-            Character c = new Character(input.charAt(beginningIndex));
-            if(c.equals(charFinding))
-            {
-                break;
-            }
-            ++beginningIndex;
-        }
-
-        String subString = input.substring(0, beginningIndex);
-
-        return subString;
-    }
 }

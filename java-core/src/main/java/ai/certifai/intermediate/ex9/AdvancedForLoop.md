@@ -4,11 +4,6 @@ Let's combine these two for an interesting challenge.
 
 ## **What To Do**
 
-Iterate over an array of integers given in the function. Modify the _assessArrayValue(...)_ function
-<p align="center">
-   <img src="metadata/0.jpg">
- </p>
-
 Input text file will be presented in the form below 
 - Sample Input File 
 
@@ -27,6 +22,11 @@ Each value _a_ is calculated with the formula of
 - **_m >= 1_**
 - **_n >= 0_**
 - **_b >= 0_**
+
+Iterate over an array of integers given in the function. Modify the _assessArrayValue(...)_ function
+<p align="center">
+   <img src="metadata/0.jpg">
+ </p>
 
 ## **Sample Input**
 2 2 3

@@ -23,41 +23,15 @@ import java.util.List;
 
 class QuickSort
 {
-     private int split(List<Integer> array, int beginIndex, int endIndex)
-     {
-         int pivot = array.get(endIndex);
-         int j = beginIndex - 1;
-         for(int i = beginIndex; i < endIndex; ++i)
-         {
-             if(array.get(i) < pivot)
-             {
-                 ++j;
-                 int temp = array.get(i);
-                 array.set(i, array.get(j));
-                 array.set(j, temp);
-             }
-         }
-         int temp = array.get(j + 1);
-         array.set(j + 1, array.get(endIndex));
-         array.set(endIndex, temp);
-         return j + 1;
-     }
+    /**
+     Modify your code in this class
+     Do the accordingly changes to reach the successful run of the code
+     **/
 
     public List<Integer> sort(List<Integer> array, int beginIndex, int endIndex)
     {
 
-        if((array.size() < 2) || (beginIndex >= endIndex))
-        {
-            return array;
-        }
-
-        int pivotIndex = split(array, beginIndex, endIndex);
-
-        sort(array, beginIndex, pivotIndex - 1);
-        sort(array, pivotIndex + 1, endIndex);
-
-
-        return array;
+        return null;
     }
 }
 

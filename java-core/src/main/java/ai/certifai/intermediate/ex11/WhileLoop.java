@@ -56,11 +56,11 @@ public class WhileLoop
     {
         BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 
-        String input;
-        while((input = reader.readLine()) != null)
-        {
-            out.evaluate(input);
-        }
+        /**
+         Modify your code in this function
+         Do the accordingly changes to this function to reach the successful run of the code
+         Tips: out.evaluate({content}) has to be used for the program to be success
+         **/
     }
 
 }

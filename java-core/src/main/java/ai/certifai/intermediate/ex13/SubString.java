@@ -49,29 +49,10 @@ public class SubString
 
     private static void getExtensionIfExist(String input)
     {
-        if(input.isEmpty()) out.evaluate(FAIL_MESSAGE);
-
-        Character charFinding = new Character('.');
-        int beginningIndex = 0;
-
-        while(beginningIndex < input.length())
-        {
-            Character c = new Character(input.charAt(beginningIndex));
-            if(c.equals(charFinding))
-            {
-                break;
-            }
-            ++beginningIndex;
-        }
-
-        if(beginningIndex >= input.length())
-        {
-            out.evaluate(FAIL_MESSAGE);
-            return;
-        }
-
-        String subString = input.substring(beginningIndex + 1);
-
-        out.evaluate(subString);
+        /**
+         Modify your code in this function
+         Do the accordingly changes to this function to reach the successful run of the code
+         Tips: out.evaluate({content}) has to be used for the program to be success
+         **/
     }
 }
