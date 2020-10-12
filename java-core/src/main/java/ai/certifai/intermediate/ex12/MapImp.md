@@ -4,7 +4,7 @@ A Map is an object that maps keys to values.
  <img src="metadata/key-value.jpg">
 </p>
 
-## **What To Do**
+
 In program MapImp, Map<>HashMap is implemented to store country name as key and country code as value.
 <p align="center">
  <img src="metadata/country_code.jpg">
@@ -18,22 +18,47 @@ Maps are used for when you want to associate a key with a value and Lists are an
 <p align="center">
  <img src="metadata/receipt.jpg">
 </p>
+
 - User IDs matching with names
 <p align="center">
  <img src="metadata/key-value2.jpg">
 </p>
 
+## **What To Do**
+Given a Map of Country Name and Country Code 
+**
+Italy: 39
+Malaysia: 60
+Indonesia: 62
+Singapore: 65
+China: 86
+Russia: 7
+**
+
+Input comes in the form of 
+
+- GET country_name
+  - If country_name key exist, write **out.evaluate({get the country code})**, else write **out.evaluate("False")** \
+  
+- DELETE country_name
+  - If DELETE an existing key, write **out.evaluate("True")**, else write **out.evaluate("False")** \
+   
+- ADD country_name country_code 
+  - If ADD a key which is not exist in the Map<>HashMap, write **out.evaluate("True")**  and put the key & value exist in **Map keyValue*
+  - Else, write **out.evaluate("False")**  
+
+
 ## **Sample Input** 
-get Malaysia
-delete Malaysia
-delete Malaysia
-add Singapore 65
+get Malaysia  
+delete Malaysia  
+delete Malaysia  
+add Singapore 65 
 
 ## **Sample Output** 
-60
-True
-False
-True
+60  
+True  
+False  
+True  
 
 ## **Key Takeaways** 
 
@@ -48,6 +73,4 @@ True
 - Not an ordered collection. Does not return keys and values in the same order they have been inserted.
 
 
-
-## **Above & Beyond**
 
