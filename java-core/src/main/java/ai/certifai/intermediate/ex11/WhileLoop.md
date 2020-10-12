@@ -24,3 +24,8 @@ def
 abc
 def
 
+## **Above and Beyond** 
+- Check out the variant of a while loop - **Do-While loop**
+<p align="center">
+  <img src="metadata/dowhileloop.jpg">
+</p> 
