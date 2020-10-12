@@ -39,6 +39,7 @@ public class If_ElseIf_Else
         {
             int input = in.getIntegerInput();
 
+            System.out.println(input);
             String output = compute(input);
 
             out.evaluate(output);

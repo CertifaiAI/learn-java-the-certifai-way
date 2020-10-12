@@ -25,11 +25,12 @@ import ai.certifai.util.OutputParser;
  */
 class PersonalProfile
 {
-    private String name;
+    public String name;
 
-    private int height;
-    private int weight;
+    public int height;
+    public int weight;
 
+    //constructor
     public PersonalProfile(String myName, int myHeight, int myWeight)
     {
         name = myName;
@@ -52,13 +53,14 @@ public class BluePrint
 
         PersonalProfile johnProfile = new PersonalProfile("John Doe", 165, 100);
 
+
         /**
          Enter your code here
          Complete the program by uncommenting line 59-61 and making accordingly changes in PersonalProfile class
          **/
-        //out.evaluate("Name: " + johnProfile.getName());
-        //out.evaluate("Height: " + johnProfile.getHeight());
-        //out.evaluate("Width: " + johnProfile.getWeight());
+        out.evaluate("Name: " + johnProfile.name);
+        out.evaluate("Height: " + johnProfile.height);
+        out.evaluate("Width: " + johnProfile.weight);
 
         out.printResult();
     }
