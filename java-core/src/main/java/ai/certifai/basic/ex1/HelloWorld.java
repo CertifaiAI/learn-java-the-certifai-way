@@ -17,12 +17,17 @@ package ai.certifai.basic.ex1;
 
 import ai.certifai.util.OutputParser;
 
+
+class HelloWorld2
+{
+
+}
 /**
  * Iconic Hello World Quickstart
  *
  * @author codenamewei
  */
-public class HelloWorld
+class HelloWorld
 {
     static OutputParser out;
 
@@ -35,7 +40,7 @@ public class HelloWorld
         Complete the program by making changes to line 38
         Tips: change the content assign to variable firstString
          **/
-        String firstString = null;
+        String firstString = "Hello World!";
 
         out.evaluate(firstString);
 

@@ -35,7 +35,7 @@ public class PackagingIntro
          Complete the program by making changes to line 38
          Tips: change the content assign to variable packageName
          **/
-        String packageName = null;
+        String packageName = new PackagingIntro().getClass().getCanonicalName();
         String output = "Package Name = " + packageName;
 
         out.evaluate(output);
