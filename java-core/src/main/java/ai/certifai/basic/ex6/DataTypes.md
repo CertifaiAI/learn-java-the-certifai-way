@@ -5,7 +5,7 @@ Define these 4 values in the respective data format and get it evaluated
   
 - "Nasi Lemak!" as **String**
 - 20 as **int**
-- 100.054 as **double**
+- 100.054 as **float**
 - true as **boolean**
 
 Fill in the code in [this range](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/basic/ex6/DataTypes.java#L36-L39)
