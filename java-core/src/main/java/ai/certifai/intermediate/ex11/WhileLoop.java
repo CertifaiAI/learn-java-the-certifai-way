@@ -46,21 +46,21 @@ public class WhileLoop
 
             File inputFilePath = new FileLoader().getInputLoader(WhileLoop.class, inputFileName);
 
-            readFile(inputFilePath);
+            out.evaluate(getTotalNumberOfLines(inputFilePath));
         }
 
         out.printResult();
     }
 
-    private static void readFile(File inputFile) throws Exception
+    private static int getTotalNumberOfLines(File inputFile) throws Exception
     {
         BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 
         /**
          Modify your code in this function
-         Do the accordingly changes to this function to reach the successful run of the code
-         Tips: out.evaluate({content}) has to be used for the program to be success
+         Change the return value to get the success of the program
          **/
+        return 0;
     }
 
 }

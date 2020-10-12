@@ -1,36 +1,8 @@
-5 true
+7 false
 6
-true
-true
-true
-false
-false
-false
 7
-Sep 09, 2020 05:47:51 PM
-Sep 09, 2020 05:47:52 PM
-Sep 09, 2020 05:47:53 PM
-Sep 09, 2020 05:47:53 PM
-Sep 09, 2020 05:47:56 PM
-Sep 09, 2020 05:47:56 PM
-Sep 09, 2020 05:48:07 PM
 1
-Designed and Developed various mechanical and structural parts for global TV market from concept to launch.
 4
-Try the cloud-native development solutions from Red Hat,
-and experience how you can build apps more efficiently and deliver faster!
-Get the e-book here.
-Make growth happen with AI that works for you!
 12
-Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: PROJECTNAME
-	at org.hsqldb.error.Error.error(Unknown Source)
-	at org.hsqldb.error.Error.error(Unknown Source)
-	at org.hsqldb.ExpressionColumn.checkColumnsResolved(Unknown Source)
-	at org.hsqldb.QueryExpression.resolve(Unknown Source)
-	at org.hsqldb.ParserDQL.compileCursorSpecification(Unknown Source)
-	at org.hsqldb.ParserCommand.compilePart(Unknown Source)
-	at org.hsqldb.ParserCommand.compileStatement(Unknown Source)
-	at org.hsqldb.Session.compileStatement(Unknown Source)
-	at org.hsqldb.StatementManager.compile(Unknown Source)
-	at org.hsqldb.Session.execute(Unknown Source)
-	... 13 common frames omitted
+0
+57
