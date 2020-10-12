@@ -4,9 +4,7 @@
 Fill in function [_String compute(int input)_](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/basic/ex5/If_ElseIf_Else.java#L50-L57) to fulfill the conditions above
 
 Given an integer, _input_, return an output string of **Even**, **Odd**, **Out Of Range**, **Special**
- 
-- if _input_ is even number, return **Even**  
-- if _input_ is odd number, return **Odd**  
+git add 
 - if _input_ more or equal to 50 but less or equal to 100, return **Special**  
 - if _input_ greater than 10000, return **Out of Range**  
 
