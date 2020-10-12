@@ -8,7 +8,7 @@ Given an integer, _input_, return an output string of **Even**, **Odd**, **Out O
 - if _input_ is even number, return **Even**  
 - if _input_ is odd number, return **Odd**  
 - if _input_ more or equal to 50 but less or equal to 100, return **Special**  
-- if _input_ greater than 10000, return **Out Of Range**  
+- if _input_ greater than 10000, return **Out of Range**  
 
 ```
 if(condition 1)
