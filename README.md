@@ -18,7 +18,7 @@
 **Takeaway:**\  
 - Java - Programming Language
 - Apache Maven - Java Dependency Manager
-- 
+- Intellij IDE -  Editor
 
 
 ## Repository Structure
