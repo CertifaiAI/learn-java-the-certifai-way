@@ -13,15 +13,15 @@ Fill in function [_private static void readFile(File inputFile) throws Exception
 A while loop has to be used to iterate through **BufferedReader reader** to get next lines if next line exist
 
 **Tips:** 
-- Use _reader.readLine()_ to read from file
-- If there is no next line, _reader.readLine()_ will return null;
+- Use **_reader.readLine()_** to read from file
+- If there is no next line, **_reader.readLine()_** will return null;
 
 ## **Sample Input** 
-abc
+abc\
 def
 
 ## **Sample Output** 
-abc
+abc\
 def
 
 ## **Above and Beyond** 
