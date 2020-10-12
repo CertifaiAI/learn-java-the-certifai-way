@@ -28,7 +28,7 @@ With input file of
 </p> 
 
 ## **Sample Output** 
-5
+7
 
 ## **Above and Beyond** 
 - Check out the variant of a while loop - **Do-While loop**
