@@ -1,5 +1,10 @@
 # Manipulation of String
 
+Getting a substring of a string is a very common operation to perform 
+<p align="center">
+ <img src="metadata/substring.JPG">
+</p>
+
 ## **What To Do**  
 With each string input, return the file formats if exist
 <p align="center">
