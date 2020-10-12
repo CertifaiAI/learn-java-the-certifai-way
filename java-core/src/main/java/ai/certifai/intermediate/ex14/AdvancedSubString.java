@@ -39,19 +39,20 @@ public class AdvancedSubString
         {
             String input = in.getStringInput();
 
-            processString(input);
+            out.evaluate(processString(input));
         }
 
         out.printResult();
     }
 
-    private static void processString(String input)
+    private static int processString(String input)
     {
         /**
          Modify your code in this function
          Do the accordingly changes to this function to reach the successful run of the code
-         Tips: out.evaluate({content}) has to be used for the program to be success
-         **/
+         Change the returning value in line 55
+         */
+        return 0;
     }
 
 }
