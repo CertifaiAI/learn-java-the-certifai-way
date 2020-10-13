@@ -218,6 +218,3 @@ one of the few debugging steps an individual can try to do is clear the cache an
 <p align="center">
   <img src="metadata/reload.jpg">
 </p>  
-
-## **Quiz** 
-- How to create a maven project in intellij in the most convenient way?
