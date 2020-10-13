@@ -15,7 +15,7 @@
 - [Apache Maven 3.5](https://maven.apache.org/download.cgi) or later
 - [Intellij IDE](https://www.jetbrains.com/idea/download/)  
 
-**Takeaway:**\  
+**Takeaway:**  
 - Java - Programming Language
 - Apache Maven - Java Dependency Manager
 - Intellij IDE -  Editor
