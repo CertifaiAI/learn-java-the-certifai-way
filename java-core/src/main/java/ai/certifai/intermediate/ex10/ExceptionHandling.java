@@ -15,7 +15,6 @@
  */
 package ai.certifai.intermediate.ex10;
 
-import ai.certifai.util.InputParser;
 import ai.certifai.util.OutputParser;
 
 import java.io.File;

@@ -19,7 +19,6 @@ import ai.certifai.util.Conversion;
 import ai.certifai.util.InputParser;
 import ai.certifai.util.OutputParser;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
