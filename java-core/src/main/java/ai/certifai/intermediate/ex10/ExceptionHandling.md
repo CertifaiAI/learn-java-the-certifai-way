@@ -55,8 +55,9 @@ finally
 ## **What To Do**  
 
 Rewrite the function block
-- [_readFile()_]()
-- [_divideByZero()_]()
+- [_readFile()_](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/intermediate/ex10/ExceptionHandling.java#L41)
+- [_divideByZero()_](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/intermediate/ex10/ExceptionHandling.java#L51)
+- [_retrieveObject()_](https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/master/java-core/src/main/java/ai/certifai/intermediate/ex10/ExceptionHandling.java#L58)
 to catch Exception  
 **Tips:** return e.getClass().getCanonicalName() for each function block for program to successfully execute
 
