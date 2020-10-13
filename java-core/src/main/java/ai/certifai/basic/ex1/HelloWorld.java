@@ -18,10 +18,6 @@ package ai.certifai.basic.ex1;
 import ai.certifai.util.OutputParser;
 
 
-class HelloWorld2
-{
-
-}
 /**
  * Iconic Hello World Quickstart
  *
@@ -40,7 +36,7 @@ class HelloWorld
         Complete the program by making changes to line 38
         Tips: change the content assign to variable firstString
          **/
-        String firstString = "Hello World!";
+        String firstString = null;
 
         out.evaluate(firstString);
 

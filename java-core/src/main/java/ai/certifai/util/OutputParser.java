@@ -288,6 +288,8 @@ public class OutputParser
 
     private void flushSingleLineUseCase()
     {
+        if(in == null) return;
+
         if( (currentUseCase != totalUseCases) && (in.getCurrentUseCase() > (currentUseCase + 1)))
         {
             int numOfUseCaseToFlush = in.getCurrentUseCase() - currentUseCase - 1;

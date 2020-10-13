@@ -15,23 +15,53 @@
  */
 package ai.certifai.intermediate.ex10;
 
+import ai.certifai.util.InputParser;
 import ai.certifai.util.OutputParser;
 
 import java.io.File;
 import java.util.Scanner;
 
+/**
+ * Exception Handling
+ *
+ * @author codenamewei
+ */
 public class ExceptionHandling
 {
     public static void main(String[] args) throws Exception
     {
         OutputParser out = new OutputParser(ExceptionHandling.class);
 
+        out.evaluate(readFile());
+        out.evaluate(divideByZero());
+        out.evaluate(retrieveObject());
+
+        out.printResult();
+    }
+
+    private static String readFile() throws Exception
+    {
         String filePathInString = "metadata/sample.txt"; //FILE DID NOT EXIST
 
         //Rewrite the statement below onwards to catch the exception with try-catch-finally
         File filePath = new File(filePathInString);
         Scanner input = new Scanner(filePath);
+        return "";
+    }
 
-        out.printResult();
+    private static String divideByZero() throws Exception
+    {
+        int value = 1000 / 0;
+
+        return "";
+    }
+
+    private static String retrieveObject() throws Exception
+    {
+        String buffer = null;
+
+        buffer.length();
+
+        return "";
     }
 }

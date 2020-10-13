@@ -1,7 +1,4 @@
 # Quick Sort
-
-## **What To Do**
-
-## **Sample Input**
-
-## **Sample Output**
+<p align="center">
+ <img src="metadata/sort.pngs">
+</p>
