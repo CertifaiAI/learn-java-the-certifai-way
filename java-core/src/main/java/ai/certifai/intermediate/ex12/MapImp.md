@@ -26,14 +26,15 @@ Maps are used for when you want to associate a key with a value and Lists are an
 
 ## **What To Do**
 Given a Map of Country Name and Country Code 
-**
+
+```
 Italy: 39
 Malaysia: 60
 Indonesia: 62
 Singapore: 65
 China: 86
 Russia: 7
-**
+```
 
 Input comes in the form of 
 
