@@ -20,17 +20,17 @@ To initialize a logger in a program, just simply import `org.slf4j.Logger` and u
 ```
  
  
- ### Log4j (V1)
- To use log4j V1 with SLF4J binding, the following dependencies should be imported:
+ ### Log4j (v1)
+ To use log4j v1 with SLF4J binding, the following dependencies should be imported:
 ```xml
-        <!-- Log4JV1 -->
+        <!-- Log4J v1 -->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
 
-        <!-- SLF4j binding for Log4JV1 -->
+        <!-- SLF4j binding for Log4J v1 -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
@@ -39,10 +39,10 @@ To initialize a logger in a program, just simply import `org.slf4j.Logger` and u
 ```
  With these dependencies, we could have our logger running on log4j framework with SLF4J abstraction.
  
- ### Log4j (V2)
- To use log4j V2 with SLF4J binding, the following dependencies have to be imported:
+ ### Log4j (v2)
+ To use log4j v2 with SLF4J binding, the following dependencies have to be imported:
  ```xml
-        <!-- Log4JV2 -->
+        <!-- Log4J v2 -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
@@ -54,7 +54,7 @@ To initialize a logger in a program, just simply import `org.slf4j.Logger` and u
             <version>2.14.0</version>
         </dependency>
 
-        <!-- Binding for Log4JV2 -->
+        <!-- SLF4j binding for Log4J v2 -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j-impl</artifactId>
