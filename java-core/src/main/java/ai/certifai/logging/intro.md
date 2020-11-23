@@ -6,7 +6,7 @@
 Logging is the process of writing log messages during the execution of a program to a central place. 
 We want to log the meaningful events that occurs during the execution of the program for user to analyze later.
 We would also want to report any potential error or some warning messages to the user so that user could understand 
-more what to do to solve it. 
+more about the situation and what to do to solve it. 
 
 #### Examples of log messages 
 
@@ -18,7 +18,7 @@ the execution of the program.
     log.info("Application succesfully runned with time {} s", timeTaken);
 ```
 
-It could be we want to record the error messages whenever an exception
+It could be helpful when we want to record the error messages whenever an exception
 occurs and log the error messages for the expert to resolve later.
 
 ```java
@@ -32,26 +32,26 @@ to the user about it.
     log.warn("Invalid user id/password, please try again.");
 ```
 
-No matter what kind of message you want to record, you need to have an appropriate logging library
-to use it. There are some java logging libraries out there for you to use.
+No matter what kind of messages you want to record, you need to have an appropriate logging library
+to do it. There are some java logging libraries out there for you to use.
 
 
-#### Java Logging Library/Framework
+### Java Logging Library/Framework
 
 **java.util.logging (JUL)**
 
 Since Java 1.4 there is a built-in Logging Framework provided by the JDK.
-But due to slow performance and documentation, other open-sourced logging framework
+But due to slow performance, other open-sourced logging framework
 has been introduced.
 
 **Log4j (v1)**
 
 Log4j is a reliable, fast and flexible logging framework (APIs) written in Java,
-which highly configurable through external configuration files at runtime.
+which highly configurable through external configuration files at runtime. It is deprecated at 2015 yet many legacy projects still use it.
 
 **Log4j (v2)**
  
- Log4j v2 is an upgrade to Log4j that provides significant improvements over its predecessor, Log4j v1.
+ Log4j 12 is an upgrade to Log4j that provides significant improvements over its predecessor, Log4j v1.
  It is currently the newest logging framework that has been introduced.
 
 **SLF4J**
@@ -62,5 +62,5 @@ The Simple Logging Facade for Java (SLF4J) serves as a simple facade or abstract
 
 **Logback**
 
-Logback is one of the most widely used logging frameworks in the Java Community. It was meant to become a successor for Log4j v1 and it 
-is designed by the same author. It is faster and has a smaller footprint than other existing logging systems and supports SLF4J natively.
+Logback is one of the most widely used logging frameworks in the Java Community. It was meant to become a successor for Log4j v1, and it 
+is designed by the same author. It is faster and has a smaller footprint than other existing logging systems, and it supports SLF4J natively.

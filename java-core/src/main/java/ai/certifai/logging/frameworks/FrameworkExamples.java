@@ -34,6 +34,6 @@ public class FrameworkExamples {
 
         // Logback natively uses SLF4J, to use Logback, need to have SLF4J dependencies
         org.slf4j.Logger logback = LoggerFactory.getLogger(FrameworkExamples.class);
-        logback.info("Logback with slf4j implementation");
+        logback.info("Logback with slf4j");
     }
 }

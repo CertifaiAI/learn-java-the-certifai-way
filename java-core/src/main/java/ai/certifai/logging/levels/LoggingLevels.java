@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 
 public class LoggingLevels {
     /**
-     *  Logging levels in SLF4J (commonly used) could be arranged as below :
+     *  Logging levels in SLF4J could be arranged as below :
      *  DEBUG < INFO < WARN < ERROR where DEBUG is the highest level of logging
      *
      *  The functionality of each logging level explained below:
