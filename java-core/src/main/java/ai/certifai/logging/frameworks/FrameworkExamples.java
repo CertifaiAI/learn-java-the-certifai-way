@@ -20,11 +20,11 @@ public class FrameworkExamples {
      */
     public static void main(String[] args) {
 
-        // Log4j V1 could de directly implement as below
+        // Log4j v1 could de directly implement as below
         Logger log4jv1 = Logger.getLogger(FrameworkExamples.class);
         log4jv1.info("Log4jV1 over here");
 
-        // Log4j V2 could de directly implement as below
+        // Log4j v2 could de directly implement as below
         org.apache.logging.log4j.Logger log4jv2 = LogManager.getLogger(FrameworkExamples.class);
         log4jv2.info("Log4jv2 over here");
 
