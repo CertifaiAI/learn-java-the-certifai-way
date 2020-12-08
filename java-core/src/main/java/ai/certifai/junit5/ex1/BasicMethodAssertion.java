@@ -1,12 +1,12 @@
-package training;
+package ai.certifai.junit5.ex1;
 
 /**
  * Demo of Junit5 Test (Class)
- *
+ * Test file path : test\java\ai\certifai\junit5\ex1
  * @author Boon Khai Yeoh
  */
 
-public class MathUtils {
+public class BasicMethodAssertion {
 
     public int add(int a, int b){
         return a+b;
@@ -29,4 +29,6 @@ public class MathUtils {
     }
 
 }
+
+
 

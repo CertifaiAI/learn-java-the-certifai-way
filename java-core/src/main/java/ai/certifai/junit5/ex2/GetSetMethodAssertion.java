@@ -1,8 +1,8 @@
-package solution;
+package ai.certifai.junit5.ex2;
 
 /**
  * Demo of Junit5 Test (Class)
- *
+ * solution file path : test\java\ai\certifai\junit5\ex2
  * @author Boon Khai Yeoh
  */
 
@@ -11,12 +11,12 @@ package solution;
  *
  *
  * Task 2 : Create a simple test use assertEquals to evaluate the type of coffee
- * by set the value Example : Coffee coffee = new Coffee("Espresso",9);
+ * by set the value Example : GetSetMethodAssertion coffee = new GetSetMethodAssertion("Espresso",9);
  * and using getCoffeeType() to get the coffee type
  *
  *
  * Task 3 : Create a simple test use assertEquals to evaluate the price of coffee
- * by set the value Example : Coffee coffee = new Coffee("Espresso",9);
+ * by set the value Example : GetSetMethodAssertion coffee = new GetSetMethodAssertion("Espresso",9);
  * and using getPrice() to get the coffee price
  *
  *
@@ -24,14 +24,14 @@ package solution;
  * Type of Exception :  ExceptionIllegalArgumentException
  */
 
-public class Coffee {
+public class GetSetMethodAssertion {
 
     private String coffeeType;
     private double price;
 
 
 
-    public Coffee(String coffeeType, double price){
+    public GetSetMethodAssertion(String coffeeType, double price){
         this.coffeeType = coffeeType;
         this.price=price;
 
