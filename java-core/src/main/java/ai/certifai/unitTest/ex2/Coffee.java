@@ -11,12 +11,12 @@ package ai.certifai.unitTest.ex2;
  *
  *
  * Task 2 : Create a simple test use assertEquals to evaluate the type of coffee
- * by set the value Example : GetSetMethodAssertion coffee = new GetSetMethodAssertion("Espresso",9);
+ * by set the value Example : Coffee coffee = new Coffee("Espresso",9);
  * and using getCoffeeType() to get the coffee type
  *
  *
  * Task 3 : Create a simple test use assertEquals to evaluate the price of coffee
- * by set the value Example : GetSetMethodAssertion coffee = new GetSetMethodAssertion("Espresso",9);
+ * by set the value Example : Coffee coffee = new Coffee("Espresso",9);
  * and using getPrice() to get the coffee price
  *
  *
@@ -30,14 +30,14 @@ package ai.certifai.unitTest.ex2;
  *
  */
 
-public class GetSetMethodAssertion {
+public class Coffee {
 
     private String coffeeType;
     private double price;
 
 
 
-    public GetSetMethodAssertion(String coffeeType, double price){
+    public Coffee(String coffeeType, double price){
         this.coffeeType = coffeeType;
         this.price=price;
 
@@ -68,14 +68,14 @@ public class GetSetMethodAssertion {
  *            Solution for test file
  *  ============================================
  * Task 1 : Create a test program file
- * Put the cursor to the class name "GetSetMethodAssertion"
+ * Put the cursor to the class name "Coffee"
  * Right click -> Generate -> test
  *
  *
  * Task 2 : Create a simple test use assertEquals to evaluate the type of coffee
  *    @Test
  *     void getCoffeeType() {
- *         GetSetMethodAssertion coffee = new GetSetMethodAssertion("Espresso",9);
+ *         Coffee coffee = new Coffee("Espresso",9);
  *         assertEquals("Espresso",coffee.getCoffeeType());
  *     }
  *
@@ -83,7 +83,7 @@ public class GetSetMethodAssertion {
  * Task 3 : Create a simple test use assertEquals to evaluate the price of coffee
  *     @Test
  *     void getPrice() {
- *         GetSetMethodAssertion coffee = new GetSetMethodAssertion("Latte",11);
+ *         Coffee coffee = new Coffee("Latte",11);
  *         assertEquals(11,coffee.getPrice());
  *     }
  *
@@ -91,9 +91,9 @@ public class GetSetMethodAssertion {
  * Task 4 : Create a simple test use assertAll to evaluate the types of coffee
  *     @Test
  *     void allCoffeeType() {
- *         GetSetMethodAssertion espresso = new GetSetMethodAssertion("Espresso",9);
- *         GetSetMethodAssertion latte = new GetSetMethodAssertion("Latte",11);
- *         GetSetMethodAssertion mocha = new GetSetMethodAssertion("Mocha",12);
+ *         Coffee espresso = new Coffee("Espresso",9);
+ *         Coffee latte = new Coffee("Latte",11);
+ *         Coffee mocha = new Coffee("Mocha",12);
  *
  *         assertAll(
  *                 ()->assertEquals("Espresso",espresso.getCoffeeType()),
@@ -106,7 +106,7 @@ public class GetSetMethodAssertion {
  * Task 5 : Create a exception test to evaluate negative price value
  *     @Test
  *     void exceptionTest() {
- *         GetSetMethodAssertion coffee = new GetSetMethodAssertion("Latte",11);
+ *         Coffee coffee = new Coffee("Latte",11);
  *         assertThrows(IllegalArgumentException.class,
  *                 ()->coffee.setPrice(-1));
  *     }
