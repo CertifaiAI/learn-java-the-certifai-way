@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Demo of Unit Test (Test File)
- * Test Naming Method : MethodName_ExpectedBehavior_StateUnderTest
+ * Test Naming Method : methodName_expectedBehavior_stateUnderTest
  * @author Boon Khai Yeoh
  */
 
@@ -27,8 +27,8 @@ class MathUtilsTest {
      */
 
     @Test
-    @DisplayName("addition_True_IfCorrectSumOfTwoVariable")
-    void addition() {
+    @DisplayName("additionTest_True_ifCorrectSumOfTwoVariable")
+    void additionTest() {
         MathUtils mathUtils = new MathUtils();
         int expected = 2;
         int actual = mathUtils.add(1,1);
@@ -47,8 +47,8 @@ class MathUtilsTest {
 
     @Test
     @Disabled
-    @DisplayName("assertEqualsMultiplication_True_IfCorrectProductOfTwoVariable")
-    void assertEqualsMultiplication(){
+    @DisplayName("assertEqualsMultiplicationTest_True_ifCorrectProductOfTwoVariable")
+    void assertEqualsMultiplicationTest(){
         MathUtils mathUtils = new MathUtils();
         assertEquals(4,mathUtils.mul(2,2));
         assertEquals(2,mathUtils.mul(1,1));
@@ -58,8 +58,8 @@ class MathUtilsTest {
 
     @Test
     @Disabled
-    @DisplayName("assertALLMultiplication_True_IfCorrectProductOfTwoVariable")
-    void assertAllMultiplication(){
+    @DisplayName("allMultiplicationTest_True_ifCorrectProductOfTwoVariable")
+    void allMultiplicationTest(){
         MathUtils mathUtils = new MathUtils();
         assertAll(
                 ()->assertEquals(4,mathUtils.mul(2,2)),
@@ -80,8 +80,8 @@ class MathUtilsTest {
      */
 
     @Test
-    @DisplayName("divide_ExceptionThrown_IfInvalidAnswer")
-    void divide(){
+    @DisplayName("divideTest_ExceptionThrown_ifInvalidAnswer")
+    void divideTest(){
         MathUtils mathUtils = new MathUtils();
         assertThrows(ArithmeticException.class,() -> mathUtils.divide(1,0));
 
@@ -97,9 +97,9 @@ class MathUtilsTest {
      */
 
     @ParameterizedTest
-    @DisplayName("testAllElement_True_IfZeroRemainder")
+    @DisplayName("testAllElementTest_True_ifZeroRemainder")
     @ValueSource(ints ={3,4,5,6})
-    void testAllElement(int number){
+    void testAllElementTest(int number){
         assertEquals(0,number%3);
 
     }
@@ -115,8 +115,8 @@ class MathUtilsTest {
      */
 
     @RepeatedTest(3)
-    @DisplayName("repeatAdd_True_IFCorrectSumOfTwoVariable")
-    void repeatAdd() {
+    @DisplayName("repeatAddTest_True_ifCorrectSumOfTwoVariable")
+    void repeatAddTest() {
         MathUtils mathUtils = new MathUtils();
         int expected = 2;
         int actual = mathUtils.add(1, 1);
