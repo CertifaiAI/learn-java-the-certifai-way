@@ -1,4 +1,4 @@
-package ai.certifai.junit5.ex1;
+package ai.certifai.unitTest.ex1;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
@@ -9,6 +9,13 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * Demo of Unit Test (Test File)
+ *
+ * @author Boon Khai Yeoh
+ */
+
 class MathUtilsTest {
 
     /**
@@ -117,6 +124,7 @@ class MathUtilsTest {
 
 
     /**
+     * Create the test function
      * Task 1 : Evaluate difference of two value by create minus (subtraction) test case using assertEquals
      *
      *
