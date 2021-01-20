@@ -3,12 +3,13 @@ package ai.certifai.junit5.ex1;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
-class BasicMethodAssertionTest {
+class MathUtilsTest {
 
     /**
      * Test Method 1 : Using assertEquals to compare two value.
@@ -21,7 +22,7 @@ class BasicMethodAssertionTest {
     @Test
     @DisplayName("Add Function Test")
     void add() {
-        BasicMethodAssertion mathUtils = new BasicMethodAssertion();
+        MathUtils mathUtils = new MathUtils();
         int expected = 2;
         int actual = mathUtils.add(1,1);
         assertEquals(expected,actual,"The sum expected to be 2");
@@ -41,7 +42,7 @@ class BasicMethodAssertionTest {
     @Disabled
     @DisplayName("Multiplication Function Test")
     void mul(){
-        BasicMethodAssertion mathUtils = new BasicMethodAssertion();
+        MathUtils mathUtils = new MathUtils();
         assertEquals(4,mathUtils.mul(2,2));
         assertEquals(2,mathUtils.mul(1,1));
         assertEquals(3,mathUtils.mul(3,3));
@@ -52,7 +53,7 @@ class BasicMethodAssertionTest {
     @Disabled
     @DisplayName("Assert ALL Multiplication Function Test")
     void mul1(){
-        BasicMethodAssertion mathUtils = new BasicMethodAssertion();
+        MathUtils mathUtils = new MathUtils();
         assertAll(
                 ()->assertEquals(4,mathUtils.mul(2,2)),
                 ()->assertEquals(2,mathUtils.mul(1,1)),
@@ -74,8 +75,9 @@ class BasicMethodAssertionTest {
     @Test
     @DisplayName("Divide Function Test")
     void divide(){
-        BasicMethodAssertion mathUtils = new BasicMethodAssertion();
+        MathUtils mathUtils = new MathUtils();
         assertThrows(ArithmeticException.class,() -> mathUtils.divide(1,0));
+
 
     }
 
@@ -107,7 +109,7 @@ class BasicMethodAssertionTest {
     @RepeatedTest(3)
     @DisplayName("Add Function Test")
     void repeatAdd() {
-        BasicMethodAssertion mathUtils = new BasicMethodAssertion();
+        MathUtils mathUtils = new MathUtils();
         int expected = 2;
         int actual = mathUtils.add(1, 1);
         assertEquals(expected, actual, "The sum expected to be 2");
