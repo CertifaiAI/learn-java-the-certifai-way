@@ -1,4 +1,4 @@
-package ai.certifai.unitTest.ex1;
+package ai.certifai.unittest.ex1;
 
 /**
  * Demo of Unit Test (Class)
