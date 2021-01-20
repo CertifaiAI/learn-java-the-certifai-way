@@ -1,8 +1,9 @@
-package ai.certifai.unitTest.ex2;
+package ai.certifai.unittest.ex2;
 
 /**
  * Demo of Unit Test (Class)
  * Solution : At Bottom of this file
+ * Test Naming Method : MethodName_ExpectedBehavior_StateUnderTest
  * @author Boon Khai Yeoh
  */
 
@@ -16,7 +17,7 @@ package ai.certifai.unitTest.ex2;
  *
  *
  * Task 3 : Create a simple test use assertEquals to evaluate the price of coffee
- * by set the value Example : Coffee coffee = new Coffee("Espresso",9);
+ * by set the value Example : Coffee coffee = new Coffee("Latte",11);
  * and using getPrice() to get the coffee price
  *
  *
@@ -74,6 +75,7 @@ public class Coffee {
  *
  * Task 2 : Create a simple test use assertEquals to evaluate the type of coffee
  *    @Test
+ *    @DisplayName("getCoffeeType_True_IFCoffeeTypeSameWithUserDefine")
  *     void getCoffeeType() {
  *         Coffee coffee = new Coffee("Espresso",9);
  *         assertEquals("Espresso",coffee.getCoffeeType());
@@ -82,6 +84,7 @@ public class Coffee {
  *
  * Task 3 : Create a simple test use assertEquals to evaluate the price of coffee
  *     @Test
+ *     @DisplayName("getPrice_True_IFCoffeePriceSameWithUserDefine")
  *     void getPrice() {
  *         Coffee coffee = new Coffee("Latte",11);
  *         assertEquals(11,coffee.getPrice());
@@ -90,6 +93,7 @@ public class Coffee {
  *
  * Task 4 : Create a simple test use assertAll to evaluate the types of coffee
  *     @Test
+ *     @DisplayName("allCoffeeType_True_IFAllCoffeeTypeSameWithUserDefine")
  *     void allCoffeeType() {
  *         Coffee espresso = new Coffee("Espresso",9);
  *         Coffee latte = new Coffee("Latte",11);
@@ -105,6 +109,7 @@ public class Coffee {
  *
  * Task 5 : Create a exception test to evaluate negative price value
  *     @Test
+ *     @DisplayName("exceptionTest_ExceptionThrown_IFCoffeePriceNegative")
  *     void exceptionTest() {
  *         Coffee coffee = new Coffee("Latte",11);
  *         assertThrows(IllegalArgumentException.class,
