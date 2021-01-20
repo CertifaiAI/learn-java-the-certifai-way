@@ -1,4 +1,4 @@
-package ai.certifai.unitTest.ex1;
+package ai.certifai.unittest.ex1;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Demo of Unit Test (Test File)
- *
+ * Test Naming Method : MethodName_ExpectedBehavior_StateUnderTest
  * @author Boon Khai Yeoh
  */
 
@@ -27,8 +27,8 @@ class MathUtilsTest {
      */
 
     @Test
-    @DisplayName("Add Function Test")
-    void add() {
+    @DisplayName("addition_True_IfCorrectSumOfTwoVariable")
+    void addition() {
         MathUtils mathUtils = new MathUtils();
         int expected = 2;
         int actual = mathUtils.add(1,1);
@@ -41,14 +41,14 @@ class MathUtilsTest {
      * Usage :
      * assertAll is use to compare all the value,
      * evaluate all condition compare to assertEquals
-     *
+     * observe the difference between assertEquals and assertAll method
      * Comment the @Disabled to review the difference
      */
 
     @Test
     @Disabled
-    @DisplayName("Multiplication Function Test")
-    void mul(){
+    @DisplayName("assertEqualsMultiplication_True_IfCorrectProductOfTwoVariable")
+    void assertEqualsMultiplication(){
         MathUtils mathUtils = new MathUtils();
         assertEquals(4,mathUtils.mul(2,2));
         assertEquals(2,mathUtils.mul(1,1));
@@ -58,8 +58,8 @@ class MathUtilsTest {
 
     @Test
     @Disabled
-    @DisplayName("Assert ALL Multiplication Function Test")
-    void mul1(){
+    @DisplayName("assertALLMultiplication_True_IfCorrectProductOfTwoVariable")
+    void assertAllMultiplication(){
         MathUtils mathUtils = new MathUtils();
         assertAll(
                 ()->assertEquals(4,mathUtils.mul(2,2)),
@@ -80,7 +80,7 @@ class MathUtilsTest {
      */
 
     @Test
-    @DisplayName("Divide Function Test")
+    @DisplayName("divide_ExceptionThrown_IfInvalidAnswer")
     void divide(){
         MathUtils mathUtils = new MathUtils();
         assertThrows(ArithmeticException.class,() -> mathUtils.divide(1,0));
@@ -97,8 +97,9 @@ class MathUtilsTest {
      */
 
     @ParameterizedTest
+    @DisplayName("testAllElement_True_IfZeroRemainder")
     @ValueSource(ints ={3,4,5,6})
-    void test(int number){
+    void testAllElement(int number){
         assertEquals(0,number%3);
 
     }
@@ -114,7 +115,7 @@ class MathUtilsTest {
      */
 
     @RepeatedTest(3)
-    @DisplayName("Add Function Test")
+    @DisplayName("repeatAdd_True_IFCorrectSumOfTwoVariable")
     void repeatAdd() {
         MathUtils mathUtils = new MathUtils();
         int expected = 2;
