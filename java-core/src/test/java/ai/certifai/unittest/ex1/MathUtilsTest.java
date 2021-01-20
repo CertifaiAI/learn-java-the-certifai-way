@@ -47,8 +47,8 @@ class MathUtilsTest {
 
     @Test
     @Disabled
-    @DisplayName("assertEqualsMultiplicationTest_True_ifCorrectProductOfTwoVariable")
-    void assertEqualsMultiplicationTest(){
+    @DisplayName("equalsMultiplicationTest_True_ifCorrectProductOfTwoVariable")
+    void equalsMultiplicationTest(){
         MathUtils mathUtils = new MathUtils();
         assertEquals(4,mathUtils.mul(2,2));
         assertEquals(2,mathUtils.mul(1,1));
@@ -97,9 +97,9 @@ class MathUtilsTest {
      */
 
     @ParameterizedTest
-    @DisplayName("testAllElementTest_True_ifZeroRemainder")
+    @DisplayName("allElementTest_True_ifZeroRemainder")
     @ValueSource(ints ={3,4,5,6})
-    void testAllElementTest(int number){
+    void allElementTest(int number){
         assertEquals(0,number%3);
 
     }
