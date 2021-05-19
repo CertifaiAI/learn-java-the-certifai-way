@@ -1,6 +1,29 @@
 <p align="center">
   <img src="java-core/src/main/java/ai/certifai/maven/metadata/java.png">
-</p> 
+</p>
+
+<p>
+  <p align="center">
+    <a href="https://sonarcloud.io/dashboard?id=CertifaiAI_learn-java-the-certifai-way">
+        <img alt="Sonar Cloud" src="https://sonarcloud.io/images/project_badges/sonarcloud-white.svg">
+    </a>
+</p>
+
+<p>
+  <p align="center">
+    <a href="https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/main/LICENSE">
+        <img alt="GitHub" src="https://img.shields.io/github/license/CertifaiAI/learn-java-the-certifai-way.svg">
+    </a>
+    <a href="Discord">
+        <img alt="Discord" src="https://img.shields.io/discord/699181979316387842?color=red">
+    </a>
+    <a href="https://certifai.ai">
+        <img alt="Documentation" src="https://img.shields.io/website/https/certifai.ai.svg?color=ff69b4">
+    </a>
+    <a href="https://sonarcloud.io/dashboard?id=CertifaiAI_learn-java-the-certifai-way">
+        <img alt="Sonar Cloud" src="https://sonarcloud.io/api/project_badges/measure?project=CertifaiAI_learn-java-the-certifai-way&metric=alert_status">
+    </a>
+</p>
 
 ## What You Will Learn
 - Through the building blocks of Java snippets, you will able to understand the gist of Java programming in no time.
