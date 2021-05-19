@@ -24,6 +24,16 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+
+        <!-- Adding Sonar properties for Sonar Cloud code scan -->
+        <sonar.projectKey>CertifaiAI_learn-java-the-certifai-way</sonar.projectKey>
+        <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
+        <sonar.organization>certifaiai</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
+    </properties>
+
     <modules>
         <module>java-core</module>
     </modules>
