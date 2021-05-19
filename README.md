@@ -12,7 +12,7 @@
 <p>
   <p align="center">
     <a href="https://github.com/CertifaiAI/learn-java-the-certifai-way/blob/main/LICENSE">
-        <img alt="GitHub" src="https://img.shields.io/github/license/CertifaiAI/TrainingLabs.svg">
+        <img alt="GitHub" src="https://img.shields.io/github/license/CertifaiAI/learn-java-the-certifai-way.svg">
     </a>
     <a href="Discord">
         <img alt="Discord" src="https://img.shields.io/discord/699181979316387842?color=red">
